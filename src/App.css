@@ -16,3 +16,8 @@ body {
 .ml-auto {
   margin-left: auto;
 }
+
+#border_black{
+  border:1px solid #000;
+}
+

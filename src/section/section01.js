@@ -76,6 +76,26 @@ const Section01 = () => {
                     </div>    
                 </div>
                 <div className='max-lg:hidden w-full bg-black h-[0.5px]'></div>
+                <div className="pl-[20px] pr-[20px] text-center lg:text-left lg:pt-[1.3194444444444444vw]">
+                    <div classNmae="max-w-[600px] lg:max-w-full mx-auto">
+                        <h1 className="tracking-[-2px] text-[44px] lg:text-[3.3333333333333335vw] leading-[108%]">
+                            Distinctive website solutions for leading and rising companies
+                        </h1>
+                    </div>
+                </div>
+                <div className='mt-[51px]  lg:bottom-[var(--size-20)] lg:inset-x-[var(--size-20)] text-center lg:text-left'>
+                    <div className="inline-flex">
+                        <div id="border_black" className="w-[220px] h-[50px] pl-4 lg:pl-[1.1111111111111112vw] pr-2.5 lg:pr-[0.6944444444444444vw] min-h-10 lg:min-h-[2.7777777777777777vw] py-1 lg:py-[.3vw] flex items-center justify-between rounded-[10px]">
+                            <div className="flex items-center">
+                                <div className="text-[12px] lg:text-[0.8333333333333334vw] uppercase text-right font-medium leading-[100%]">
+                                in business<br/>
+                                since
+                                </div>
+                                <div className="ml-4 lg:ml-[1.0416666666666665vw] font_editorial text-[28px] lg:text-[1.9444444444444444vw] leading-none">©2025</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
      </section>

@@ -1,3 +1,18 @@
+
+
 body {
   background-color:#E6E8EA;
+}
+
+.border-primary {
+ 
+  border-color: #000;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.ml-auto {
+  margin-left: auto;
 }

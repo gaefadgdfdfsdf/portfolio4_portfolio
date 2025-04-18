@@ -24,7 +24,8 @@ const Section01 = () => {
                     </svg>
                 </div>
             </div>
-            <div className='pt-[38px] lg:pt-0 pb-5 lg:pb-[6.944444444444445vw] relative'>
+            <div className='pt-[38px] lg:pt-0 pb-3 lg:pb-[1.944444444444445vw] relative'>
+                <div className="max-lg:hidden absolute left-0 bottom-0 h-full w-[0.5px] bg-black"></div>
                 <div className='max-lg:hidden px-[var(--size-20)] flex justify-between'>
                     <ul className="menu_header lowercase flex items-center gap-[2.083333333333333vw] font-medium text-[20px]">
                         <li>
@@ -83,12 +84,12 @@ const Section01 = () => {
                         </h1>
                     </div>
                 </div>
-                <div className='mt-[51px]  lg:bottom-[var(--size-20)] lg:inset-x-[var(--size-20)] text-center lg:text-left'>
+                <div className='mt-[71px] pl-[20px] pr-[20px] lg:bottom-[var(--size-20)] lg:inset-x-[var(--size-20)] text-center lg:text-left'>
                     <div className="inline-flex">
-                        <div id="border_black" className="w-[220px] h-[50px] pl-4 lg:pl-[1.1111111111111112vw] pr-2.5 lg:pr-[0.6944444444444444vw] min-h-10 lg:min-h-[2.7777777777777777vw] py-1 lg:py-[.3vw] flex items-center justify-between rounded-[10px]">
+                        <div id="border_black" className="w-[220px] h-[50px] pl-4 lg:pl-[1.1111111111111112vw] pr-2.5 lg:pr-[0.6944444444444444vw] min-h-10 lg:min-h-[2.7777777777777777vw] py-1 lg:py-[.3vw] flex items-center justify-between rounded-[5px]">
                             <div className="flex items-center">
                                 <div className="text-[12px] lg:text-[0.8333333333333334vw] uppercase text-right font-medium leading-[100%]">
-                                in business<br/>
+                                portfolio<br/>
                                 since
                                 </div>
                                 <div className="ml-4 lg:ml-[1.0416666666666665vw] font_editorial text-[28px] lg:text-[1.9444444444444444vw] leading-none">©2025</div>
@@ -98,7 +99,22 @@ const Section01 = () => {
                 </div>
             </div>
         </div>
+        <div className="w-full bg-black h-[0.5px]"></div>
      </section>
+     <div className="pt-[30px] lg:pt-[3vw] ">
+        <div className="max-w-full px-[var(--size-20)]">
+            <div className="text-[12px] lg:text-[0.8333333333333334vw] flex justify-center overflow-hidden text-center font-medium relative z-[1]">
+                <div className="animate-up-down">
+                    <span>( SCROLL )</span>
+                </div>
+            </div>
+        </div>
+        <div className='h-[150vh] mt-[-65vw] lg:mt-[-2vw]'>
+            <div className='sticky top-0 h-screen'>
+                
+            </div>
+        </div>
+     </div>
     </>
   )
 }

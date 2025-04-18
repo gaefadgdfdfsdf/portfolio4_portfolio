@@ -114,7 +114,56 @@ const Section01 = () => {
                 
             </div>
         </div>
+        <div className='mt-[-35vw] lg:mt-[-23vw] mb-[116px] lg:mb-[20vw]'>
+            <div className='max-w-full pl-[1.38vw] pr-[1.38vw'>
+                <div className='relative'>
+                    <div className="hidden inline-flex absolute left-0 invisible opacity-0 width-view-indent lg:[font-size:0.8333333333vw]">ABOUT</div>
+                    <div className="-mb-4 lg:mb-[-1.25vw] pointer-events-none lg:[font-size:0.8333333333vw]">ABOUT</div>
+                    <div className="text-[28px] lg:text-[2.2222222222222223vw] leading-[112%] tracking-tight lg:tracking-normal hide_br_tablet">
+                        <div className="overflow-hidden">
+                            <div className='block relative text-start'>
+                              <span className='mr-[101px] lg:mr-[4.472222222222223vw] '></span>
+                              For 10 years, we've been delivering powerful,          
+                            </div>
+                        </div>
+                        <div className="oerflow-hidden">
+                            <div className="block relative text-start">
+                            tailor-made websites that have helped brands 
+                            </div>
+                        </div>
+                        <div className="oerflow-hidden">
+                            <div className="block relative text-start">
+                                anchor their authority. Now, we’re harnessing
+                            </div>
+                        </div>
+                        <div className="oerflow-hidden">
+                            <div className="block relative text-start">
+                            this cargo of expertise to propel your projects 
+                            </div>
+                        </div>
+                        <div className="oerflow-hidden">
+                            <div className="block relative text-start">
+                            toward new and exciting horizons. 
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
      </div>
+     <div className="mb-5 lg:mb-[3.6111111111111107vw]">
+        <div className="max-w-full pl-[1.38vw] pr-[1.38vw]">
+        <div className="pr-[60px] lg:pr-[11.527777777777779vw] relative">
+				<div class="absolute right-0 lg:right-[1.3194444444444444vw] -top-0.5 lg:top-[-0.06944444444444445vw] text-[18px] lg:text-[2.2222222222222223vw] leading-[100%]">
+					<span class="inline-flex mx-[3px] lg:mx-[0.4166666666666667vw]">
+						 ( 03 )					</span>
+				</div>
+				<div>
+					
+				</div>
+			</div>
+        </div>
+     </div>   
     </>
   )
 }

@@ -120,33 +120,43 @@ const Section01 = () => {
                 <div className='relative'>
                     <div className="hidden inline-flex absolute left-0 invisible opacity-0 width-view-indent lg:[font-size:0.8333333333vw]">ABOUT</div>
                     <div className="-mb-4 lg:mb-[-1.25vw] pointer-events-none lg:[font-size:0.8333333333vw]">ABOUT</div>
-                    <div className="text-[28px] lg:text-[2.2222222222222223vw] leading-[112%] tracking-tight lg:tracking-normal hide_br_tablet">
+                    <div className="text-[20px] lg:text-[1.3222222222222223vw] leading-[128%] tracking-tight lg:tracking-normal hide_br_tablet">
                         <div className="overflow-hidden">
                             <div className='block relative text-start'>
                               <span className='mr-[101px] lg:mr-[4.472222222222223vw] '></span>
-                              For 10 years, we've been delivering powerful,          
+                              저는 프론트엔드 개발을 기반으로 꾸준히 학습하고 있는 신입 개발자 JYH입니다.      
                             </div>
                         </div>
                         <div className="oerflow-hidden">
                             <div className="block relative text-start">
-                            tailor-made websites that have helped brands 
+                            JavaScript, HTML, CSS, React, jQuery 등 웹 기술에 대한 이해를 바탕으로,
                             </div>
                         </div>
                         <div className="oerflow-hidden">
                             <div className="block relative text-start">
-                                anchor their authority. Now, we’re harnessing
+                            사용자 중심의 UI 구현에 집중하고 있습니다. 신입이지만 성실함과 꾸준함을
                             </div>
                         </div>
                         <div className="oerflow-hidden">
                             <div className="block relative text-start">
-                            this cargo of expertise to propel your projects 
+                             바탕으로 기초를 탄탄히 다져왔으며, 실무에서도 빠르게 적응할 수 있는 준비가 되어 있습니다.
                             </div>
                         </div>
                         <div className="oerflow-hidden">
                             <div className="block relative text-start">
-                            toward new and exciting horizons. 
+                            작은 디테일도 놓치지 않는 꼼꼼함과 책임감을 강점으로 삼고 있습니다.
                             </div>
                         </div>    
+                        <div className="oerflow-hidden">
+                            <div className="block relative text-start">
+                            이름처럼 ‘믿을 윤(允)’, ‘연꽃 하(荷)’의 의미를 담아, 신뢰감 있고 성장하는 개발자가 되고자 합니다.
+                            </div>
+                        </div> 
+                        <div className="oerflow-hidden">
+                            <div className="block relative text-start">
+                            장기적인 관점에서 계속해서 발전할 수 있는 개발자를 목표로 하고 있습니다.
+                            </div>
+                        </div> 
                     </div>
                 </div>
             </div>

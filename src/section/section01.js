@@ -79,8 +79,9 @@ const Section01 = () => {
                 <div className='max-lg:hidden w-full bg-black h-[0.5px]'></div>
                 <div className="pl-[20px] pr-[20px] text-center lg:text-left lg:pt-[1.3194444444444444vw]">
                     <div classNmae="max-w-[600px] lg:max-w-full mx-auto">
-                        <h1 className="tracking-[-2px] text-[44px] lg:text-[3.3333333333333335vw] leading-[108%]">
-                            Distinctive website solutions for leading and rising companies
+                        <h1 className="tracking-[-2px] text-[24px] lg:text-[1.3333333333333335vw] leading-[124%]">
+                        이 포트폴리오는 모던하고 감각적인 인터랙티브 웹사이트로 React + Tailwind CSS + Framer Motion으로 구성되며, 깔끔한 UI와 부드러운 전환 애니메이션, 3D 모델 임베드 및 가로 스크롤 기반 인터랙션 등 다양한 웹 기술이 활용됩니다.
+
                         </h1>
                     </div>
                 </div>

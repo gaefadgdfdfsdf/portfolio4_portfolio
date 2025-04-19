@@ -5,8 +5,8 @@ const Section01 = () => {
     <>
      <section className='relative'>
         <div className='grid grid-cols-2'>
-            <div className='absolute top-[-50px] left-[var(--size-20)] lg:static lg:pb-[2.013888888888889vw] lg:pl-[var(--size-20)] lg:pr-[1.9444444444444444vw] lg:pt-[1.6666666666666667vw]'>
-                <div className="flex flex-nowrap items-end">
+            <div className='absolute top-[-50px] left-[1.38vw] lg:static lg:pb-[2.013888888888889vw] lg:pl-[var(--size-20)] lg:pr-[1.9444444444444444vw] lg:pt-[1.6666666666666667vw]'>
+                <div className="pl-[1.38vw] flex flex-nowrap items-end">
                     <svg className="mr-[1.18px] lg:mr-[0.625vw] w-[23.98px] lg:w-[13.194444444444445vw] h-auto" width="190" height="230" viewBox="0 0 190 230" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M2.40752e-05 162.436C-0.0328505 205.586 33.6058 229.776 76.3243 229.808C117.748 229.84 140.633 209.577 148.419 185.419L148.389 224.685L189.381 224.717L189.5 68.5129C189.534 24.5002 157.19 0.31159 101.526 0.26909C44.9997 0.22609 12.1833 29.5431 6.54387 68.8049L49.6939 68.8379C52.302 43.8132 71.2975 31.3142 101.071 31.3369C130.413 31.3592 145.938 43.453 145.926 59.4189C145.913 75.7799 126.918 80.8729 97.8184 88.6739C94.6858 89.5139 91.4361 90.3859 88.0803 91.3059C34.1319 105.504 0.0338849 117.992 2.40752e-05 162.436ZM147.598 129.755C147.57 166.432 125.97 198.778 88.43 198.75C63.403 198.73 44.8586 185.34 44.877 161.176C44.8971 134.854 67.3427 124.947 101.438 115.48C126.903 108.164 142.442 101.272 147.629 88.7619L147.598 129.755Z" fill="#091423"></path>
                     </svg>
@@ -86,7 +86,7 @@ const Section01 = () => {
                 </div>
                 <div className='mt-[71px] pl-[20px] pr-[20px] lg:bottom-[var(--size-20)] lg:inset-x-[var(--size-20)] text-center lg:text-left'>
                     <div className="inline-flex">
-                        <div id="border_black" className="w-[220px] h-[50px] pl-4 lg:pl-[1.1111111111111112vw] pr-2.5 lg:pr-[0.6944444444444444vw] min-h-10 lg:min-h-[2.7777777777777777vw] py-1 lg:py-[.3vw] flex items-center justify-between rounded-[5px]">
+                        <div id="border_black" className="w-[260px] h-[50px] pl-4 lg:pl-[1.1111111111111112vw] pr-2.5 lg:pr-[0.6944444444444444vw] min-h-10 lg:min-h-[2.7777777777777777vw] py-1 lg:py-[.3vw] flex items-center justify-between rounded-[5px]">
                             <div className="flex items-center">
                                 <div className="text-[12px] lg:text-[0.8333333333333334vw] uppercase text-right font-medium leading-[100%]">
                                 portfolio<br/>

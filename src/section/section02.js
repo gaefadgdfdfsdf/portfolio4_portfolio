@@ -24,7 +24,7 @@ const Section02 = () => {
                 <div className='lg:sticky lg:top-[var(--header-sticky-height)] lg:grid'>
                     <div className='lg:h-[32.29166666666667vw] overflow-hidden relative'>
                         <div className='absolute bottom-0 left-0 w-full bg-black h-[0.5px]'></div>
-                        <a href='' className='absolute inset-0 z-[1]'/>
+                        <a href='https://gaefadgdfdfsdf.github.io/portfolio_1_hyundai/' target='_blank' className='absolute inset-0 z-[1]'/>
                         <div className='py-5 lg:py-[1.38vw] flex flex-col-reverse lg:flex-row lg:h-full'>
                             <div className='lg:w-[32.84722222222222vw] lg:pr-[2.7777777777777777vw] mt-[18px] lg:mt-0'>
                                 <h2 className='text-[32px] lg:text-[4.166666666666666vw] leading-[100%] tracking-tighter font-medium'>hyundai</h2>
@@ -39,6 +39,9 @@ const Section02 = () => {
                             <div className='lg:w-[calc(100%-32.84722222222222vw)]'>
                                 <div className='wrap-img-distortion overflow-hidden rounded-[.3472222222222222vw] h-[42vw] lg:h-full relative'>
                                     <img className='object-cover w-full relative h-full lg:top-1/2 lg:-translate-y-1/2' src={process.env.PUBLIC_URL + 'hyundai.jpg'} alt='hyunda'/>
+                                    <div class="absolute top-[50%] w-full left-0 z-1 translate-y-[-50%]">
+                                        <canvas className='w-full h-full object-cover' id="hover-effect-canvas-1745038706574" width="1236" height="618"></canvas>
+                                    </div>
 				                </div>
                             </div>
                         </div>

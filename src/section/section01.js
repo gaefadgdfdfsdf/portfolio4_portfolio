@@ -1,7 +1,58 @@
-import React from 'react'
+import { useAnimations, useGLTF } from '@react-three/drei'
+import { Canvas, useFrame } from '@react-three/fiber'
+import React, { Suspense, useEffect, useRef, useState } from 'react'
+import * as THREE from 'three';
+
+
+
+const Model = () => {
+    const { scene, animations } = useGLTF('/flower.glb');
+    console.log(scene); // 모델에 대한 정보
+    console.log(animations); // 애니메이션에 대한 정보
+
+    // const ref = useRef<THREE.Object3D>(null);
+    // // GLTF 모델에 포함된 애니메이션을 제어가능
+    // const { actions } = useAnimations(animations, ref);
+    // console.log(actions);
+
+    // const [currentAnimation, setCurrentAnimation] = useState('WalkStanding');
+
+    // useEffect(()=>{
+    //     actions[currentAnimation]?.fadeIn(0.5).play();
+    //     setTimeout(()=>{
+    //         setCurrentAnimation('Run');
+    //     }, 5000);
+    //     return () => {
+    //         actions[currentAnimation]?.fadeOut(0.5).stop();
+    //     }
+    // }, [actions, currentAnimation]);
+
+    // useFrame(()=>{
+    //     if(ref.current) {
+    //         ref.current.rotation.y += 0.1;
+    //     }
+    // })
+
+    const material = new THREE.MeshPhongMaterial({
+        color: 0xffcc00,
+        specular: 0x222222,
+        shininess: 100
+      });
+
+    return (
+        <primitive
+            // ref={ref}
+            object={scene}
+            position={[0,0,0]}
+            scale={0.33}    
+                
+        />
+    );
+}
 
 const Section01 = () => {
   return (
+
     <>
      <section className='relative'>
         <div className='grid grid-cols-2'>
@@ -112,7 +163,18 @@ const Section01 = () => {
         </div>
         <div className='h-[150vh] mt-[-65vw] lg:mt-[-2vw]'>
             <div className='sticky top-0 h-screen'>
-                
+                <Suspense fallback={<span>로딩중..</span>}>
+                <Canvas>
+                    {/* <ambientLight intensity={10} /> */}
+                    <directionalLight 
+                        position={[0,1,0]} // 위치
+                        intensity={30} // 강도
+                        castShadow
+                    />
+                    <material/>
+                    <Model/>
+                </Canvas>
+            </Suspense>
             </div>
         </div>
         <div className='mt-[-35vw] lg:mt-[-23vw] mb-[116px] lg:mb-[20vw]'>

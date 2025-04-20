@@ -1,8 +1,55 @@
+
 import { useAnimations, useGLTF } from '@react-three/drei'
-import { Canvas, useFrame } from '@react-three/fiber'
+import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import React, { Suspense, useEffect, useRef, useState } from 'react'
 import * as THREE from 'three';
+import {
+    motion,
+    useTransform,
+    useMotionValueEvent,
+    useScroll,
+    MotionValue,
+  } from "framer-motion";
 
+
+  const CameraController = ({
+    scrollYProgress,
+  }: {
+    scrollYProgress: MotionValue;
+  }) => {
+    const pivotRef = useRef(null);
+    const { camera } = useThree();
+  
+    useEffect(() => {
+      if (pivotRef.current) {
+        pivotRef.current.add(camera);
+        camera.position.set(0, 0, 5);
+        camera.lookAt(0, 0, 0);
+      }
+    }, [camera]);
+  
+    useFrame(() => {
+      const progress = scrollYProgress.get();
+      if (pivotRef.current) {
+        const targetPosition = new THREE.Vector3();
+        let targetRotationY = 0;
+  
+        if (progress >= 0.1 && progress <= 0.2) {
+          targetPosition.set(0, 1, -5);
+          targetRotationY = -(Math.PI / 180) * 180;
+        }
+  
+        pivotRef.current.position.lerp(targetPosition, 0.05);
+        pivotRef.current.rotation.y = THREE.MathUtils.lerp(
+          pivotRef.current.rotation.y,
+          targetRotationY,
+          0.05
+        );
+      }
+    });
+  
+    return <group ref={pivotRef} position={[0, 0, 0]} />;
+  };  
 
 
 const Model = () => {
@@ -10,34 +57,9 @@ const Model = () => {
     console.log(scene); // 모델에 대한 정보
     console.log(animations); // 애니메이션에 대한 정보
 
-    // const ref = useRef<THREE.Object3D>(null);
-    // // GLTF 모델에 포함된 애니메이션을 제어가능
-    // const { actions } = useAnimations(animations, ref);
-    // console.log(actions);
+   
 
-    // const [currentAnimation, setCurrentAnimation] = useState('WalkStanding');
-
-    // useEffect(()=>{
-    //     actions[currentAnimation]?.fadeIn(0.5).play();
-    //     setTimeout(()=>{
-    //         setCurrentAnimation('Run');
-    //     }, 5000);
-    //     return () => {
-    //         actions[currentAnimation]?.fadeOut(0.5).stop();
-    //     }
-    // }, [actions, currentAnimation]);
-
-    // useFrame(()=>{
-    //     if(ref.current) {
-    //         ref.current.rotation.y += 0.1;
-    //     }
-    // })
-
-    const material = new THREE.MeshPhongMaterial({
-        color: 0xffcc00,
-        specular: 0x222222,
-        shininess: 100
-      });
+   
 
     return (
         <primitive
@@ -51,10 +73,34 @@ const Model = () => {
 }
 
 const Section01 = () => {
+
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end end"],
+  });
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      console.log(scrollYProgress.get());
+    });
+  }, [scrollYProgress]);
+
+  const position = useTransform(
+    scrollYProgress,
+    [0, 0.1, 0.25, 0.3],
+    [
+        new THREE.Vector3(0, -1.5, 3.5),   // 처음 가까이
+        new THREE.Vector3(0, 0, -5),       // 뒤로 빠짐
+        new THREE.Vector3(-2, 3, 0),       // 왼쪽으로 이동
+        new THREE.Vector3(5, 8, 0)     // 아래쪽 + 멀리
+    ]
+  );
+
   return (
 
     <>
-     <section className='relative'>
+     <section  className='relative'>
         <div className='grid grid-cols-2'>
             <div className='absolute top-[-50px] left-[1.38vw] lg:static lg:pb-[2.013888888888889vw] lg:pl-[var(--size-20)] lg:pr-[1.9444444444444444vw] lg:pt-[1.6666666666666667vw]'>
                 <div className="pl-[1.38vw] flex flex-nowrap items-end">
@@ -165,14 +211,15 @@ const Section01 = () => {
             <div className='sticky top-0 h-screen'>
                 <Suspense fallback={<span>로딩중..</span>}>
                 <Canvas>
+                    <CameraController scrollYProgress={scrollYProgress} />
                     {/* <ambientLight intensity={10} /> */}
                     <directionalLight 
                         position={[0,1,0]} // 위치
                         intensity={30} // 강도
                         castShadow
                     />
-                    <material/>
-                    <Model/>
+                   
+                    <Model position={position}/>
                 </Canvas>
             </Suspense>
             </div>

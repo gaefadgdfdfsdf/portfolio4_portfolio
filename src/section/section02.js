@@ -120,6 +120,9 @@ const Section02 = () => {
                                     More in the vault.<br/>
                                     Take a look.
                                 </div>
+                                <div className='mt-[35px] lg:mt-[2.638888888888889vw]'>
+                                    <a href='' className='min-w-[190px] lg:min-w-[13.194444444444445vw]'/>
+                                </div>
                             </div>
                         </div>
                     </div>

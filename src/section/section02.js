@@ -98,7 +98,31 @@ const Section02 = () => {
                             </div>
                         </div>
                     </div>
-                    <div></div>
+                    <div>
+                        <div className='lg:flex pt-[81px] lg:pt-[2.430555555555556vw] text-center lg:text-left'>
+                            <div className='lg:w-[32.84722222222222vw] lg:pr-[2.7777777777777777vw]'>
+                                <div className='flex justify-center lg:justify-start'>
+                                    <div id="blackline" className='min-w-[208px] lg:min-w-[15.069444444444443vw] pl-2 lg:pl-[0.5555555555555556vw] pr-[5px] lg:pr-[0.4166666666666667vw] min-h-[49px] lg:min-h-[3.4027777777777777vw] inline-flex items-center justify-between rounded-[5px]'>
+                                        <div className='flex items-center'>
+                                            <img className='w-[32px] lg:w-[2.2222222222222223vw] h-auto mr-2 lg:mr-[0.5555555555555556vw]' src={process.env.PUBLIC_URL + 'icon-projects.svg'} alt='icon-projects'/>
+                                            <div className='text-left leading-[100%] text-[12px] lg:text-[0.8333333333333334vw] tracking-tighter uppercase'>
+                                                ADDED<br/>
+                                                PORTFOLIO<br/>
+                                                PROJECTS
+                                            </div>
+                                        </div>
+                                        <div className='ml-4 lg:ml-[2vw] font_editorial text-[44px] lg:text-[3.0555555555555554vw] leading-none'>3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='class="lg:w-[calc(100%-32.84722222222222vw)] mt-[37px] lg:mt-0'>
+                                <div className='text-[1.25vw] leading-[133%] max-lg:max-w-[290px] max-lg:mx-auto'> 
+                                    More in the vault.<br/>
+                                    Take a look.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

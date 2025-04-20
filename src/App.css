@@ -61,3 +61,8 @@ body {
     opacity: 0;
   }
 }
+
+
+#blackline {
+  border: 1px solid #000;
+}

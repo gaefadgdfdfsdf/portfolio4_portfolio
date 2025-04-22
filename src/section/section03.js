@@ -136,7 +136,12 @@ const Section03 = () => {
                                     With us, no regrets.
                                     </div>
                                     <div className='mt-9 lg:mt-[2.2916666666666665vw]'>
-                                        <a href='' className="rounded-[5px] block w-[160px] h-[50px] bg-white min-w-[169px] lg:min-w-[11.73611111111111vw] lg:h-[3.4722222222222223vw] lg:text-[0.8333333333333334vw]"/>
+                                        <a href='' className="rounded-[5px] block w-[160px] leading-[50px] h-[50px] bg-white text-[#091423] min-w-[169px] lg:min-w-[11.73611111111111vw] lg:h-[3.4722222222222223vw] lg:text-[0.8333333333333334vw]">
+                                            <span className='relative overflow-visible flex flex-col items-center'>
+                                                <span className='opacity-0 flex absolute flex-nowrap items-center'>CONTACT</span>
+                                                <span className='flex absolute flex-nowrap items-center'>CONTACT</span>
+                                            </span>
+                                        </a>    
                                     </div>
                                 </div>
                             </div>

@@ -55,7 +55,8 @@ const Section03 = () => {
                             </div>
                         </div>
                         <div className='relative z-[1px] lg:pt-0 pt-[0.694vw]'>
-                            <div className='absolute top-0 left-0 h-full w-[0.5px] bg-white'></div>
+                            <div className='absolute top-0 left-0 h-full w-[0.5px] bg-white max-lg:hidden'></div>
+                            <div className='absolute top-0 left-0 w-full h-[0.5px] bg-white hidden max-lg:block'></div>
                             <div className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
                             <div className='flex justify-between'>
                                     <div className='pt-[9px] lg:pt-0'>
@@ -77,7 +78,8 @@ const Section03 = () => {
                             </div>
                         </div>
                         <div className='relative z-[1px] lg:pt-0 pt-[0.694vw]'>
-                        <div className='absolute top-0 left-0 h-full w-[0.5px] bg-white'></div>
+                            <div className='absolute top-0 left-0 h-full w-[0.5px] bg-white max-lg:hidden'></div>
+                            <div className='absolute top-0 left-0 w-full h-[0.5px] bg-white hidden max-lg:block'></div>
                             <div className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
                             <div className='flex justify-between'>
                                     <div className='pt-[9px] lg:pt-0'>
@@ -99,25 +101,27 @@ const Section03 = () => {
                             </div>
                         </div>
                         <div className='relative z-[1px] lg:pt-0 pt-[0.694vw]'>
-                        <div className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
-                            <div className='flex justify-between'>
-                                    <div className='pt-[9px] lg:pt-0'>
-                                        <div className='text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>Expand</div>
-                                        <div className='mt-[13px] lg:mt-[1.9444444444444444vw]'>
-                                            <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + ' icon_4.svg'} alt='icon_4'/>
+                            <div className='absolute top-0 left-0 h-full w-[0.5px] bg-white max-lg:hidden'></div>
+                            <div className='absolute top-0 left-0 w-full h-[0.5px] bg-white hidden max-lg:block'></div>   
+                            <div className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
+                                <div className='flex justify-between'>
+                                        <div className='pt-[9px] lg:pt-0'>
+                                            <div className='text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>Expand</div>
+                                            <div className='mt-[13px] lg:mt-[1.9444444444444444vw]'>
+                                                <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + ' icon_4.svg'} alt='icon_4'/>
+                                            </div>
+                                        </div>
+                                        <div className='text-[92px] lg:text-[9.722222222222223vw] font-medium leading-none lg:mt-[-0.9722222222222222vw]'>
+                                            EXP
                                         </div>
                                     </div>
-                                    <div className='text-[92px] lg:text-[9.722222222222223vw] font-medium leading-none lg:mt-[-0.9722222222222222vw]'>
-                                        EXP
+                                    <div className='flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
+                                        <div className='lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
+                                        Scalable websites designed to expand with<br/>
+                                        your business.
+                                        </div>
                                     </div>
                                 </div>
-                                <div className='flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
-                                    <div className='lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
-                                    Scalable websites designed to expand with<br/>
-                                    your business.
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div className='relative z-[1px] lg:pt-0 pt-[0.694vw]'></div>
                     </div>

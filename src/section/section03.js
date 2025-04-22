@@ -136,7 +136,7 @@ const Section03 = () => {
                                     With us, no regrets.
                                     </div>
                                     <div className='mt-9 lg:mt-[2.2916666666666665vw]'>
-                                        <a href='' className="min-w-[169px] lg:min-w-[11.73611111111111vw] lg:h-[3.4722222222222223vw] lg:text-[0.8333333333333334vw]"/>
+                                        <a href='' className="rounded-[5px] block w-[160px] h-[50px] bg-white min-w-[169px] lg:min-w-[11.73611111111111vw] lg:h-[3.4722222222222223vw] lg:text-[0.8333333333333334vw]"/>
                                     </div>
                                 </div>
                             </div>

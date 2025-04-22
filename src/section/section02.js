@@ -121,7 +121,7 @@ const Section02 = () => {
                                     Take a look.
                                 </div>
                                 <div className='mt-[35px] lg:mt-[2.638888888888889vw]'>
-                                    <a href='' className='min-w-[190px] lg:min-w-[13.194444444444445vw]'>
+                                    <a href='' className='text-white bg-[#091423] rounded-[5px] block h-[70px] min-w-[190px] lg:min-w-[13.194444444444445vw] leading-[70px]'>
                                         <span className='relative overflow-visible flex flex-col'>
                                             <span className='opacity-0 flex absolute flex-nowrap items-center'>SEE MORE</span>
                                             <span className='flex absolute flex-nowrap items-center'>SEE MORE</span>

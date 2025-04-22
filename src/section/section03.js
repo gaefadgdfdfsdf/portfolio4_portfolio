@@ -130,6 +130,15 @@ const Section03 = () => {
                                 <div className='max-lg:max-w-[310px] max-lg:mx-auto lg:flex lg:justify-between'>
                                     <h2 className='text-[76px] lg:text-[9.722222222222223vw] lg:mt-[-0.9722222222222222vw] font-medium leading-none tracking-tight lg:whitespace-nowrap'>Ready?</h2>
                                 </div>
+                                <div className='max-lg:max-w-[310px] max-lg:mx-auto mt-7 lg:mt-[3.4722222222222223vw] lg:max-w-[23.26388888888889vw] lg:ml-auto'>
+                                    <div className='lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
+                                    Code. Create. Conquer.<br/>
+                                    With us, no regrets.
+                                    </div>
+                                    <div className='mt-9 lg:mt-[2.2916666666666665vw]'>
+                                        <a href='' className="min-w-[169px] lg:min-w-[11.73611111111111vw] lg:h-[3.4722222222222223vw] lg:text-[0.8333333333333334vw]"/>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

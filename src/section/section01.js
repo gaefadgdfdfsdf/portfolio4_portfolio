@@ -101,22 +101,34 @@ const Section01 = () => {
     const section02Ref = useRef(null);
     const [showHeader, setShowHeader] = useState(false);
 
+    const [isSectionvisible, setIsSectionVisible] = useState(false);
+
 
 
     useEffect(()=>{
         const handleScroll = () => {
             const sectionTop = section02Ref.current?.getBoundingClientRect().top || 0;
-            
+            const sectionBottom = section02Ref.current?.getBoundingClientRect().bottom || 0;
+
+            const isVisible = sectionTop < window.innerHeight && sectionBottom >  0;
+            setIsSectionVisible(isVisible);
+
+          
             if (sectionTop < window.innerHeight && sectionTop > 0){
                 setShowHeader(true);
-            }else if (sectionTop > window.innerHeight){
+            }
+
+            else if (sectionTop > window.innerHeight){
                 setShowHeader(false);
             } else if (sectionTop < 0) {
                 setShowHeader(true);
             }
+
+           
         };
 
         window.addEventListener('scroll', handleScroll);
+        handleScroll();
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
@@ -129,7 +141,8 @@ const Section01 = () => {
                 left: 0,
                 transition:'top 0.5s ease in-out'
              }}
-             className="lg:sticky lg:inset-x-0 lg:z-[90] flex max-lg:items-center max-lg:h-[66px]  lg:bg-opacity-95 lg:backdrop-blur px-[var(--size-20)] lg:px-0 top-header">
+            //  className="hidden lg:sticky lg:inset-x-0 lg:z-[90] flex max-lg:items-center max-lg:h-[66px]  lg:bg-opacity-95 lg:backdrop-blur px-[var(--size-20)] lg:px-0 top-header">
+             className={`${isSectionvisible ? 'block' : 'hidden'} lg:sticky lg:inset-x-0 lg:z-[90] flex max-lg:items-center max-lg:h-[66px]  lg:bg-opacity-95 lg:backdrop-blur px-[var(--size-20)] lg:px-0 top-header`}>
                 <div className="transition-colors duration-300 left-logo-header lg:border-r lg:border-current w-[86px] lg:w-[7.083333333333333vw]">
                     <a href="https://atolldigital.com" className="w-full lg:h-full flex items-center justify-center">
                         <svg className="w-full lg:w-[4.305555555555555vw] h-auto" width="62" height="26" viewBox="0 0 62 26" fill="none" xmlns="http://www.w3.org/2000/svg">

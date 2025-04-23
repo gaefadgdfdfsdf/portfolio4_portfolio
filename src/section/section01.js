@@ -176,18 +176,6 @@ const Section01 = () => {
                             <span className="!opacity-100 lang-ls">FR</span>
                         </span>
                     </a>
-                    <div hidden="" className="site-language">
-
-                        <div className="wpml-ls-statics-shortcode_actions wpml-ls wpml-ls-legacy-list-horizontal">
-                            <ul><li className="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-first-item wpml-ls-item-legacy-list-horizontal">
-                                <a href="https://atolldigital.com/" className="wpml-ls-link">
-                                    <span className="wpml-ls-native">EN</span></a>
-                            </li><li className="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-fr wpml-ls-last-item wpml-ls-item-legacy-list-horizontal">
-                                    <a href="https://atolldigital.com/fr/" classNmae="wpml-ls-link">
-                                        <span className="wpml-ls-native" lang="fr">FR</span></a>
-                                </li></ul>
-                        </div>
-                    </div>
                 </div>
                 <span className="max-lg:hidden block border-b border-current absolute bottom-0 left-0 w-full"></span>
             </div>

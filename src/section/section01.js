@@ -111,9 +111,14 @@ const Section01 = () => {
                             <path className="fill-current" fill-rule="evenodd" clip-rule="evenodd" d="M2.19646e-06 19.8253C-0.00299705 23.7151 3.06595 25.8957 6.96328 25.8986C10.7425 25.9015 12.8304 24.0748 13.5407 21.8971L13.5379 25.4368L17.2778 25.4396L17.2887 11.3585C17.2917 7.39094 14.3409 5.21043 9.26252 5.20661C4.10545 5.20273 1.11152 7.84554 0.597016 11.3849L4.53371 11.3878C4.77166 9.13193 6.50467 8.00519 9.22099 8.00724C11.898 8.00925 13.3143 9.09946 13.3132 10.5387C13.3121 12.0136 11.579 12.4727 8.92425 13.176C8.63845 13.2517 8.34197 13.3302 8.03582 13.4132C3.11395 14.6931 0.00309142 15.8188 2.19646e-06 19.8253ZM13.4658 16.8792C13.4632 20.1855 11.4926 23.1014 8.06772 23.0988C5.78443 23.0971 4.09258 21.89 4.09426 19.7117C4.09609 17.3389 6.14386 16.4458 9.25452 15.5924C11.5777 14.9329 12.9954 14.3116 13.4686 13.1839L13.4658 16.8792Z"></path>
                         </svg>
                     </a>
+                    
                 </div>
+                
                 <div className="transition-colors duration-300 px-[var(--size-20)] max-lg:hidden">
-                    <ul className="menu_header menu_global is_sticky lowercase flex items-center gap-[2.083333333333333vw] text-[20px]">
+                    <ul className="menu_header menu_global relative lowercase flex items-center gap-[2.083333333333333vw] text-[20px]">
+                        <li>
+                            <span className='h-full bg-black absolute bottom-0 left-0 w-[0.5px]'></span>
+                        </li>
                         <li>
                             <a href="https://atolldigital.com/about/" className="overflow-hidden leading-none h-[3.472vw]">
                                 <span className="relative flex flex-col overflow-hidden">
@@ -160,6 +165,7 @@ const Section01 = () => {
                             </a>
                         </li>
                     </ul>
+                    <span className='max-lg:hidden h-[0.5px] bg-black absolute bottom-0 left-0 w-full'></span>
                 </div>
 
                 <div className="transition-colors duration-300 max-lg:hidden cursor-pointer absolute right-0 inset-y-0 flex items-center justify-center">

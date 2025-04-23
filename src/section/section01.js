@@ -111,7 +111,12 @@ const Section01 = () => {
             const sectionBottom = section02Ref.current?.getBoundingClientRect().bottom || 0;
 
             const isVisible = sectionTop < window.innerHeight && sectionBottom >  0;
-            setIsSectionVisible(isVisible);
+            // setIsSectionVisible(isVisible);
+            if (isVisible && !isSectionvisible) {
+                setIsSectionVisible(true);
+            } else if(sectionTop > window.innerHeight){
+                setIsSectionVisible(false);
+            }
 
           
             if (sectionTop < window.innerHeight && sectionTop > 0){

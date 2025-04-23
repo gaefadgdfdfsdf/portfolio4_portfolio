@@ -105,6 +105,18 @@ const Section01 = () => {
 
 
 
+
+    const containerRef = useRef(null);
+    const { scrollYProgress: newScrollYProgress } = useScroll({
+        target: containerRef,
+        offset: ["start start", "end end"],
+      });
+
+    const x = useTransform(newScrollYProgress, [0, 1], ["0%", "-200vw"]);
+
+
+
+
     useEffect(()=>{
         const handleScroll = () => {
             const sectionTop = section02Ref.current?.getBoundingClientRect().top || 0;
@@ -413,7 +425,7 @@ const Section01 = () => {
             </div>
             <div className='hidden h-[7.916666666666666vw]'></div>
             <section  ref={section02Ref}  className='pb-[10.416666666666668vw]'>
-                <div className='w-full bg-black h-[0.5px]'></div>
+                <div ref={containerRef} className='w-full bg-black h-[0.5px]'></div>
                 <div className='max-w-full pl-[1.38vw]  pr-[1.38vw] '>
                     <div className='relative'>
                         <div className='lg:sticky lg:top-[var(--header-sticky-height)] lg:grid'>

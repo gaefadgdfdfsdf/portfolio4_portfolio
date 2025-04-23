@@ -115,29 +115,47 @@ const Section01 = () => {
                 <div className="transition-colors duration-300 px-[var(--size-20)] max-lg:hidden">
                     <ul className="menu_header menu_global is_sticky lowercase flex items-center gap-[2.083333333333333vw] text-[20px]">
                         <li>
-                            <a href="https://atolldigital.com/about/" className="overflow-hidden leading-none">
-                                <span className="label_wrap">
-                                    <span className="!opacity-100" >ABOUT</span>
-                                    <span className="!opacity-100">ABOUT</span>
+                            <a href="https://atolldigital.com/about/" className="overflow-hidden leading-none h-[3.472vw]">
+                                <span className="relative flex flex-col overflow-hidden">
+                                    <span className="!opacity-100 flex nowrap items-center absolute pl-[1.041555vw]" >
+                                        <img className='absolute top-1/5 -translate-y-1/3 opacity-[0.2] left-0 w-[0.694vw] h-[0.694vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + 'trai_icon.svg'} alt='trai_icon'/>
+                                        ABOUT
+                                    </span>
+                                    <span className="!opacity-100 flex nowrap items-center pl-[1.041555vw]">
+                                        <img className='absolute top-1/5 -translate-y-1/3 opacity-[0.2] left-0 w-[0.694vw] h-[0.694vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + 'trai_icon.svg'} alt='trai_icon'/>
+                                        ABOUT
+                                    </span>
                                 </span>
                             </a>
                         </li>
                         <li className="flex items-center">
-                            <a href="https://atolldigital.com/work/" className="overflow-hidden leading-none">
-                                <span className="label_wrap">
-                                    <span className="!opacity-100" >WORK</span>
-                                    <span className="!opacity-100">WORK</span>
+                            <a href="https://atolldigital.com/work/" className="overflow-hidden leading-none flex h-[3.472vw] items-center">
+                                <span className="relative flex flex-col overflow-hidden ">
+                                    <span className="!opacity-100 flex nowrap items-center absolute pl-[1.041555vw]" >
+                                        <img className='absolute top-1/5 -translate-y-1/3 opacity-[0.2] left-0 w-[0.694vw] h-[0.694vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + 'trai_icon.svg'} alt='trai_icon'/>
+                                        WORK
+                                    </span>
+                                    <span className="!opacity-100 flex nowrap items-center pl-[1.041555vw]">
+                                        <img className='absolute top-1/5 -translate-y-1/3 opacity-[0.2] left-0 w-[0.694vw] h-[0.694vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + 'trai_icon.svg'} alt='trai_icon'/>
+                                        WORK
+                                    </span>
                                 </span>
                             </a>
-                            <span classNmae="font_editorial text-[.9vw] ml-[.2vw] relative top-[-.3vw]">
+                            <span className="font_editorial text-[.9vw] ml-[.2vw] relative top-[-.3vw]">
                                 (10)
                             </span>
                         </li>
                         <li>
-                            <a href="https://atolldigital.com/contact/" className="overflow-hidden leading-none contact">
-                                <span className="label_wrap">
-                                    <span className="!opacity-100" >CONTACT</span>
-                                    <span className="!opacity-100">CONTACT</span>
+                            <a href="https://atolldigital.com/contact/" className="overflow-hidden leading-none contact  h-[3.472vw]">
+                                <span className="relative flex flex-col overflow-hidden">
+                                    <span className="!opacity-100 flex nowrap items-center absolute pl-[1.441555vw]" >
+                                        <img className='absolute top-1/5 -translate-y-1/3 opacity-[0.2] left-0 w-[1.194vw] h-[0.994vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + 'thesun_33.svg'} alt='thesun_33'/>
+                                        CONTACT
+                                        </span>
+                                    <span className="!opacity-100 flex nowrap items-center pl-[1.441555vw]">
+                                        <img className='absolute top-1/5 -translate-y-1/3 opacity-[0.2] left-0 w-[1.194vw] h-[0.994vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + 'thesun_33.svg'} alt='thesun_33'/>
+                                        CONTACT
+                                        </span>
                                 </span>
                             </a>
                         </li>

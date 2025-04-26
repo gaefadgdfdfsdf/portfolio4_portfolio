@@ -16,7 +16,7 @@ const Section04 = () => {
     <div ref={containerRef} className="h-[600vh]">
       <div className="sticky top-0 h-screen overflow-hidden">
         <div className="relative top-24 left-24">
-            <h2 className="lg:text-[30px] text-[#091423]">CAFE 24로 작업한 홈페이지</h2>
+            <h2 className="lg:text-[30px] text-[#091423]">기업 프로젝트로 참여한 반응형 웹사이트</h2>
         </div>
         <motion.div
           className="h-[65vh] w-[600vh] flex flex-shrink-0 items-center justify-start px-20 space-x-40 pt-28"

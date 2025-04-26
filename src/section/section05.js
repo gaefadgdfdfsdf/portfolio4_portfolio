@@ -53,7 +53,9 @@ const Section05 = () => {
       </div>
     </section>
     <footer className='bg-[#091423] lg:text-[0.9722222222222222vw] lg:h-[calc(100vh+1px-3.472vw)]'>
+      <div className='lg:grid lg:grid-cols-2 font-medium'>
 
+      </div>
     </footer>
    </>
   )

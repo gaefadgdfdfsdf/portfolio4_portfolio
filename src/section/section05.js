@@ -38,7 +38,12 @@ const Section05 = () => {
               </div>
             </div>
             <div className='mt-[37px] lg:mt-[2.638888888888889vw]'>
-              <a href='#' className='rounded-[5px] lg:h-[4.166666666666666vw] lg:px-[2.7777777777777777vw] lg:text-[0.9722222222222222vw] relative inline-flex items-center justify-center bg-[#091423] min-w-[223px] lg:min-w-[15.555555555555555vw]'/>
+              <a href='#' className='rounded-[5px] lg:h-[4.166666666666666vw] lg:px-[2.7777777777777777vw] lg:text-[0.9722222222222222vw] relative inline-flex items-center justify-center bg-[#091423] min-w-[223px] lg:min-w-[15.555555555555555vw]'>
+              <span className="text-white relative flex flex-col ">
+                <span className="absolute opacity-0 flex flex-nowrap items-center">contact us</span>
+                <span className="">contact us</span>
+              </span>
+              </a> 
             </div>
           </div>
         </div>       

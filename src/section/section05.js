@@ -27,7 +27,19 @@ const Section05 = () => {
             </h2>
           </div>
           <div className='text-center lg:text-left mt-10 lg:mt-0'>
-            
+            <div>
+              <div className='lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
+                <div>
+                &nbsp;Big ambitions?											
+                </div>
+                <div>
+                &nbsp;We match the energy.											
+                </div>
+              </div>
+            </div>
+            <div className='mt-[37px] lg:mt-[2.638888888888889vw]'>
+              
+            </div>
           </div>
         </div>       
       </div>

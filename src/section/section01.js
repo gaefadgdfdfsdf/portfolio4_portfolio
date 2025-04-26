@@ -14,8 +14,6 @@ import {
 
 const CameraController = ({
     scrollYProgress,
-}: {
-    scrollYProgress: MotionValue;
 }) => {
     const pivotRef = useRef(null);
     const { camera } = useThree();
@@ -57,6 +55,7 @@ const Model = () => {
     console.log(scene); // 모델에 대한 정보
     console.log(animations); // 애니메이션에 대한 정보
 
+    // MeshPhysicalMaterial
 
 
 
@@ -315,8 +314,9 @@ const Section01 = () => {
                         <div className="pl-[20px] pr-[20px] text-center lg:text-left lg:pt-[1.3194444444444444vw]">
                             <div classNmae="max-w-[600px] lg:max-w-full mx-auto">
                                 <h1 className="tracking-[-2px] text-[24px] lg:text-[1.3333333333333335vw] leading-[124%]">
-                                    이 포트폴리오는 모던하고 감각적인 인터랙티브 웹사이트로 React + Tailwind CSS + Framer Motion으로 구성되며, 깔끔한 UI와 부드러운 전환 애니메이션, 3D 모델 임베드 및 가로 스크롤 기반 인터랙션 등 다양한 웹 기술이 활용됩니다.
-
+                                    {/* 이 포트폴리오는 모던하고 감각적인 인터랙티브 웹사이트로 React + Tailwind CSS + Framer Motion으로 구성되며, 깔끔한 UI와 부드러운 전환 애니메이션, 3D 모델 임베드 및 가로 스크롤 기반 인터랙션 등 다양한 웹 기술이 활용됩니다. */}
+                                    프론트엔드 개발자 조윤하의 포트폴리오 사이트
+                                    React + Tailwind CSS + Framer Motion을 중점으로 구현
                                 </h1>
                             </div>
                         </div>

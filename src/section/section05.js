@@ -92,7 +92,7 @@ const Section05 = () => {
               2025
             </div>
             <div className="flex flex-col-reverse lg:flex-row justify-between py-3.5 lg:py-0">
-              <nav className="flex justify-between lg:justify-end gap-[1.25vw] mt-5">
+              <nav className="flex justify-between lg:justify-end gap-[1.25vw] mt-[20px]">
                 <a href="https://www.linkedin.com/company/atoll-digital/" target="_blank">
                   <span className="leading-none group h-[1em] relative flex flex-col overflow-hidden items-end">
                     <span className="translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center" >GIT</span>
@@ -101,13 +101,13 @@ const Section05 = () => {
                 </a>
               </nav>
 
-              <div className="max-lg:hidden">
+              <div className="max-lg:hidden mt-[20px]">
                 <ul className="flex gap-[1.25vw]">
                   <li>
                     <a href="#">
-                      <span className="relative flex flex-col overflow-hidden">
-                        <span className="!opacity-100 flex nowrap items-center" >PORTFOILO</span>
-                        <span className="!opacity-100 flex nowrap items-center" >PORTFOILO</span>
+                      <span className="leading-none group h-[1em] relative flex flex-col overflow-hidden">
+                        <span className="translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center" >PORTFOILO</span>
+                        <span className="translate-y-0 opacity-100 group-hover:-translate-y-full  transition-transform duration-300 flex nowrap items-center" >PORTFOILO</span>
                       </span>
                     </a>
                   </li>

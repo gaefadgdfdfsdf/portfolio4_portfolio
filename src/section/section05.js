@@ -37,6 +37,25 @@ const Section05 = () => {
                   </div>
                 </div>
               </div>
+              <div className="mt-24 relative flex flex-wrap justify-between items-center px-[40px] gap-y-[5rem] gap-x-[2rem]">
+                <div className="flex flex-col items-center justify-center">
+                  <div className="w-[180px] h-[180px] relative flex items-center justify-center">
+                      <svg  xmlns="http://www.w3.org/2000/svg" stroke="#fff" stroke-width="2" width="140.74" height="165.04" viewBox="0 0 70.37 82.52">
+                      <path  d="M57.87,70.52v-15.29c0-14.72-13.96-26.66-28.68-26.66-7.75,0-14.03-6.28-14.03-14.03S21.43.5,29.18.5s14.03,6.28,14.03,14.03-6.28,14.03-14.03,14.03h0,0C14.46,28.57.5,40.5.5,55.23v15.29"></path>
+                     </svg>
+                  </div>
+                  <div className='text-black'>
+                    <p className='mb-5'>name</p>
+                    <p>조윤하</p>
+                  </div>
+                </div>
+                <div className="flex flex-col items-center justify-center">
+
+                </div>
+                <div className="flex flex-col items-center justify-center">
+
+                </div>
+              </div>
               <div className='mt-[37px] lg:mt-[2.638888888888889vw]'>
                 <a href='#' className='rounded-[5px] lg:h-[4.166666666666666vw] lg:px-[2.7777777777777777vw] lg:text-[0.9722222222222222vw] relative inline-flex items-center justify-center bg-[#091423] min-w-[223px] lg:min-w-[15.555555555555555vw]'>
                   <span className=" text-white relative flex flex-col ">
@@ -76,9 +95,9 @@ const Section05 = () => {
               <li className="group relative overflow-hidden cursor-pointer p-0">
                 <div className="group-hover:translate-y-0 hover-bg h-full bg-[#E6E8EA] absolute inset-0 translate-y-[100px] transition-transform duration-300"></div>
                 <a href="#" className="flex items-center pl-[1.388vw] pr-[1.388vw] lg:h-[3vw] lg:pt-0 lg:pb-0 lg:text-[0.9722222222222222vw] relative z-10 transition-colors duration-300 group-hover:text-black">
-                  Contact
+                  MBTI
                 </a>
-                <span className="absolute right-[1.388vw] top-1/2 -translate-y-1/2 transition-colors duration-300 group-hover:text-black">010-8864-4851</span>
+                <span className="absolute right-[1.388vw] top-1/2 -translate-y-1/2 transition-colors duration-300 group-hover:text-black">ISTJ</span>
               </li>
             </ul>
           </div>

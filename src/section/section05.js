@@ -52,10 +52,10 @@ const Section05 = () => {
           </div>
         </div>
       </section>
-      <footer className='bg-[#091423] lg:text-[0.9722222222222222vw] lg:h-[calc(100vh+1px-3.472vw)]'>
-        <div className='lg:grid lg:grid-cols-2 font-medium relative'>
+      <footer className='bg-[#091423] lg:text-[0.9722222222222222vw] lg:h-[calc(100vh+1px-3.472vw)] overflow-hidden'>
+        <div className='lg:grid lg:grid-cols-2 font-medium relative border-b border-white border-solid'>
           <div className='line'>
-            <ul className="text-white">
+            <ul className="text-white p-0 m-0">
               <li className="group relative overflow-hidden cursor-pointer">
                 <div className="group-hover:translate-y-0 hover-bg h-full bg-[#E6E8EA] absolute inset-0 translate-y-[100px] transition-transform duration-300"></div>
                 <a href="#" className="flex items-center pl-[1.388vw] pr-[1.388vw] lg:h-[3vw] lg:pt-0 lg:pb-0 lg:text-[0.9722222222222222vw] relative z-10 transition-colors duration-300 group-hover:text-black">
@@ -73,7 +73,7 @@ const Section05 = () => {
 
               </li>
 
-              <li className="group relative overflow-hidden cursor-pointer">
+              <li className="group relative overflow-hidden cursor-pointer p-0">
                 <div className="group-hover:translate-y-0 hover-bg h-full bg-[#E6E8EA] absolute inset-0 translate-y-[100px] transition-transform duration-300"></div>
                 <a href="#" className="flex items-center pl-[1.388vw] pr-[1.388vw] lg:h-[3vw] lg:pt-0 lg:pb-0 lg:text-[0.9722222222222222vw] relative z-10 transition-colors duration-300 group-hover:text-black">
                   Contact
@@ -94,7 +94,7 @@ const Section05 = () => {
             <div className="flex flex-col-reverse lg:flex-row justify-between py-3.5 lg:py-0">
               <nav className="flex justify-between lg:justify-end gap-[1.25vw] mt-[20px]">
                 <a href="https://www.linkedin.com/company/atoll-digital/" target="_blank">
-                  <span className="leading-none group h-[1em] relative flex flex-col overflow-hidden items-end">
+                  <span className="group h-[1em] relative flex flex-col overflow-hidden">
                     <span className="translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center" >GIT</span>
                     <span className="translate-y-0 opacity-100 group-hover:-translate-y-full  transition-transform duration-300 flex nowrap items-center" >GIT</span>
                   </span>
@@ -105,7 +105,7 @@ const Section05 = () => {
                 <ul className="flex gap-[1.25vw]">
                   <li>
                     <a href="#">
-                      <span className="leading-none group h-[1em] relative flex flex-col overflow-hidden">
+                      <span className=" group h-[1em] relative flex flex-col overflow-hidden">
                         <span className="translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center" >PORTFOILO</span>
                         <span className="translate-y-0 opacity-100 group-hover:-translate-y-full  transition-transform duration-300 flex nowrap items-center" >PORTFOILO</span>
                       </span>
@@ -117,6 +117,17 @@ const Section05 = () => {
             </div>
           </div>
         </div>
+        <div class="px-[1.388vw] pb-[1.388vw] lg:pb-0 pt-5 lg:pt-[3.4722222222222223vw] overflow-hidden">
+          <div className="overflow-hidden">
+            <svg className="w-full h-auto" width="1397" height="584" viewBox="0 0 1397 584" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4.94912e-05 444.924C-0.0675303 533.627 69.0827 583.353 156.898 583.42C242.053 583.485 289.097 541.83 305.102 492.169L305.04 572.888L389.308 572.953L389.552 251.849C389.621 161.372 323.132 111.647 208.706 111.56C92.505 111.472 25.045 171.738 13.4521 252.449L102.155 252.517C107.516 201.073 146.565 175.379 207.77 175.426C268.088 175.472 300.002 200.333 299.977 233.153C299.951 266.787 260.902 277.256 201.084 293.293C194.644 295.02 187.963 296.811 181.065 298.702C70.1644 327.89 0.0696566 353.56 4.94912e-05 444.924ZM303.415 377.741C303.357 453.138 258.955 519.631 181.784 519.573C130.336 519.534 92.2151 492.007 92.2529 442.333C92.2941 388.224 138.435 367.858 208.525 348.397C260.871 333.357 292.815 319.189 303.479 293.473L303.415 377.741Z" fill="#E6E8EA"></path>
+              <path d="M665.96 186.419L566.613 186.343L566.613 186.417L478.097 186.35L566.535 288.706L566.411 451.565C566.379 493.255 573.466 505.679 611.608 505.708L665.717 505.749L665.665 573.163L584.946 573.102C501.565 573.038 477.644 535.765 477.703 457.706L477.91 186.276L408.722 186.223L408.772 120.583L477.96 120.636L478.052 0L566.755 0.0675807L566.663 120.703L666.01 120.779L665.96 186.419Z" fill="#E6E8EA"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M668.055 346.973C667.951 483.575 755.69 583.876 890.518 583.979C1024.46 584.081 1112.35 483.914 1112.46 347.311C1112.56 212.483 1024.82 112.182 890.878 112.08C756.05 111.977 668.158 212.145 668.055 346.973ZM1018.43 347.24C1018.36 445.7 971.29 515.739 890.571 515.678C808.964 515.615 762.005 445.504 762.08 347.044C762.154 249.471 809.219 180.319 890.826 180.381C971.545 180.443 1018.51 249.667 1018.43 347.24Z" fill="#E6E8EA"></path>
+              <path d="M1154.09 1.13571e-06L1241.91 0.066905L1241.43 573.602L1153.61 573.535L1154.09 1.13571e-06Z" fill="#E6E8EA"></path>
+              <path d="M1309.18 0.11816L1397 0.185064L1396.52 573.72L1308.7 573.653L1309.18 0.11816Z" fill="#E6E8EA"></path>
+            </svg>
+          </div>
+			  </div>
       </footer>
     </>
   )

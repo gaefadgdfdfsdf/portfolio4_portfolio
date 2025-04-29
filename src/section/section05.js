@@ -55,10 +55,31 @@ const Section05 = () => {
     <footer className='bg-[#091423] lg:text-[0.9722222222222222vw] lg:h-[calc(100vh+1px-3.472vw)]'>
       <div className='lg:grid lg:grid-cols-2 font-medium'>
         <div>
-          <ul>
-            <li>about</li>
-            <li>work</li>
-            <li>contact</li>
+          <ul className="text-white">
+            <li className="group relative overflow-hidden cursor-pointer">
+              <div className="group-hover:translate-y-0 hover-bg h-full bg-[#E6E8EA] absolute inset-0 translate-y-[100px] transition-transform duration-300"></div>
+              <a href="#" className="flex items-center pl-[1.388vw] pr-[1.388vw] lg:h-[3vw] lg:pt-0 lg:pb-0 lg:text-[0.9722222222222222vw] relative z-10 transition-colors duration-300 group-hover:text-black">
+                Name
+              </a>
+              <span className="absolute right-[1.388vw] top-1/2 -translate-y-1/2 transition-colors duration-300 group-hover:text-black">조윤하</span>
+            </li>
+
+            <li className="group relative overflow-hidden cursor-pointer">
+              <div className="group-hover:translate-y-0 hover-bg h-full bg-[#E6E8EA] absolute inset-0 translate-y-[100px] transition-transform duration-300"></div>
+              <a href="#" className="flex items-center pl-[1.388vw] pr-[1.388vw] lg:h-[3vw] lg:pt-0 lg:pb-0 lg:text-[0.9722222222222222vw] relative z-10 transition-colors duration-300 group-hover:text-black">
+                Birth
+              </a>
+              <span className="absolute right-[1.388vw] top-1/2 -translate-y-1/2 transition-colors duration-300 group-hover:text-black">1998.09.20</span>
+           
+            </li>
+
+            <li className="group relative overflow-hidden cursor-pointer">
+              <div className="group-hover:translate-y-0 hover-bg h-full bg-[#E6E8EA] absolute inset-0 translate-y-[100px] transition-transform duration-300"></div>
+              <a href="#" className="flex items-center pl-[1.388vw] pr-[1.388vw] lg:h-[3vw] lg:pt-0 lg:pb-0 lg:text-[0.9722222222222222vw] relative z-10 transition-colors duration-300 group-hover:text-black">
+                Contact
+              </a>
+              <span className="absolute right-[1.388vw] top-1/2 -translate-y-1/2 transition-colors duration-300 group-hover:text-black">010-8864-4851</span>
+            </li>
           </ul>
         </div> 
         <div className='w-full bg-white h-[0.5px]'></div>

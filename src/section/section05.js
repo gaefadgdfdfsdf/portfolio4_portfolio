@@ -94,9 +94,9 @@ const Section05 = () => {
             <div className="flex flex-col-reverse lg:flex-row justify-between py-3.5 lg:py-0">
               <nav className="flex justify-between lg:justify-end gap-[1.25vw]">
                 <a href="https://www.linkedin.com/company/atoll-digital/" target="_blank" >
-                  <span className="relative flex flex-col overflow-hidden">
-                    <span className="!opacity-100 flex nowrap items-center" >GIT</span>
-                    <span className="!opacity-100 flex nowrap items-center" >GIT</span>
+                  <span className="leading-none group h-[1em] relative flex flex-col overflow-hidden">
+                    <span className="translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center" >GIT</span>
+                    <span className="translate-y-0 opacity-100 group-hover:-translate-y-full group-hover:opacity-0 transition-transform duration-300 flex nowrap items-center" >GIT</span>
                   </span>
                 </a>
                 <a href="" target="_blank" className='overflow-hidden'>

@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Section05 = () => {
   return (
     <>
@@ -7,8 +8,9 @@ const Section05 = () => {
         <div className='max-w-full pl-[1.388vw] pr-[1.388vw]'>
           <div className='max-lg:max-w-[550px] max-lg:mx-auto mb-[-5px] lg:mb-0'>
             <h2 className='text-[76px] lg:text-[9.722222222222223vw] tracking-tight font-medium leading-[100%] lg:leading-[86%]'>
-              let’s discuss your <br />
-              next
+            Let’s build your
+           <br />
+            next
               <svg class="ml-[18px] relative -top-0.5 inline-block lg:hidden" width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M34.7468 16.7559V5.0489H27.6836V23.3571L4.99444 0.667969L0 5.66241L22.6122 28.2746L4.28723 28.2746L4.28723 35.3378H29.6754L29.7882 35.4507L34.6198 30.6191L27.7517 23.7511L34.7468 16.7559Z" fill="#091423"></path>
               </svg>
@@ -23,17 +25,18 @@ const Section05 = () => {
               </div>
               <h2 className='text-[76px] lg:text-[9.722222222222223vw] tracking-tight font-medium leading-[100%] lg:leading-[86%] whitespace-nowrap'>
                 <span className='max-lg:block'></span>
-                <span>project</span>
+                <span> preject</span>
               </h2>
             </div>
             <div className='text-center lg:text-left mt-10 lg:mt-0'>
               <div>
                 <div className='lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
                   <div>
-                    &nbsp;Big ambitions?
+                    &nbsp;Clean code. Bold vision.
+                   
                   </div>
                   <div>
-                    &nbsp;We match the energy.
+                    &nbsp; I’m ready to ship.
                   </div>
                 </div>
               </div>
@@ -41,40 +44,40 @@ const Section05 = () => {
               <div className='mt-[37px] lg:mt-[2.638888888888889vw]'>
                 <a href='#' className='rounded-[5px] lg:h-[4.166666666666666vw] lg:px-[2.7777777777777777vw] lg:text-[0.9722222222222222vw] relative inline-flex items-center justify-center bg-[#091423] min-w-[223px] lg:min-w-[15.555555555555555vw]'>
                   <span className=" text-white relative flex flex-col ">
-                    <span className="absolute opacity-0 flex flex-nowrap items-center">contact us</span>
-                    <span className="">contact us</span>
+                    <span className="absolute opacity-0 flex flex-nowrap items-center">contact me</span>
+                    <span className="">contact me</span>
                   </span>
                   <span className='lg:p-[0.4166666666666667vw] absolute left-0 bottom-0'>
-
+                   
                   </span>
                 </a>
               </div>
             </div>
           </div>
-          <div className="max-w-[900px] mx-auto mt-24 relative flex flex-wrap justify-between items-center px-[40px] gap-y-[5rem] gap-x-[2rem]">
-                <div className="flex flex-col items-center justify-center">
-                  <div className="w-[180px] h-[180px] relative flex items-center justify-center">
-                   
+          <div className="max-w-[900px] mx-auto mt-40 mb-40 relative flex flex-wrap justify-between items-center px-[40px] gap-y-[5rem] gap-x-[10rem]">
+                <div className="mx-auto flex flex-col items-center justify-center">
+                  <div className="w-40 h-40 relative flex items-center justify-center">
+                    <img src={process.env.PUBLIC_URL + ' user.svg'} alt="user" />
                   </div>
-                  <div className='text-black text-center'>
+                  <div className='text-black text-center mt-3'>
                     <p className='mb-2'>name</p>
                     <p>조윤하</p>
                   </div>
                 </div>
-                <div className="flex flex-col items-center justify-center">
-                  <div className="w-[180px] h-[180px] relative flex items-center justify-center">
-                   
+                <div className="mx-auto flex flex-col items-center justify-center">
+                  <div className="w-40 h-40 relative flex items-center justify-center">
+                   <img src={process.env.PUBLIC_URL + 'email.svg'} alt="email" />
                   </div>
-                  <div className='text-black text-center'>
+                  <div className='text-black text-center mt-3'>
                     <p className='mb-2'>email</p>
                     <p>joyunha4@gmail.com</p>
                   </div>
                 </div>
-                <div className="flex flex-col items-center justify-center">
-                  <div className="w-[180px] h-[180px] relative flex items-center justify-center">
-                   
+                <div className="mx-auto flex flex-col items-center justify-center">
+                  <div className="w-40 h-40 relative flex items-center justify-center">
+                    <img src={process.env.PUBLIC_URL + 'contact.svg'} alt="contact" />
                   </div>
-                  <div className='text-black text-center'>
+                  <div className='text-black text-center mt-3'>
                     <p className='mb-2'>contact</p>
                     <p>010-8864-4851</p>
                   </div>

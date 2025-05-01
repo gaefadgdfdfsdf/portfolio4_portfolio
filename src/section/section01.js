@@ -27,25 +27,54 @@ const CameraController = ({
         }
     }, [camera]);
 
+
+    // useFrame(() => {
+    //     const progress = scrollYProgress.get();
+    //     if (pivotRef.current) {
+    //         let targetRotationY = 0;
+    
+    //         // 회전 구간 정의
+    //         if (progress >= 0.1 && progress <= 0.2) {
+    //             targetRotationY = Math.PI * 2; // 360도 회전
+    //         }
+    
+            
+    
+    //         // ✅ 회전만 적용
+    //         pivotRef.current.rotation.y = THREE.MathUtils.lerp(
+    //             pivotRef.current.rotation.y,
+    //             targetRotationY,
+    //             0.05
+    //         );
+    //     }
+    // });
+
     useFrame(() => {
         const progress = scrollYProgress.get();
         if (pivotRef.current) {
-            const targetPosition = new THREE.Vector3();
             let targetRotationY = 0;
-
+            let targetScale = 1;
+    
+            // 회전 + 확대 범위
             if (progress >= 0.1 && progress <= 0.2) {
-                targetPosition.set(0, 1, -5);
-                targetRotationY = -(Math.PI / 180) * 180;
+                targetRotationY = Math.PI * 2;
+                targetScale = 0.9; // 스크롤 내릴 때 커짐
             }
-
-            pivotRef.current.position.lerp(targetPosition, 0.05);
+    
+            // 회전 적용
             pivotRef.current.rotation.y = THREE.MathUtils.lerp(
                 pivotRef.current.rotation.y,
                 targetRotationY,
                 0.05
             );
+    
+            // 스케일 적용 (부드럽게 변화)
+            const currentScale = pivotRef.current.scale.x;
+            const scaleLerp = THREE.MathUtils.lerp(currentScale, targetScale, 0.05);
+            pivotRef.current.scale.set(scaleLerp, scaleLerp, scaleLerp);
         }
     });
+    
 
     return <group ref={pivotRef} position={[0, 0, 0]} />;
 };
@@ -56,9 +85,8 @@ const Model = () => {
     console.log(scene); // 모델에 대한 정보
     console.log(animations); // 애니메이션에 대한 정보
     
-
-
-
+  
+    
     return (
         <primitive
             // ref={ref}
@@ -88,8 +116,8 @@ const Section01 = () => {
     });
 
     // 원하는 y transform 값 정의
-    const y = useTransform(scrollYProgressB, [0, 1], ['0%', '30%']);
-    const x = useTransform(scrollYProgressB, [0, 1], ['0%', '20%']);
+    const y = useTransform(scrollYProgressB, [0, 1], ['0%', '43%']);
+    const x = useTransform(scrollYProgressB, [0, 1], ['0%', '30%']);
    
      // 3d 아래쪽으로 이동
    
@@ -122,13 +150,7 @@ const Section01 = () => {
 
 
     const containerRef = useRef(null);
-    // const { scrollYProgress: newScrollYProgress } = useScroll({
-    //     target: containerRef,
-    //     offset: ["start start", "end end"],
-    //   });
-
-    // const x = useTransform(newScrollYProgress, [0, 1], ["0%", "-200vw"]);
-
+  
 
 
 
@@ -385,8 +407,8 @@ const Section01 = () => {
                                 <CameraController scrollYProgress={scrollYProgress} />
                                 {/* <ambientLight intensity={10} /> */}
                                 <directionalLight
-                                    position={[0, 1, 0]} // 위치
-                                    intensity={30} // 강도
+                                    position={[0, 10, 0]} // 위치
+                                    intensity={40} // 강도
                                     castShadow
                                 />
 

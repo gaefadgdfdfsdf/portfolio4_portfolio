@@ -82,7 +82,7 @@ const Section03 = () => {
                             <div className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
                             <div className='flex justify-between'>
                                     <div className='pt-[9px] lg:pt-0'>
-                                        <div className='text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>DESIGN</div>
+                                        <div className='text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>Development</div>
                                         <div className='mt-[13px] lg:mt-[1.9444444444444444vw]'>
                                             <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + ' icon_3.svg'} alt='icon_3'/>
                                         </div>
@@ -105,13 +105,13 @@ const Section03 = () => {
                             <div className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
                                 <div className='flex justify-between'>
                                         <div className='pt-[9px] lg:pt-0'>
-                                            <div className='text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>Expand</div>
+                                            <div className='text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>Development</div>
                                             <div className='mt-[13px] lg:mt-[1.9444444444444444vw]'>
                                                 <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + ' icon_4.svg'} alt='icon_4'/>
                                             </div>
                                         </div>
                                         <div className='text-[92px] lg:text-[9.722222222222223vw] font-medium leading-none lg:mt-[-0.9722222222222222vw]'>
-                                            EXP
+                                        Development
                                         </div>
                                     </div>
                                     <div className='flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>

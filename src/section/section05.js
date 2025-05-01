@@ -43,15 +43,25 @@ const Section05 = () => {
               
               <div className='mt-[37px] lg:mt-[2.638888888888889vw]'>
                 <a href='#' className='rounded-[5px] lg:h-[4.166666666666666vw] lg:px-[2.7777777777777777vw] lg:text-[0.9722222222222222vw] relative inline-flex items-center justify-center bg-[#091423] min-w-[223px] lg:min-w-[15.555555555555555vw]'>
-                  <span className=" text-white relative flex flex-col ">
-                    <span className="absolute opacity-0 flex flex-nowrap items-center">contact me</span>
-                    <span className="">contact me</span>
-                  </span>
-                  <span className='lg:p-[0.4166666666666667vw] absolute left-0 bottom-0'>
-                   
+                  <span className="group relative flex flex-col overflow-hidden  text-white ">
+                    <span className="translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center">
+                      contact me
+                      </span>
+                    <span className="translate-y-0 opacity-100 group-hover:-translate-y-full  transition-transform duration-300 flex nowrap items-center">contact me</span>
                   </span>
                 </a>
               </div>
+{/* 
+              <span className="group relative flex flex-col overflow-hidden">
+                <span className="pl-[1.041555vw] translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center" >
+                    <img className='absolute top-1/5 -translate-y-1/3 opacity-[0.2] left-0 w-[0.694vw] h-[0.694vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + 'trai_icon.svg'} alt='trai_icon' />
+                    ABOUT
+                </span>
+                <span className="pl-[1.041555vw] translate-y-0 opacity-100 group-hover:-translate-y-full  transition-transform duration-300 flex nowrap items-center">
+                    <img className='absolute top-1/5 -translate-y-1/3 opacity-[0.2] left-0 w-[0.694vw] h-[0.694vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + 'trai_icon.svg'} alt='trai_icon' />
+                    ABOUT
+                </span>
+            </span> */}
             </div>
           </div>
           <div className="max-w-[900px] mx-auto mt-40 mb-40 relative flex flex-wrap justify-between items-center px-[40px] gap-y-[5rem] gap-x-[10rem]">

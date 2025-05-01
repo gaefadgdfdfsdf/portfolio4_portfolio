@@ -10,6 +10,7 @@ import {
     useScroll,
     MotionValue,
 } from "framer-motion";
+import { section } from 'framer-motion/client';
 
 
 const CameraController = ({
@@ -54,9 +55,7 @@ const Model = () => {
     const { scene, animations } = useGLTF('/flower.glb');
     console.log(scene); // 모델에 대한 정보
     console.log(animations); // 애니메이션에 대한 정보
-
-    // MeshPhysicalMaterial
-
+    
 
 
 
@@ -65,20 +64,35 @@ const Model = () => {
             // ref={ref}
             object={scene}
             position={[0, 0, 0]}
-            scale={0.33}
-
+            scale={0.33}    
+           
         />
     );
 }
 
 const Section01 = () => {
 
+    const threed_Ref = useRef(null);
+    const section01Ref = useRef(null);
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
-        offset: ["start start", "end end"],
+        offset: ["start end", "end end" ],
     });
 
+    // 3d 아래쪽으로 이동
+   // scrollYProgress로 변경
+    const { scrollYProgress: scrollYProgressB } = useScroll({
+        target: section01Ref,
+        offset: ['start start', 'end start'],
+    });
+
+    // 원하는 y transform 값 정의
+    const y = useTransform(scrollYProgressB, [0, 1], ['0%', '30%']);
+    const x = useTransform(scrollYProgressB, [0, 1], ['0%', '20%']);
+   
+     // 3d 아래쪽으로 이동
+   
     useEffect(() => {
         window.addEventListener("scroll", () => {
             console.log(scrollYProgress.get());
@@ -87,12 +101,14 @@ const Section01 = () => {
 
     const position = useTransform(
         scrollYProgress,
-        [0, 0.1, 0.25, 0.3],
+        [0, 0.1, 0.3, 0.7 , 1, 1.3], // 전체 스크롤 범위에서 점진적으로
         [
-            new THREE.Vector3(0, -1.5, 3.5),   // 처음 가까이
-            new THREE.Vector3(0, 0, -5),       // 뒤로 빠짐
-            new THREE.Vector3(-2, 3, 0),       // 왼쪽으로 이동
-            new THREE.Vector3(5, 8, 0)     // 아래쪽 + 멀리
+            new THREE.Vector3(0, 0, 3),       // 초기 위치: 앞에 있음
+            new THREE.Vector3(0, 0, 0),       // 점점 가까워짐
+            new THREE.Vector3(2, 1, -2),      // 살짝 오른쪽 아래로 내려감
+            new THREE.Vector3(4, 2, -5),       // 더 오른쪽 아래, 뒤로 멀어짐
+            new THREE.Vector3(0, 0, 3),
+            new THREE.Vector3(0, 0, 0),
         ]
     );
 
@@ -106,12 +122,12 @@ const Section01 = () => {
 
 
     const containerRef = useRef(null);
-    const { scrollYProgress: newScrollYProgress } = useScroll({
-        target: containerRef,
-        offset: ["start start", "end end"],
-      });
+    // const { scrollYProgress: newScrollYProgress } = useScroll({
+    //     target: containerRef,
+    //     offset: ["start start", "end end"],
+    //   });
 
-    const x = useTransform(newScrollYProgress, [0, 1], ["0%", "-200vw"]);
+    // const x = useTransform(newScrollYProgress, [0, 1], ["0%", "-200vw"]);
 
 
 
@@ -238,7 +254,7 @@ const Section01 = () => {
                 </div>
                 <span className="max-lg:hidden block border-b border-current absolute bottom-0 left-0 w-full"></span>
             </div>
-            <section className='relative'>
+            <section className='relative overflow-x-clip' ref={section01Ref}>
                 <div className='grid grid-cols-2'>
                     <div className='absolute top-[-50px] left-[1.38vw] lg:static lg:pb-[2.013888888888889vw] lg:pl-[var(--size-20)] lg:pr-[1.9444444444444444vw] lg:pt-[1.6666666666666667vw]'>
                         <div className="pl-[1.38vw] flex flex-nowrap items-end">
@@ -357,8 +373,13 @@ const Section01 = () => {
                         </div>
                     </div>
                 </div>
-                <div className='h-[150vh] mt-[-65vw] lg:mt-[-2vw]'>
-                    <div className='sticky top-0 h-screen'>
+                <div className='overflow-x-clip h-[150vh] mt-[-65vw] lg:mt-[-2vw]'>
+                    <motion.div className='sticky top-0 h-screen'
+                    
+                    id="text"
+                    ref={threed_Ref}
+                    style={{ y ,x}} 
+                    >
                         <Suspense fallback={<span>로딩중..</span>}>
                             <Canvas>
                                 <CameraController scrollYProgress={scrollYProgress} />
@@ -372,9 +393,9 @@ const Section01 = () => {
                                 <Model position={position} />
                             </Canvas>
                         </Suspense>
-                    </div>
+                    </motion.div>
                 </div>
-                <div className='mt-[-35vw] lg:mt-[-23vw] mb-[116px] lg:mb-[20vw]'>
+                <div id="about" className='mt-[-35vw] lg:mt-[-23vw] mb-[116px] lg:mb-[20vw]'>
                     <div className='max-w-full pl-[1.38vw] pr-[1.38vw'>
                         <div className='relative'>
                             <div className="hidden inline-flex absolute left-0 invisible opacity-0 width-view-indent lg:[font-size:0.8333333333vw]">ABOUT</div>

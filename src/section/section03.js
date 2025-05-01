@@ -9,20 +9,20 @@ const Section03 = () => {
                 <section className='pt-[25px] lg:pt-[1.1111111111111112vw]'>
                     <div className='w-max-full pl-[1.388vw] pr-[1.388vw]'>
                         <div className='relative'>
-                            <div className='inline-flex absolute left-0 opacity-0'>PROCESS</div>
-                            <div className='font-medium text-white text-[.8333333333333334vw] -mb-4 lg:mb-[-1.5277777777777777vw] pointer-events-none'>PROCESS</div>
+                            <div className='inline-flex absolute left-0 opacity-0'>Skillset</div>
+                            <div className='font-medium text-white text-[.8333333333333334vw] -mb-4 lg:mb-[-1.5277777777777777vw] pointer-events-none'>Skillset</div>
                             <div>
-                                <h2 className='text-white leading-[107%] tracking-[-0.01em] lg:text-[3.488888888888889vw]'>
+                                <h2 className='text-white leading-[109%] tracking-[-0.01em] lg:text-[1.988888888888889vw]'>
                                     <div className='overflow-hidden'>
                                         <div className='relative block text-start'>
                                             <span className='ml-[90.953px]'>
-                                            We are combining our love of well-designed websites
+                                            포토샵과 일러스트를 활용한 세련된 디자인 구현과, HTML, CSS, JavaScript, React를 
                                             </span>
                                         </div>
                                     </div>
                                     <div className='overflow-hidden'>
                                         <div className='relative block text-start'>
-                                        with our marketing knowledge to help you thrive.
+                                        기반으로 한 효율적인 웹 개발 능력을 결합하여, 사용자 중심의 직관적이고 혁신적인 웹 경험을 제공합니다.
                                         </div>
                                     </div>
                                 </h2>
@@ -42,14 +42,13 @@ const Section03 = () => {
                                             <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + ' icon_1.svg'} alt='icon_1'/>
                                         </div>
                                     </div>
-                                    <div className='text-[92px] lg:text-[9.722222222222223vw] font-medium leading-none lg:mt-[-0.9722222222222222vw]'>
-                                        DES
+                                    <div className='text-[92px] lg:text-[3.722222222222223vw] font-medium leading-none lg:mt-[1.7722222222222222vw]'>
+                                    Photoshop
                                     </div>
                                 </div>
                                 <div className='flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
                                     <div className='lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
-                                    Unique, thoughtfully designed interfaces to<br/>
-                                    reinforce your business authority.
+                                    포토샵의 기초 기능을 활용하여 창의적이고<br/> 효율적인 디자인 작업을 구현합니다.
                                     </div>
                                 </div>
                             </div>
@@ -65,8 +64,8 @@ const Section03 = () => {
                                             <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + ' icon_2.svg'} alt='icon_2'/>
                                         </div>
                                     </div>
-                                    <div className='text-[92px] lg:text-[9.722222222222223vw] font-medium leading-none lg:mt-[-0.9722222222222222vw]'>
-                                        DEV
+                                    <div className='text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
+                                    Illustrator
                                     </div>
                                 </div>
                                 <div className='flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>

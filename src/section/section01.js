@@ -28,26 +28,6 @@ const CameraController = ({
     }, [camera]);
 
 
-    // useFrame(() => {
-    //     const progress = scrollYProgress.get();
-    //     if (pivotRef.current) {
-    //         let targetRotationY = 0;
-    
-    //         // 회전 구간 정의
-    //         if (progress >= 0.1 && progress <= 0.2) {
-    //             targetRotationY = Math.PI * 2; // 360도 회전
-    //         }
-    
-            
-    
-    //         // ✅ 회전만 적용
-    //         pivotRef.current.rotation.y = THREE.MathUtils.lerp(
-    //             pivotRef.current.rotation.y,
-    //             targetRotationY,
-    //             0.05
-    //         );
-    //     }
-    // });
 
     useFrame(() => {
         const progress = scrollYProgress.get();
@@ -80,12 +60,14 @@ const CameraController = ({
 };
 
 
-const Model = () => {
+const Model = ({ position }) => {
     const { scene, animations } = useGLTF('/flower.glb');
     console.log(scene); // 모델에 대한 정보
     console.log(animations); // 애니메이션에 대한 정보
-    
-  
+
+    //  마우스오버에 반응하는 3d
+ 
+  //  마우스오버에 반응하는 3d
     
     return (
         <primitive
@@ -417,7 +399,7 @@ const Section01 = () => {
                         </Suspense>
                     </motion.div>
                 </div>
-                <div id="about" className='mt-[-35vw] lg:mt-[-23vw] mb-[116px] lg:mb-[20vw]'>
+                <div id="about" className='mt-[-35vw] lg:mt-[-20vw] mb-[116px] lg:mb-[20vw]'>
                     <div className='max-w-full pl-[1.38vw] pr-[1.38vw'>
                         <div className='relative'>
                             <div className="hidden inline-flex absolute left-0 invisible opacity-0 width-view-indent lg:[font-size:0.8333333333vw]">ABOUT</div>

@@ -149,7 +149,7 @@ const Section03 = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='relative z-[1px] lg:pt-0 pt-[0.694vw]'>
+                        {/* <div className='relative z-[1px] lg:pt-0 pt-[0.694vw]'>
                             <div className='absolute top-0 left-0 h-full w-[0.5px] bg-white max-lg:hidden'></div>
                             <div className='absolute top-0 left-0 w-full h-[0.5px] bg-white hidden max-lg:block'></div>   
                             <div className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
@@ -171,7 +171,7 @@ const Section03 = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

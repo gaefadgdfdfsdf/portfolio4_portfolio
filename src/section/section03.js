@@ -112,13 +112,14 @@ const Section03 = () => {
                                             </div>
                                         </div>
                                         <div className='text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
-                                        Development
+                                        Javascript
                                         </div>
                                     </div>
                                     <div className='flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
                                         <div className='lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
-                                        Scalable websites designed to expand with<br/>
-                                        your business.
+                                        스크롤, 휠, 클릭 등 다양한 이벤트 리스너를 활용해<br/>
+                                        요소 애니메이션, 화면 전환 등<br/>
+                                        동적인 UI를 JavaScript로 구현이 가능합니다.
                                         </div>
                                     </div>
                                 </div>

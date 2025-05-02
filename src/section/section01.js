@@ -246,7 +246,7 @@ const Section01 = () => {
                     <span className='max-lg:hidden h-[0.5px] bg-black absolute bottom-0 left-0 w-full'></span>
                 </div>
 
-                <div className="transition-colors duration-300 max-lg:hidden cursor-pointer absolute right-0 inset-y-0 flex items-center justify-center">
+                <div className="host-grotesk-bold transition-colors duration-300 max-lg:hidden cursor-pointer absolute right-0 inset-y-0 flex items-center justify-center">
                     <div className="block bg-black absolute top-0 left-0 w-[0.5px] h-full"></div>
                     <a href="https://atolldigital.com/fr/" className="h-[3.472vw] text-[1vw] font-medium px-[1vw] flex items-center justify-center w-full overflow-hidden leading-none">
                         <span class="group relative flex flex-col overflow-hidden">
@@ -329,7 +329,7 @@ const Section01 = () => {
                                 </li>
 
                             </ul>
-                            <div className='flex items-center justify-center mr-6'>
+                            <div className='host-grotesk-bold flex items-center justify-center mr-6'>
                                 <a href="#" className='pt-[1.5277777777777777vw] pb-[1.5277777777777777vw] px-0relative flex items-center overflow-hidden'>
                                     <span className="group relative flex flex-col overflow-hidden">
                                         <span className="pl-[1.041555vw] translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center" >
@@ -345,7 +345,7 @@ const Section01 = () => {
                         <div className='max-lg:hidden w-full bg-black h-[0.5px]'></div>
                         <div className="pl-[20px] pr-[20px] text-center lg:text-left lg:pt-[1.3194444444444444vw]">
                             <div classNmae="max-w-[600px] lg:max-w-full mx-auto">
-                                <h1 className="tracking-[-2px] text-[24px] lg:text-[2.1033333333333335vw] leading-[124%]">
+                                <h1 className="noto-sans-kr-medium tracking-[-2.5px] text-[24px] lg:text-[2.1033333333333335vw] leading-[124%]">
                                     {/* 이 포트폴리오는 모던하고 감각적인 인터랙티브 웹사이트로 React + Tailwind CSS + Framer Motion으로 구성되며, 깔끔한 UI와 부드러운 전환 애니메이션, 3D 모델 임베드 및 가로 스크롤 기반 인터랙션 등 다양한 웹 기술이 활용됩니다. */}
                                     프론트엔드 개발자 조윤하의 포트폴리오 사이트
                                     React + Tailwind CSS + Framer Motion을 중점으로 구현

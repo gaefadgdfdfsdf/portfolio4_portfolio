@@ -372,7 +372,7 @@ const Section01 = () => {
             <div className="pt-[30px] lg:pt-[3vw] ">
                 <div className="max-w-full px-[var(--size-20)]">
                     <div className="text-[12px] lg:text-[0.8333333333333334vw] flex justify-center overflow-hidden text-center font-medium relative z-[1]">
-                        <div className="animate-up-down">
+                        <div className="noto-sans-kr-semibold animate-up-down">
                             <span>( SCROLL )</span>
                         </div>
                     </div>

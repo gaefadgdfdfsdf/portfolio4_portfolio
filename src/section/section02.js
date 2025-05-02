@@ -145,8 +145,8 @@ const Section02 = () => {
                             </div>
                             <div className='class="lg:w-[calc(100%-32.84722222222222vw)] mt-[37px] lg:mt-0'>
                                 <div className='text-[1.25vw] leading-[133%] max-lg:max-w-[290px] max-lg:mx-auto'> 
-                                    More in the vault. <br/>
-                                    Take a look.
+                                Built with clean code. <br/>
+                                Dive in.
                                 </div>
                                 <div className='mt-[35px] lg:mt-[2.638888888888889vw]'>
                                     <a href='' className='text-white bg-[#091423] rounded-[5px] block h-[70px] min-w-[190px] lg:min-w-[13.194444444444445vw] leading-[70px]'>

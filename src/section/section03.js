@@ -70,8 +70,8 @@ const Section03 = () => {
                                 </div>
                                 <div className='flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
                                     <div className='lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
-                                    User-friendly back offices to make content<br/>
-                                    management a breeze.
+                                    일러스트 기초 기능을 활용하여<br/>
+                                    간단한 SVG 아이콘 제작이 가능합니다.
                                     </div>
                                 </div>
                             </div>
@@ -87,14 +87,15 @@ const Section03 = () => {
                                             <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + ' icon_3.svg'} alt='icon_3'/>
                                         </div>
                                     </div>
-                                    <div className='text-[92px] lg:text-[9.722222222222223vw] font-medium leading-none lg:mt-[-0.9722222222222222vw]'>
-                                        ENG
+                                    <div className='text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
+                                        HTML+CSS
                                     </div>
                                 </div>
                                 <div className='flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
                                     <div className='lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
-                                    Engaging user experiences that turn visitors<br/>
-                                    into customers.
+                                    HTML과 CSS의 기초 지식을 바탕으로<br/>
+                                    홈페이지의 구조를 제작하고, Animation CSS를 활용한<br/>
+                                    다양한 인터랙션 구현이 가능합니다.
                                     </div>
                                 </div>
                             </div>
@@ -110,7 +111,7 @@ const Section03 = () => {
                                                 <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + ' icon_4.svg'} alt='icon_4'/>
                                             </div>
                                         </div>
-                                        <div className='text-[92px] lg:text-[9.722222222222223vw] font-medium leading-none lg:mt-[-0.9722222222222222vw]'>
+                                        <div className='text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
                                         Development
                                         </div>
                                     </div>

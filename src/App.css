@@ -3,6 +3,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+
 .host-grotesk-thin {
   font-family: "Host Grotesk", sans-serif;
   font-optical-sizing: auto;
@@ -111,6 +114,51 @@
   font-weight: 900;
   font-style: normal;
 }
+
+.bodoni-moda-thin {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+}
+
+
+.bodoni-moda-regular {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+}
+
+.bodoni-moda-medium {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight:600;
+  font-style: normal;
+}
+
+
+.bodoni-moda-semibold {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+}
+
+.bodoni-moda-bold {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight:800;
+  font-style: normal;
+}
+
+.bodoni-moda-extrabold {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight:900;
+  font-style: normal;
+}
+
 
 body {
   background-color:#E6E8EA;

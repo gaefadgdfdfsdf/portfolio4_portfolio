@@ -356,11 +356,11 @@ const Section01 = () => {
                             <div className="inline-flex">
                                 <div id="border_black" className="max-[1540px]:w-[210px] w-[260px] h-[50px] pl-4 lg:pl-[1.1111111111111112vw] pr-2.5 lg:pr-[0.6944444444444444vw] min-h-10 lg:min-h-[2.7777777777777777vw] py-1 lg:py-[.3vw] flex items-center justify-between rounded-[5px]">
                                     <div className="flex items-center">
-                                        <div className="text-[12px] lg:text-[0.8333333333333334vw] uppercase text-right font-medium leading-[100%]">
+                                        <div className="host-grotesk-superbold text-[12px] lg:text-[0.8333333333333334vw] uppercase text-right font-medium leading-[100%]">
                                             portfolio<br />
                                             since
                                         </div>
-                                        <div className="ml-4 lg:ml-[1.0416666666666665vw] font_editorial text-[28px] lg:text-[1.9444444444444444vw] leading-none">©2025</div>
+                                        <div className="tracking-[-3px] bodoni-moda-regular ml-4 lg:ml-[1.0416666666666665vw] font_editorial text-[28px] lg:text-[2.0444444444444444vw] leading-none">© 2025</div>
                                     </div>
                                 </div>
                             </div>

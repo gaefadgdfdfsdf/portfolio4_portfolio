@@ -125,10 +125,13 @@ const Section04 = () => {
       
         <div className='class="lg:w-[calc(100%-32.84722222222222vw)] mt-[20px] lg:mt-0 relative left-24'>
             <div className='text-[1.15vw] leading-[133%] max-lg:max-w-[290px] max-lg:mx-auto'> 
-            From initial planning to final delivery,<br/>
-            our approach to artistic direction is deeply<br/>
-            informed by an understanding of your business<br/>
-            and audience.From initial planning to final.
+            기업 프로젝트에 참여해 반응형 웹사이트 제작을 진행한 경험이 있습니다.<br/>
+            클라이언트와의 줌 미팅 및 기획 회의를 통해 요구사항을 정확히 파악하고,<br/>
+            원하는 분위기와 기능을 구현할 수 있도록 구조를 설계하고 수정했습니다.<br/>
+            HTML과 CSS를 기반으로 기존 코드를 이해하고 직접 수정하며,<br/>
+            기획부터 구현까지 원활한 소통과 협업을 통해 완성도 높은 결과물을 도출했습니다.
+
+
             </div>
             <div className='mt-[35px] lg:mt-[1.538888888888889vw]'>
                 <a href='file:///C:/Users/User/Downloads/%EC%9A%B0%EB%A6%AC%EB%B0%94%EC%9D%B4%EB%AF%B8%20%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4.pdf' target="_balnk" className='text-white bg-[#091423] rounded-[5px] block h-[70px] w-[150px] min-w-[150px] lg:min-w-[10.194444444444445vw] leading-[70px]'>

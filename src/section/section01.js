@@ -193,7 +193,7 @@ const Section01 = () => {
                 </div>
 
                 <div className="transition-colors duration-300 px-[var(--size-20)] max-lg:hidden">
-                    <ul className="menu_header menu_global relative lowercase flex items-center gap-[2.083333333333333vw] text-[20px]">
+                    <ul className="host-grotesk-bold menu_header menu_global relative lowercase flex items-center gap-[2.083333333333333vw] text-[20px]">
                         <li>
                             <span className='h-full bg-black absolute bottom-0 left-0 w-[0.5px]'></span>
                         </li>
@@ -282,7 +282,7 @@ const Section01 = () => {
                     <div className='pt-[38px] lg:pt-0 pb-3 lg:pb-[1.944444444444445vw] relative'>
                         <div className="max-lg:hidden absolute left-0 bottom-0 h-full w-[0.5px] bg-black"></div>
                         <div className='max-lg:hidden px-[var(--size-20)] flex justify-between'>
-                            <ul className="menu_header lowercase flex items-center gap-[2.083333333333333vw] font-medium text-[20px]">
+                            <ul className="host-grotesk-bold menu_header lowercase flex items-center gap-[2.083333333333333vw] font-medium text-[20px]">
                                 <li>
                                     <a href="#" className='pl-[1.388vw] pt-[1.5277777777777777vw] pb-[1.5277777777777777vw] px-0 relative flex items-center overflow-hidden'>
                                         <span className="group relative flex flex-col overflow-hidden">

@@ -133,8 +133,8 @@ const Section04 = () => {
 
 
             </div>
-            <div className='mt-[35px] lg:mt-[1.538888888888889vw]'>
-                <a href='file:///C:/Users/User/Downloads/%EC%9A%B0%EB%A6%AC%EB%B0%94%EC%9D%B4%EB%AF%B8%20%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4.pdf' target="_balnk" className='text-white bg-[#091423] rounded-[5px] block h-[70px] w-[150px] min-w-[150px] lg:min-w-[10.194444444444445vw] leading-[70px]'>
+            <div className='mt-[35px] lg:mt-[1.538888888888889vw] max-lg:w-[150px] max-lg:mx-auto'>
+                <a href='file:///C:/Users/User/Downloads/%EC%9A%B0%EB%A6%AC%EB%B0%94%EC%9D%B4%EB%AF%B8%20%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4.pdf' target="_balnk" className='max-lg:min-w-[150px] text-white bg-[#091423] rounded-[5px] block min-w-[150px] leading-[70px]'>
                     <span className='relative overflow-visible flex flex-col items-center'>
                         <span className='opacity-0 flex absolute flex-nowrap items-center'>SEE MORE</span>
                         <span className='flex absolute flex-nowrap items-center'>SEE MORE</span>

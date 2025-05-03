@@ -354,7 +354,7 @@ const Section01 = () => {
                         </div>
                         <div className='mt-[71px] pl-[20px] pr-[20px] lg:bottom-[var(--size-20)] lg:inset-x-[var(--size-20)] text-center lg:text-left'>
                             <div className="inline-flex">
-                                <div id="border_black" className="max-[1540px]:w-[210px] w-[260px] h-[50px] pl-4 lg:pl-[1.1111111111111112vw] pr-2.5 lg:pr-[0.6944444444444444vw] min-h-10 lg:min-h-[2.7777777777777777vw] py-1 lg:py-[.3vw] flex items-center justify-between rounded-[5px]">
+                                <div id="border_black" className="max-[1024px]:w-[200px] max-[1400px]:w-[180px] max-[1590px]:w-[210px] w-[260px] h-[50px] pl-4 lg:pl-[1.1111111111111112vw] pr-2.5 lg:pr-[0.6944444444444444vw] min-h-10 lg:min-h-[2.7777777777777777vw] py-1 lg:py-[.3vw] flex items-center justify-between rounded-[5px]">
                                     <div className="flex items-center">
                                         <div className="host-grotesk-superbold text-[12px] lg:text-[0.8333333333333334vw] uppercase text-right font-medium leading-[100%]">
                                             portfolio<br />

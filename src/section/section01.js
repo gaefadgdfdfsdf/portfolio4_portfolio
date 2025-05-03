@@ -12,6 +12,16 @@ import {
 } from "framer-motion";
 import { section } from 'framer-motion/client';
 
+/*
+
+  const isSection07Visible = useRecoilValue(isSection07VisibleState);
+
+    className={`${
+                  isSection07Visible ? "fill-black" : "fill-white"
+                }`}
+
+*/
+
 
 const CameraController = ({
     scrollYProgress,

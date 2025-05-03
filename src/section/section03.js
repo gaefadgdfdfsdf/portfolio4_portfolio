@@ -1,6 +1,18 @@
 import React from 'react'
 
 const Section03 = () => {
+
+//     const setIsSection07Visible = useSetRecoilState(isSection07VisibleState);
+//   const isInView = useInView(containerRef, {
+//     once: false,
+//     amount: "some",
+//     margin: "0px 0px -100% 0px",
+//   });
+
+//   useEffect(() => {
+//     setIsSection07Visible(isInView);
+//   }, [isInView, setIsSection07Visible]);
+
   return (
    <>
     <div className='bg-[#091423]'>

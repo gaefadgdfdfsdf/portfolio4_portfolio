@@ -258,7 +258,7 @@ const Section01 = () => {
                 </div>
                 <span className="max-lg:hidden block border-b border-current absolute bottom-0 left-0 w-full"></span>
             </div>
-            <section className='max-lg:bg-[#E6E8EA] relative overflow-x-clip' ref={section01Ref}>
+            <section className='max-lg:bg-[#E6E8EA] relative overflow-x-clip max-lg:z-50' ref={section01Ref}>
                 <div className='grid grid-cols-2 max-lg:grid-cols-1'>
                     <div className='absolute top-[-50px] left-[1.38vw] lg:static lg:pb-[2.013888888888889vw] lg:pl-[var(--size-20)] lg:pr-[1.9444444444444444vw] lg:pt-[1.6666666666666667vw]'>
                         <div className="pl-[1.38vw] flex flex-nowrap items-end">

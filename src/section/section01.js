@@ -552,7 +552,7 @@ const Section01 = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='lg:h-[34.29166666666667vw] overflow-hidden relative'>
+                            {/* <div className='lg:h-[34.29166666666667vw] overflow-hidden relative'>
                                 <div className='absolute bottom-0 left-0 w-full bg-black h-[1px] z-10'></div>
                                 <a href='https://gaefadgdfdfsdf.github.io/portfolio2_glaxywatch/' target='_blank' className='absolute inset-0 z-[1]' />
                                 <div className='py-5 lg:py-[1.38vw] flex flex-col-reverse lg:flex-row lg:h-full'>
@@ -579,7 +579,7 @@ const Section01 = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                             <div>
                                 <div className='lg:flex pt-[81px] lg:pt-[2.430555555555556vw] text-center lg:text-left'>
                                     <div className='lg:w-[32.84722222222222vw] lg:pr-[2.7777777777777777vw]'>
@@ -593,7 +593,7 @@ const Section01 = () => {
                                                         PROJECTS
                                                     </div>
                                                 </div>
-                                                <div className='ml-4 lg:ml-[2vw] font_editorial text-[44px] lg:text-[3.0555555555555554vw] leading-none'>4</div>
+                                                <div className='ml-4 lg:ml-[2vw] font_editorial text-[44px] lg:text-[3.0555555555555554vw] leading-none'>3</div>
                                             </div>
                                         </div>
                                     </div>

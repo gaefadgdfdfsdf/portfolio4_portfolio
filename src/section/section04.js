@@ -8,7 +8,7 @@ const Section04 = () => {
     offset: ["start start", "end end"],
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-200vw"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-225vw"]);
 
  
 
@@ -100,6 +100,21 @@ const Section04 = () => {
             />
              <a
             href="https://b2model.com/"
+            target="_blank"
+            className="absolute inset-0 flex items-center justify-center bg-black/50 text-[#091423] opacity-0 group-hover:opacity-100 transition-opacity"
+            >   
+            <div className="w-[180px] h-[50px] bg-[#fff] flex items-center justify-center rounded-[5px]">Visit website</div>         
+            </a>
+        </div>
+
+        <div className="relative group">
+            <img
+            src="/web05.jpg"
+            alt="Poster 5"
+            className="h-3/4 object-cover shadow-2xl"
+            />
+             <a
+            href="https://www.no1cats.com/"
             target="_blank"
             className="absolute inset-0 flex items-center justify-center bg-black/50 text-[#091423] opacity-0 group-hover:opacity-100 transition-opacity"
             >   

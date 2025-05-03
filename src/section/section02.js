@@ -146,9 +146,9 @@ const Section02 = () => {
                             <div className='class="lg:w-[calc(100%-32.84722222222222vw)] mt-[37px] lg:mt-0'>
                                 <div className='text-[1.25vw] leading-[133%] max-lg:max-w-[290px] max-lg:mx-auto'> 
                                 Built with clean code. <br/>
-                                Dive in.
+                                Dive in.in
                                 </div>
-                                <div className='mt-[35px] lg:mt-[2.638888888888889vw] max-lg:w-[200px]'>
+                                <div id="see" className='mt-[35px] lg:mt-[2.638888888888889vw] max-lg:w-[200px]'>
                                     <a href='' className='text-white bg-[#091423] rounded-[5px] block h-[70px]  lg:w-[13.194444444444445vw] leading-[70px]'>
                                         <span className='relative overflow-visible flex flex-col items-center'>
                                             <span className='opacity-0 flex absolute flex-nowrap items-center'>SEE MORE</span>

@@ -6,13 +6,13 @@ const Section03 = () => {
     <div className='bg-[#091423]'>
         <div id="process_block">
             <div className='lg:flex flex-col justify-between lg:h-[calc(100vh-var(3.4722222222222223vw))] lg:sticky lg:top-[var(3.4722222222222223vw)]'>
-                <section className='pt-[25px] lg:pt-[1.1111111111111112vw]'>
+                <section className='pt-[25px] lg:pt-[2.1111111111111112vw]'>
                     <div className='w-max-full pl-[1.388vw] pr-[1.388vw]'>
                         <div className='relative'>
-                            <div className='inline-flex absolute left-0 opacity-0'>Skillset</div>
-                            <div className='font-medium text-white text-[.8333333333333334vw] -mb-4 lg:mb-[-1.5277777777777777vw] pointer-events-none'>Skillset</div>
+                            <div className='host-grotesk-superbold inline-flex absolute left-0 opacity-0'>SKILLSET</div>
+                            <div className='font-medium text-white text-[.8333333333333334vw] -mb-4 lg:mb-[-1.5277777777777777vw] pointer-events-none'>SKILLSET</div>
                             <div>
-                                <h2 className='text-white leading-[109%] tracking-[-0.01em] lg:text-[1.988888888888889vw]'>
+                                <h2 className='noto-sans-kr-medium text-white leading-[139%] tracking-[-0.01em] lg:text-[2.188888888888889vw]'>
                                     <div className='overflow-hidden'>
                                         <div className='relative block text-start'>
                                             <span className='ml-[90.953px]'>

@@ -178,7 +178,7 @@ const Section01 = () => {
                 transition:'top 0.5s ease in-out'
              }}
             //  className="hidden lg:sticky lg:inset-x-0 lg:z-[90] flex max-lg:items-center max-lg:h-[66px]  lg:bg-opacity-95 lg:backdrop-blur px-[var(--size-20)] lg:px-0 top-header">
-             className={`${isSectionvisible ? 'block' : 'hidden'} lg:sticky lg:inset-x-0 lg:z-[90] flex max-lg:items-center max-lg:h-[66px] bg-[#E6E8EA] lg:bg-opacity-95 lg:backdrop-blur px-[var(--size-20)] lg:px-0 top-header`}>
+             className={`${isSectionvisible ? 'block' : 'hidden'} max-lg:hidden lg:sticky lg:inset-x-0 lg:z-[90] flex max-lg:items-center max-lg:h-[66px] bg-[#E6E8EA] lg:bg-opacity-95 lg:backdrop-blur px-[var(--size-20)] lg:px-0 top-header`}>
                 <div className="transition-colors duration-300 left-logo-header lg:border-r lg:border-current w-[86px] lg:w-[7.083333333333333vw]">
                     <a href="https://atolldigital.com" className="w-full lg:h-full flex items-center justify-center">
                         <svg className="w-full lg:w-[4.305555555555555vw] h-auto" width="62" height="26" viewBox="0 0 62 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -258,8 +258,8 @@ const Section01 = () => {
                 </div>
                 <span className="max-lg:hidden block border-b border-current absolute bottom-0 left-0 w-full"></span>
             </div>
-            <section className='relative overflow-x-clip' ref={section01Ref}>
-                <div className='grid grid-cols-2'>
+            <section className='max-lg:bg-[#E6E8EA] relative overflow-x-clip' ref={section01Ref}>
+                <div className='grid grid-cols-2 max-lg:grid-cols-1'>
                     <div className='absolute top-[-50px] left-[1.38vw] lg:static lg:pb-[2.013888888888889vw] lg:pl-[var(--size-20)] lg:pr-[1.9444444444444444vw] lg:pt-[1.6666666666666667vw]'>
                         <div className="pl-[1.38vw] flex flex-nowrap items-end">
                             <svg className="mr-[1.18px] lg:mr-[0.625vw] w-[23.98px] lg:w-[13.194444444444445vw] h-auto" width="190" height="230" viewBox="0 0 190 230" fill="none" xmlns="http://www.w3.org/2000/svg">

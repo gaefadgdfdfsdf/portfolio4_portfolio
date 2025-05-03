@@ -30,7 +30,7 @@ const Section03 = () => {
                         </div>
                     </div>
                 </section>
-                <div className='lg:overflow-hidden mt-[70px] lg:mt-[8.861111111111112vw] relative pt-[0.694vw)]'>
+                <div className='lg:overflow-hidden mt-[70px] lg:mt-[11.861111111111112vw] relative pt-[0.694vw)]'>
                     <div className='h-[0.5px] bg-white top-0 left-0 w-full'></div>
                     <div className='lg:static lg:flex lg:flex-nowrap text-white '>
                         <div className='relative z-[1px]'>

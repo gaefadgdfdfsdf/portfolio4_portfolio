@@ -148,8 +148,8 @@ const Section02 = () => {
                                 Built with clean code. <br/>
                                 Dive in.
                                 </div>
-                                <div className='mt-[35px] lg:mt-[2.638888888888889vw]'>
-                                    <a href='' className='text-white bg-[#091423] rounded-[5px] block h-[70px] min-w-[190px] lg:min-w-[13.194444444444445vw] leading-[70px]'>
+                                <div className='mt-[35px] lg:mt-[2.638888888888889vw] max-lg:w-[200px]'>
+                                    <a href='' className='text-white bg-[#091423] rounded-[5px] block h-[70px]  lg:w-[13.194444444444445vw] leading-[70px]'>
                                         <span className='relative overflow-visible flex flex-col items-center'>
                                             <span className='opacity-0 flex absolute flex-nowrap items-center'>SEE MORE</span>
                                             <span className='flex absolute flex-nowrap items-center'>SEE MORE</span>

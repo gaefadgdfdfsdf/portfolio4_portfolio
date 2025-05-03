@@ -399,12 +399,12 @@ const Section01 = () => {
                         </Suspense>
                     </motion.div>
                 </div>
-                <div id="about" className='mt-[-35vw] lg:mt-[-20vw] mb-[116px] lg:mb-[20vw]'>
+                <div id="about" className='max-lg:mt-[-28vw] mt-[-35vw] lg:mt-[-20vw] mb-[116px] lg:mb-[20vw]'>
                     <div className='max-w-full pl-[1.38vw] pr-[1.38vw'>
                         <div className='relative'>
                             <div className="host-grotesk-bold hidden inline-flex absolute left-0 invisible opacity-0 width-view-indent lg:[font-size:0.8333333333vw]">ABOUT</div>
                             <div className="host-grotesk-bold -mb-4 lg:mb-[-1.25vw] pointer-events-none lg:[font-size:0.8333333333vw]">ABOUT</div>
-                            <div className="noto-sans-kr-medium text-[20px] lg:text-[1.3222222222222223vw] leading-[134%] tracking-tight lg:tracking-tight hide_br_tablet">
+                            <div className="noto-sans-kr-medium text-[18px] lg:text-[1.3222222222222223vw] leading-[134%] tracking-tight lg:tracking-tight hide_br_tablet">
                                 <div className="overflow-hidden">
                                     <div className='block relative text-start'>
                                         <span className='mr-[101px] lg:mr-[4.472222222222223vw] '></span>

@@ -54,7 +54,7 @@ const Section03 = () => {
                                             <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + ' icon_1.svg'} alt='icon_1'/>
                                         </div>
                                     </div>
-                                    <div className='host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw] font-medium leading-none lg:mt-[1.7722222222222222vw]'>
+                                    <div className='max-[600px]:text-[60px]  host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw] font-medium leading-none lg:mt-[1.7722222222222222vw]'>
                                     Photoshop
                                     </div>
                                 </div>
@@ -76,7 +76,7 @@ const Section03 = () => {
                                             <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + ' icon_2.svg'} alt='icon_2'/>
                                         </div>
                                     </div>
-                                    <div className='host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
+                                    <div className='max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
                                     Illustrator
                                     </div>
                                 </div>
@@ -99,7 +99,7 @@ const Section03 = () => {
                                             <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + ' icon_3.svg'} alt='icon_3'/>
                                         </div>
                                     </div>
-                                    <div className='host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
+                                    <div className='max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
                                         HTML+CSS
                                     </div>
                                 </div>
@@ -123,7 +123,7 @@ const Section03 = () => {
                                                 <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + ' icon_4.svg'} alt='icon_4'/>
                                             </div>
                                         </div>
-                                        <div className='host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
+                                        <div className='max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
                                         Javascript
                                         </div>
                                     </div>
@@ -147,7 +147,7 @@ const Section03 = () => {
                                             <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + ' icon_2.svg'} alt='icon_2'/>
                                         </div>
                                     </div>
-                                    <div className='host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
+                                    <div className='max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
                                     React
                                     </div>
                                 </div>

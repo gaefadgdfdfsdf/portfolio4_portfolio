@@ -598,7 +598,7 @@ const Section01 = () => {
                                         </div>
                                     </div>
                                     <div className='class="lg:w-[calc(100%-32.84722222222222vw)] mt-[37px] lg:mt-0 max-lg:mx-auto'>
-                                        <div className='text-[2.18vw] leading-[133%] max-lg:max-w-[330px] max-lg:mx-auto'>
+                                        <div className='tracking-[-2px] noto-sans-kr-medium text-[2.18vw] leading-[133%] max-lg:max-w-[330px] max-lg:mx-auto'>
                                             More in the vault. <br />
                                             Take a look.
                                         </div>

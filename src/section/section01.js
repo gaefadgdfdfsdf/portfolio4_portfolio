@@ -383,7 +383,7 @@ const Section01 = () => {
                 <div className="max-w-full px-[var(--size-20)]">
                     <div className="text-[12px] lg:text-[0.8333333333333334vw] flex justify-center overflow-hidden text-center font-medium relative z-[1]">
                         <div className="noto-sans-kr-semibold animate-up-down">
-                            <span>( SCROLL )</span>
+                            <span>｛ SCROLL ｝</span>
                         </div>
                     </div>
                 </div>
@@ -462,7 +462,7 @@ const Section01 = () => {
                     <div className="pr-[60px] lg:pr-[11.527777777777779vw] relative">
                         <div class="absolute right-0 lg:right-[1.3194444444444444vw] -top-0.5 lg:top-[-0.06944444444444445vw] text-[18px] lg:text-[2.2222222222222223vw] leading-[100%]">
                             <span class="bodoni-moda-bold inline-flex mx-[3px] lg:mx-[0.4166666666666667vw]">
-                                ( 03 )					</span>
+                                ｛ 03 ｝				</span>
                         </div>
                         <div>
                             <img className='w-full h-auto max-w-full' src={process.env.PUBLIC_URL + 'featured.svg'} alt='portfolio' />

@@ -506,12 +506,12 @@ const Section01 = () => {
             <div id="section02" className="mb-5 lg:mb-[3.6111111111111107vw]">
                 <div className="max-w-full pl-[1.38vw] pr-[1.38vw]">
                     <div className="pr-[60px] lg:pr-[11.527777777777779vw] relative">
-                        <div class="absolute right-0 lg:right-[1.3194444444444444vw] -top-0.5 lg:top-[-0.06944444444444445vw] text-[18px] lg:text-[2.2222222222222223vw] leading-[100%]">
+                        <div class="absolute right-12 lg:right-[18.3194444444444444vw] -top-0.5 lg:top-[-0.06944444444444445vw] text-[18px] lg:text-[2.2222222222222223vw] leading-[100%]">
                             <span class="bodoni-moda-bold inline-flex mx-[3px] lg:mx-[0.4166666666666667vw]">
                                 ｛ 03 ｝				</span>
                         </div>
                         <div>
-                            <img className='w-full h-auto max-w-full' src={process.env.PUBLIC_URL + 'featured.svg'} alt='portfolio' />
+                            <img className='w-full h-auto max-w-full' src={process.env.PUBLIC_URL + 'portfolio.svg'} alt='portfolio' />
                         </div>
                     </div>
                 </div>

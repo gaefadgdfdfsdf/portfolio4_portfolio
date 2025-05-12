@@ -49,12 +49,12 @@ const Section03 = () => {
                             <div className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
                                 <div className='flex justify-between'>
                                     <div className='pt-[9px] lg:pt-0'>
-                                        <div className='text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>DESIGN</div>
+                                        <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>DESIGN</div>
                                         <div className='mt-[13px] lg:mt-[1.9444444444444444vw]'>
                                             <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + ' icon_1.svg'} alt='icon_1'/>
                                         </div>
                                     </div>
-                                    <div className='text-[92px] lg:text-[3.722222222222223vw] font-medium leading-none lg:mt-[1.7722222222222222vw]'>
+                                    <div className='host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw] font-medium leading-none lg:mt-[1.7722222222222222vw]'>
                                     Photoshop
                                     </div>
                                 </div>
@@ -71,12 +71,12 @@ const Section03 = () => {
                             <div className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
                             <div className='flex justify-between'>
                                     <div className='pt-[9px] lg:pt-0'>
-                                        <div className='text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>DESIGN</div>
+                                        <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>DESIGN</div>
                                         <div className='mt-[13px] lg:mt-[1.9444444444444444vw]'>
                                             <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + ' icon_2.svg'} alt='icon_2'/>
                                         </div>
                                     </div>
-                                    <div className='text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
+                                    <div className='host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
                                     Illustrator
                                     </div>
                                 </div>
@@ -94,12 +94,12 @@ const Section03 = () => {
                             <div className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
                             <div className='flex justify-between'>
                                     <div className='pt-[9px] lg:pt-0'>
-                                        <div className='text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>Development</div>
+                                        <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>Development</div>
                                         <div className='mt-[13px] lg:mt-[1.9444444444444444vw]'>
                                             <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + ' icon_3.svg'} alt='icon_3'/>
                                         </div>
                                     </div>
-                                    <div className='text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
+                                    <div className='host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
                                         HTML+CSS
                                     </div>
                                 </div>
@@ -118,12 +118,12 @@ const Section03 = () => {
                             <div className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
                                 <div className='flex justify-between'>
                                         <div className='pt-[9px] lg:pt-0'>
-                                            <div className='text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>Development</div>
+                                            <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>Development</div>
                                             <div className='mt-[13px] lg:mt-[1.9444444444444444vw]'>
                                                 <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + ' icon_4.svg'} alt='icon_4'/>
                                             </div>
                                         </div>
-                                        <div className='text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
+                                        <div className='host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
                                         Javascript
                                         </div>
                                     </div>
@@ -142,12 +142,12 @@ const Section03 = () => {
                             <div className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
                             <div className='flex justify-between'>
                                     <div className='pt-[9px] lg:pt-0'>
-                                        <div className='text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>Development</div>
+                                        <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>Development</div>
                                         <div className='mt-[13px] lg:mt-[1.9444444444444444vw]'>
                                             <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + ' icon_2.svg'} alt='icon_2'/>
                                         </div>
                                     </div>
-                                    <div className='text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
+                                    <div className='host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
                                     React
                                     </div>
                                 </div>

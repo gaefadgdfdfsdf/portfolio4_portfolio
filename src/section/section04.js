@@ -19,7 +19,7 @@ const Section04 = () => {
             <h2 className="noto-sans-kr-semibold lg:text-[30px] text-[#091423]">｛ 기업 프로젝트로 참여한 반응형 웹사이트 ｝</h2>
         </div>
         <motion.div
-          className="h-[65vh] w-[600vh] flex flex-shrink-0 items-center justify-start px-20 space-x-40 pt-28"
+          className="host-grotesk-bold h-[65vh] w-[600vh] flex flex-shrink-0 items-center justify-start px-20 space-x-40 pt-28"
           style={{ x }}
         >
           {/* {Array.from({ length: 6 }).map((_, index) => (
@@ -32,7 +32,7 @@ const Section04 = () => {
             />
           ))} */}
 
-        <div className="relative group">
+        <div className="host-grotesk-bold relative group">
             <img
             src="/web01.jpg"
             alt="Poster 1"
@@ -150,7 +150,7 @@ const Section04 = () => {
             </div>
             <div className='mt-[35px] lg:mt-[1.538888888888889vw] '>
                 <a href='file:///C:/Users/User/Downloads/%EC%9A%B0%EB%A6%AC%EB%B0%94%EC%9D%B4%EB%AF%B8%20%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4.pdf' target="_balnk" className='w-[200px] h-[70px] text-white bg-[#091423] rounded-[5px] block leading-[70px]'>
-                    <span className='relative overflow-visible flex flex-col items-center'>
+                    <span className='host-grotesk-bold relative overflow-visible flex flex-col items-center'>
                         <span className='opacity-0 flex absolute flex-nowrap items-center'>SEE MORE</span>
                         <span className='flex absolute flex-nowrap items-center'>SEE MORE</span>
                     </span>

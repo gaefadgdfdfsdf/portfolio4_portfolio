@@ -139,7 +139,7 @@ const Section04 = () => {
         </motion.div>
       
         <div className='class="lg:w-[calc(100%-32.84722222222222vw)] mt-[20px] lg:mt-0 relative left-24'>
-            <div className='text-[1.15vw] leading-[133%] max-lg:max-w-[290px] max-lg:mx-auto'> 
+            <div className='tracking-[-0.7px] noto-sans-kr-medium text-[1.05vw] leading-[133%] max-lg:max-w-[290px] max-lg:mx-auto'> 
             기업 프로젝트에 참여해 반응형 웹사이트 제작을 진행한 경험이 있습니다.<br/>
             클라이언트와의 줌 미팅 및 기획 회의를 통해 요구사항을 정확히 파악하고,<br/>
             원하는 분위기와 기능을 구현할 수 있도록 구조를 설계하고 수정했습니다.<br/>

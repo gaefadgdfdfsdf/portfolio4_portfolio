@@ -59,7 +59,7 @@ const Section03 = () => {
                                     </div>
                                 </div>
                                 <div className='flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
-                                    <div className='lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
+                                    <div className='noto-sans-kr-medium lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
                                     포토샵의 기초 기능을 활용하여 창의적이고<br/> 효율적인 디자인 작업을 구현합니다.
                                     </div>
                                 </div>
@@ -81,7 +81,7 @@ const Section03 = () => {
                                     </div>
                                 </div>
                                 <div className='flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
-                                    <div className='lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
+                                    <div className='noto-sans-kr-medium lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
                                     일러스트 기초 기능을 활용하여<br/>
                                     간단한 SVG 아이콘 제작이 가능합니다.
                                     </div>
@@ -104,7 +104,7 @@ const Section03 = () => {
                                     </div>
                                 </div>
                                 <div className='flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
-                                    <div className='lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
+                                    <div className='noto-sans-kr-medium lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
                                     HTML과 CSS의 기초 지식을 바탕으로<br/>
                                     홈페이지의 구조를 제작하고, Animation CSS를 활용한<br/>
                                     다양한 인터랙션 구현이 가능합니다.
@@ -128,7 +128,7 @@ const Section03 = () => {
                                         </div>
                                     </div>
                                     <div className='flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
-                                        <div className='lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
+                                        <div className='noto-sans-kr-medium lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
                                         스크롤, 휠, 클릭 등 다양한 이벤트 리스너를 활용해<br/>
                                         요소 애니메이션, 화면 전환 등<br/>
                                         동적인 UI를 JavaScript로 구현이 가능합니다.
@@ -152,7 +152,7 @@ const Section03 = () => {
                                     </div>
                                 </div>
                                 <div className='flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
-                                    <div className='lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
+                                    <div className='noto-sans-kr-medium lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
                                     React를 기반으로 한 화면 구성과<br/>
                                     Framer Motion, Recoil을 활용한 인터랙션 구현이 가능하며,<br/>
                                     ScrollTrigger, Swiper, useEffect 등<br/>

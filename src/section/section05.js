@@ -85,10 +85,11 @@ const Section05 = () => {
                   <path d="M49.7134 13.1963L37.1131 0.596053L29.511 8.19817L49.2162 27.9033L0.375508 27.9033L0.375509 38.6543L49.0505 38.6543L29.3274 58.3775L36.9295 65.9796L64.2548 38.6543H64.4976V28.254H49.7134V13.1963Z" fill="#091423"></path>
                 </svg>
               </div>
-              <h2 className='noto-sans-kr-medium text-[#091423] text-[76px] lg:text-[8.222222222222223vw] tracking-tight font-medium leading-[100%] lg:leading-[86%] whitespace-nowrap'>
+              <h2 className='max-lg:relative max-lg:ml-52 max-lg:flex noto-sans-kr-medium text-[#091423] text-[76px] lg:text-[8.222222222222223vw] tracking-tight font-medium leading-[100%] lg:leading-[86%] whitespace-nowrap'>
                 <span className='max-lg:block opacity-0'>.</span>
-                
+                <span className='max-lg:block hidden opacity-0'>.</span>
                   <TypingText
+                    
                     phrases={['developer', 'craftsman', 'engineer']}
                     typingSpeed={120}
                     deletingSpeed={50}

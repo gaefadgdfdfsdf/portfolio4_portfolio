@@ -1,5 +1,60 @@
-import React from 'react'
+import React, { useEffect, useRef, useState, useCallback } from 'react';
 
+const TypingText = ({ phrases, typingSpeed = 120, deletingSpeed = 50, pauseTime = 2000 }) => {
+  const [displayText, setDisplayText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [phraseIndex, setPhraseIndex] = useState(0);
+
+  const charIndexRef = useRef(0);
+  const frameRef = useRef(null);
+  const lastTimeRef = useRef(0);
+  const pauseRef = useRef(false);
+
+  const tick = useCallback((time) => {
+    const delta = time - lastTimeRef.current;
+    const speed = isDeleting ? deletingSpeed : typingSpeed;
+
+    if (pauseRef.current) {
+      frameRef.current = requestAnimationFrame(tick);
+      return;
+    }
+
+    if (delta > speed) {
+      const currentPhrase = phrases[phraseIndex];
+      if (!isDeleting) {
+        charIndexRef.current += 1;
+        setDisplayText(currentPhrase.slice(0, charIndexRef.current));
+
+        if (charIndexRef.current === currentPhrase.length) {
+          pauseRef.current = true;
+          setTimeout(() => {
+            setIsDeleting(true);
+            pauseRef.current = false;
+          }, pauseTime);
+        }
+      } else {
+        charIndexRef.current -= 1;
+        setDisplayText(currentPhrase.slice(0, charIndexRef.current));
+
+        if (charIndexRef.current === 0) {
+          setIsDeleting(false);
+          setPhraseIndex((prev) => (prev + 1) % phrases.length);
+        }
+      }
+
+      lastTimeRef.current = time;
+    }
+
+    frameRef.current = requestAnimationFrame(tick);
+  }, [deletingSpeed, typingSpeed, isDeleting, phrases, phraseIndex, pauseTime]);
+
+  useEffect(() => {
+    frameRef.current = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(frameRef.current);
+  }, [tick]);
+
+  return <span>{displayText}</span>;
+};
 
 const Section05 = () => {
   return (
@@ -18,14 +73,19 @@ const Section05 = () => {
           </div>
           <div className='max-lg:max-w-[550px] max-lg:mx-auto lg:ml-[40.763888888888886vw] lg:mt-[-8.402777777777779vw] text-right lg:text-left'>
             <div className='lg:mb-[6.319444444444445vw] relative'>
-              <div className='max-lg:hidden absolute left-[-6.819444444444445vw] top-[2.430555555555556vw]'>
+              <div className='max-lg:hidden absolute left-[-5.819444444444445vw] top-[2.430555555555556vw]'>
                 <svg class="w-[35px] lg:w-[4.513888888888888vw] h-auto" width="65" height="66" viewBox="0 0 65 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M49.7134 13.1963L37.1131 0.596053L29.511 8.19817L49.2162 27.9033L0.375508 27.9033L0.375509 38.6543L49.0505 38.6543L29.3274 58.3775L36.9295 65.9796L64.2548 38.6543H64.4976V28.254H49.7134V13.1963Z" fill="#091423"></path>
                 </svg>
               </div>
               <h2 className='text-[#091423] text-[76px] lg:text-[8.222222222222223vw] tracking-tight font-medium leading-[100%] lg:leading-[86%] whitespace-nowrap'>
-                <span className='max-lg:block'></span>
-                <span>developer</span>
+                <span className='max-lg:block opacity-0 '>.</span>
+                <TypingText
+                  phrases={['developer', 'craftsman', 'engineer']}
+                  typingSpeed={120}
+                  deletingSpeed={50}
+                  pauseTime={2000}
+                />
               </h2>
             </div>
             <div className='text-center lg:text-left mt-10 lg:mt-0'>

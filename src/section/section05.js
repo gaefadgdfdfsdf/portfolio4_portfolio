@@ -10,6 +10,7 @@ const TypingText = ({ phrases, typingSpeed = 120, deletingSpeed = 50, pauseTime 
   const lastTimeRef = useRef(0);
   const pauseRef = useRef(false);
 
+  // 자식 컴포넌트에 함수를 props로 전달할 때 useCallback을 사용하여 불필요한 렌더링을 방지 가능
   const tick = useCallback((time) => {
     const delta = time - lastTimeRef.current;
     const speed = isDeleting ? deletingSpeed : typingSpeed;
@@ -67,7 +68,7 @@ const Section05 = () => {
     <>
       <section className='my-[100px] lg:my-[8.333333333333332vw] overflow-hidden'>
         <div className='max-w-full pl-[1.388vw] pr-[1.388vw]'>
-          <div className='text-[#091423] max-lg:max-w-[550px] max-lg:mx-auto mb-[-5px] lg:mb-0'>
+          <div className='noto-sans-kr-medium  text-[#091423] max-lg:max-w-[550px] max-lg:mx-auto mb-[-5px] lg:mb-0'>
             <h2 className='text-[76px] lg:text-[8.222222222222223vw] tracking-tight font-medium leading-[100%] lg:leading-[116%]'>
             Growing as a 
            <br />
@@ -84,7 +85,7 @@ const Section05 = () => {
                   <path d="M49.7134 13.1963L37.1131 0.596053L29.511 8.19817L49.2162 27.9033L0.375508 27.9033L0.375509 38.6543L49.0505 38.6543L29.3274 58.3775L36.9295 65.9796L64.2548 38.6543H64.4976V28.254H49.7134V13.1963Z" fill="#091423"></path>
                 </svg>
               </div>
-              <h2 className='text-[#091423] text-[76px] lg:text-[8.222222222222223vw] tracking-tight font-medium leading-[100%] lg:leading-[86%] whitespace-nowrap'>
+              <h2 className='noto-sans-kr-medium text-[#091423] text-[76px] lg:text-[8.222222222222223vw] tracking-tight font-medium leading-[100%] lg:leading-[86%] whitespace-nowrap'>
                 <span className='max-lg:block opacity-0 '>.</span>
                 <TypingText
                   phrases={['developer', 'craftsman', 'engineer']}
@@ -96,7 +97,7 @@ const Section05 = () => {
             </div>
             <div className='text-center lg:text-left mt-10 lg:mt-0'>
               <div>
-                <div className='lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
+                <div className='noto-sans-kr-medium lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
                   <div>
                     &nbsp;Clean code. Bold vision.
                    
@@ -109,7 +110,7 @@ const Section05 = () => {
               
               <div className='mt-[37px] lg:mt-[2.638888888888889vw]'>
                 <a href='#' className='rounded-[5px] lg:h-[4.166666666666666vw] lg:px-[2.7777777777777777vw] lg:text-[0.9722222222222222vw] relative inline-flex items-center justify-center bg-[#091423] min-w-[223px] lg:min-w-[15.555555555555555vw]'>
-                  <span className="group relative flex flex-col overflow-hidden  text-white ">
+                  <span className="noto-sans-kr-medium group relative flex flex-col overflow-hidden  text-white ">
                     <span className="translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center">
                       contact me
                       </span>

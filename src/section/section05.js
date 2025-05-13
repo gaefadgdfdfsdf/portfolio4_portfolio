@@ -86,13 +86,14 @@ const Section05 = () => {
                 </svg>
               </div>
               <h2 className='noto-sans-kr-medium text-[#091423] text-[76px] lg:text-[8.222222222222223vw] tracking-tight font-medium leading-[100%] lg:leading-[86%] whitespace-nowrap'>
-                <span className='max-lg:block opacity-0 '>.</span>
-                <TypingText
-                  phrases={['developer', 'craftsman', 'engineer']}
-                  typingSpeed={120}
-                  deletingSpeed={50}
-                  pauseTime={2000}
-                />
+                <span className='max-lg:block opacity-0'>.</span>
+                
+                  <TypingText
+                    phrases={['developer', 'craftsman', 'engineer']}
+                    typingSpeed={120}
+                    deletingSpeed={50}
+                    pauseTime={2000}
+                  />
               </h2>
             </div>
             <div className='text-center lg:text-left mt-10 lg:mt-0'>

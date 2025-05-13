@@ -114,7 +114,7 @@ const Section05 = () => {
                 
              <a
                 href="#"
-                className="group relative inline-flex items-center justify-center rounded-[5px] h-[6.166666666666666vw] lg:h-[4.166666666666666vw] lg:px-[2.7777777777777777vw] lg:text-[0.9722222222222222vw] bg-[#091423] min-w-[223px] lg:min-w-[15.555555555555555vw] overflow-hidden"
+                className="group relative inline-flex items-center justify-center rounded-[5px] h-[80px] lg:px-[2.7777777777777777vw] lg:text-[0.9722222222222222vw] bg-[#091423] min-w-[223px] lg:min-w-[15.555555555555555vw] overflow-hidden"
               >
                   <span className="ransition-transform duration-300 group-hover:bottom-16 rotate-[135deg] absolute left-2 bottom-2 noto-sans-kr-medium group flex overflow-hidden text-white ">
                   

@@ -13,13 +13,13 @@ const Section04 = () => {
  
 
   return (
-    <div ref={containerRef} className="h-[600vh]">
+    <div ref={containerRef} className="h-[600vh] mt-10">
       <div className="sticky top-0 h-screen overflow-hidden">
-        <div className="relative top-24 left-24">
+        <div className="relative top-32 left-16">
             <h2 className="noto-sans-kr-semibold lg:text-[30px] text-[#091423]">｛ 기업 프로젝트로 참여한 반응형 웹사이트 ｝</h2>
         </div>
         <motion.div
-          className="host-grotesk-bold h-[65vh] w-[600vh] flex flex-shrink-0 items-center justify-start px-20 space-x-40 pt-28"
+          className="host-grotesk-bold h-[63vh] w-[600vh] flex flex-shrink-0 items-center justify-start px-20 space-x-40 pt-28"
           style={{ x }}
         >
           {/* {Array.from({ length: 6 }).map((_, index) => (
@@ -138,8 +138,8 @@ const Section04 = () => {
         </div>
         </motion.div>
       
-        <div className='class="lg:w-[calc(100%-32.84722222222222vw)] mt-[20px] lg:mt-0 relative left-24'>
-            <div className='max-lg:hidden  tracking-[-0.7px] noto-sans-kr-medium text-[1.05vw] leading-[133%] max-lg:max-w-[290px] max-lg:mx-auto'> 
+        <div className='class="lg:w-[calc(100%-32.84722222222222vw)] lg:mt-0 relative left-24'>
+            <div className='max-lg:hidden  tracking-[-0.7px] noto-sans-kr-medium text-[1.02vw] leading-[133%] max-lg:max-w-[290px] max-lg:mx-auto'> 
             기업 프로젝트에 참여해 반응형 웹사이트 제작을 진행한 경험이 있습니다.<br/>
             클라이언트와의 줌 미팅 및 기획 회의를 통해 요구사항을 정확히 파악하고,<br/>
             원하는 분위기와 기능을 구현할 수 있도록 구조를 설계하고 수정했습니다.<br/>
@@ -148,13 +148,41 @@ const Section04 = () => {
 
 
             </div>
-            <div className='mt-[35px] lg:mt-[1.538888888888889vw] '>
-                <a href='file:///C:/Users/User/Downloads/%EC%9A%B0%EB%A6%AC%EB%B0%94%EC%9D%B4%EB%AF%B8%20%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4.pdf' target="_balnk" className='w-[200px] h-[70px] text-white bg-[#091423] rounded-[5px] block leading-[70px]'>
+            <div className='mt-[35px] lg:mt-[2.338888888888889vw] '>
+                {/* <a href='file:///C:/Users/User/Downloads/%EC%9A%B0%EB%A6%AC%EB%B0%94%EC%9D%B4%EB%AF%B8%20%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4.pdf' target="_balnk" className='w-[200px] h-[70px] text-white bg-[#091423] rounded-[5px] block leading-[70px]'>
                     <span className='host-grotesk-bold relative overflow-visible flex flex-col items-center'>
                         <span className='opacity-0 flex absolute flex-nowrap items-center'>SEE MORE</span>
                         <span className='flex absolute flex-nowrap items-center'>SEE MORE</span>
                     </span>
-                </a>    
+                </a>     */}
+                <a
+                href="#"
+                className="group relative inline-flex items-center justify-center rounded-[5px] h-[80px] lg:px-[2.7777777777777777vw] lg:text-[0.9722222222222222vw] bg-[#091423] min-w-[233px] lg:min-w-[13.555555555555555vw] overflow-hidden"
+              >
+                  <span className="ransition-transform duration-300 group-hover:bottom-16 rotate-[135deg] absolute left-2 bottom-2 noto-sans-kr-medium group flex overflow-hidden text-white ">
+                  
+                  <img className="rotate-[90deg] w-[10px] translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center"
+                   src={process.env.PUBLIC_URL + 'arrow.png'} alt='arrow' />
+                  <img className="w-[10px] translate-y-0 opacity-100 group-hover:-translate-y-full  transition-transform duration-300 flex nowrap items-center"
+                   src={process.env.PUBLIC_URL + 'arrow.png'} alt='arrow' />
+                
+                </span>
+               <span className="noto-sans-kr-medium group relative flex flex-col overflow-hidden  text-white ">
+                    <span className="translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center">
+                    SEE MORE
+                      </span>
+                    <span className="translate-y-0 opacity-100 group-hover:-translate-y-full  transition-transform duration-300 flex nowrap items-center">SEE MORE</span>
+                  </span>
+
+                  <span className="ransition-transform duration-300 group-hover:top-16 rotate-[315deg] absolute top-2 right-2 noto-sans-kr-medium group flex overflow-hidden text-white ">
+                  
+                      <img className="rotate-[90deg] w-[10px] translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center"
+                       src={process.env.PUBLIC_URL + 'arrow.png'} alt='arrow' />
+                      <img className="w-[10px] translate-y-0 opacity-100 group-hover:-translate-y-full  transition-transform duration-300 flex nowrap items-center"
+                       src={process.env.PUBLIC_URL + 'arrow.png'} alt='arrow' />
+                    
+                  </span>
+              </a>
             </div>
         </div>
 

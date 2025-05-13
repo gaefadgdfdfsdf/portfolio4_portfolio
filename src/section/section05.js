@@ -116,7 +116,7 @@ const Section05 = () => {
                 href="#"
                 className="group relative inline-flex items-center justify-center rounded-[5px] h-[6.166666666666666vw] lg:h-[4.166666666666666vw] lg:px-[2.7777777777777777vw] lg:text-[0.9722222222222222vw] bg-[#091423] min-w-[223px] lg:min-w-[15.555555555555555vw] overflow-hidden"
               >
-                  <span className="rotate-[135deg] absolute left-2 bottom-2 noto-sans-kr-medium group flex overflow-hidden text-white ">
+                  <span className="ransition-transform duration-300 group-hover:bottom-16 rotate-[135deg] absolute left-2 bottom-2 noto-sans-kr-medium group flex overflow-hidden text-white ">
                   
                   <img className="rotate-[90deg] w-[10px] translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center"
                    src={process.env.PUBLIC_URL + 'arrow.png'} alt='arrow' />
@@ -131,7 +131,7 @@ const Section05 = () => {
                     <span className="translate-y-0 opacity-100 group-hover:-translate-y-full  transition-transform duration-300 flex nowrap items-center">contact me</span>
                   </span>
 
-                  <span className="rotate-[315deg] absolute top-2 right-2 noto-sans-kr-medium group flex overflow-hidden text-white ">
+                  <span className="ransition-transform duration-300 group-hover:top-16 rotate-[315deg] absolute top-2 right-2 noto-sans-kr-medium group flex overflow-hidden text-white ">
                   
                       <img className="rotate-[90deg] w-[10px] translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center"
                        src={process.env.PUBLIC_URL + 'arrow.png'} alt='arrow' />

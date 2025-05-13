@@ -111,14 +111,18 @@ const Section05 = () => {
               </div>
               
               <div className='mt-[37px] lg:mt-[2.638888888888889vw]'>
-                <a href='#' className='rounded-[5px] h-[6.166666666666666vw]  lg:h-[4.166666666666666vw] lg:px-[2.7777777777777777vw] lg:text-[0.9722222222222222vw] relative inline-flex items-center justify-center bg-[#091423] min-w-[223px] lg:min-w-[15.555555555555555vw]'>
-                  <span className="noto-sans-kr-medium group relative flex flex-col overflow-hidden  text-white ">
+                
+             <a
+                href="#"
+                className="group relative inline-flex items-center justify-center rounded-[5px] h-[6.166666666666666vw] lg:h-[4.166666666666666vw] lg:px-[2.7777777777777777vw] lg:text-[0.9722222222222222vw] bg-[#091423] min-w-[223px] lg:min-w-[15.555555555555555vw] overflow-hidden"
+              >
+               <span className="noto-sans-kr-medium group relative flex flex-col overflow-hidden  text-white ">
                     <span className="translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center">
                       contact me
                       </span>
                     <span className="translate-y-0 opacity-100 group-hover:-translate-y-full  transition-transform duration-300 flex nowrap items-center">contact me</span>
                   </span>
-                </a>
+              </a>
               </div>
 
             </div>
@@ -132,7 +136,7 @@ const Section05 = () => {
             <ul className="text-white p-0 m-0">
               <li className="group relative overflow-hidden">
                 <div className="group-hover:translate-y-0 hover-bg h-full bg-[#E6E8EA] absolute inset-0 translate-y-[100px] transition-transform duration-300"></div>
-                <p className="max-lg:h-[4vw] flex items-center pl-[1.388vw] pr-[1.388vw] lg:h-[3vw] lg:pt-0 lg:pb-0 lg:text-[0.9722222222222222vw] relative z-10 transition-colors duration-300 group-hover:text-black">
+                <p className="max-lg:h-[4.5vw] flex items-center pl-[1.388vw] pr-[1.388vw] lg:h-[3vw] lg:pt-0 lg:pb-0 lg:text-[0.9722222222222222vw] relative z-10 transition-colors duration-300 group-hover:text-black">
                    조윤하 980920
                 </p>
               </li>
@@ -140,7 +144,7 @@ const Section05 = () => {
               <li className="group relative overflow-hidden cursor-pointer">
                 <div className="group-hover:translate-y-0 hover-bg h-full bg-[#E6E8EA] absolute inset-0 translate-y-[100px] transition-transform duration-300"></div>
                 
-                <p className="max-lg:h-[4vw]  flex items-center pl-[1.388vw] pr-[1.388vw] lg:h-[3vw] lg:pt-0 lg:pb-0 lg:text-[0.9722222222222222vw] relative z-10 transition-colors duration-300 group-hover:text-black">
+                <p className="max-lg:h-[4.5vw]  flex items-center pl-[1.388vw] pr-[1.388vw] lg:h-[3vw] lg:pt-0 lg:pb-0 lg:text-[0.9722222222222222vw] relative z-10 transition-colors duration-300 group-hover:text-black">
                   ISTJ
                 </p>
                
@@ -149,7 +153,7 @@ const Section05 = () => {
               <li className="group relative overflow-hidden cursor-pointer p-0">
                 <div className="group-hover:translate-y-0 hover-bg h-full bg-[#E6E8EA] absolute inset-0 translate-y-[100px] transition-transform duration-300"></div>
                 {/* tell */}
-                <a href="#" className="max-lg:h-[4vw] flex items-center pl-[1.388vw] pr-[1.388vw] lg:h-[3vw] lg:pt-0 lg:pb-0 lg:text-[0.9722222222222222vw] relative z-10 transition-colors duration-300 group-hover:text-black">
+                <a href="#" className="max-lg:h-[4.5vw] flex items-center pl-[1.388vw] pr-[1.388vw] lg:h-[3vw] lg:pt-0 lg:pb-0 lg:text-[0.9722222222222222vw] relative z-10 transition-colors duration-300 group-hover:text-black">
                   010-8864-4851
                 </a>
                 {/* <span className="absolute right-[1.388vw] top-1/2 -translate-y-1/2 transition-colors duration-300 group-hover:text-black"></span> */}

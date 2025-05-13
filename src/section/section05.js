@@ -53,7 +53,13 @@ const TypingText = ({ phrases, typingSpeed = 120, deletingSpeed = 50, pauseTime 
     return () => cancelAnimationFrame(frameRef.current);
   }, [tick]);
 
-  return <span>{displayText}</span>;
+  return (
+    <span>
+      {displayText}
+      
+    </span>
+  )
+  
 };
 
 const Section05 = () => {

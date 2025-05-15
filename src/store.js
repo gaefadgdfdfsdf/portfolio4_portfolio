@@ -9,3 +9,10 @@ export const isSection03VisibleState = atom({
     key: "isSection03VisibleState",
     default: false,
   });
+
+
+
+export const showHeaderState = atom({
+  key: 'showHeaderState',
+  default: false,
+});

@@ -146,58 +146,52 @@ const Section01 = () => {
 
 
 
-    useEffect(()=>{
-        const handleScroll = () => {
-            const sectionTop = section02Ref.current?.getBoundingClientRect().top || 0;
-            const sectionBottom = section02Ref.current?.getBoundingClientRect().bottom || 0;
+    // useEffect(()=>{
+    //     const handleScroll = () => {
+    //         const sectionTop = section02Ref.current?.getBoundingClientRect().top || 0;
+    //         const sectionBottom = section02Ref.current?.getBoundingClientRect().bottom || 0;
 
-            const isVisible = sectionTop < window.innerHeight && sectionBottom >  0;
-            // setIsSectionVisible(isVisible);
-            if (isVisible && !isSectionvisible) {
-                setIsSectionVisible(true);
-            } else if(sectionTop > window.innerHeight){
-                setIsSectionVisible(false);
-            }
+    //         const isVisible = sectionTop < window.innerHeight && sectionBottom >  0;
+         
+    //         if (isVisible && !isSectionvisible) {
+    //             setIsSectionVisible(true);
+    //         } else if(sectionTop > window.innerHeight){
+    //             setIsSectionVisible(false);
+    //         }
 
           
-            if (sectionTop < window.innerHeight && sectionTop > 0){
-                setShowHeader(true);
-            }
+    //         if (sectionTop < window.innerHeight && sectionTop > 0){
+    //             setShowHeader(true);
+    //         }
 
-            else if (sectionTop > window.innerHeight){
-                setShowHeader(false);
-            } else if (sectionTop < 0) {
-                setShowHeader(true);
-            }
+    //         else if (sectionTop > window.innerHeight){
+    //             setShowHeader(false);
+    //         } else if (sectionTop < 0) {
+    //             setShowHeader(true);
+    //         }
 
            
-        };
+    //     };
 
-        window.addEventListener('scroll', handleScroll);
-        handleScroll();
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    //     window.addEventListener('scroll', handleScroll);
+    //     handleScroll();
+    //     return () => window.removeEventListener('scroll', handleScroll);
+    // }, []);
 
     return (
 
         <>
-            <div ref={headerRef} id="header_sticky"
+             {/* <div ref={headerRef} id="header_sticky"
              style={{
                 top: showHeader ? 0 : -window.innerHeight,
                 left: 0,
                 transition:'top 0.5s ease in-out'
              }}
-            //  className="hidden lg:sticky lg:inset-x-0 lg:z-[90] flex max-lg:items-center max-lg:h-[66px]  lg:bg-opacity-95 lg:backdrop-blur px-[var(--size-20)] lg:px-0 top-header">
+            
              className={`${isSectionvisible ? 'block' : 'hidden'} max-lg:hidden lg:sticky lg:inset-x-0 lg:z-[90] flex max-lg:items-center max-lg:h-[66px] bg-[#E6E8EA] lg:bg-opacity-95 lg:backdrop-blur px-[var(--size-20)] lg:px-0 top-header`}>
                 <div className="transition-colors duration-300 left-logo-header lg:border-r lg:border-current w-[86px] lg:w-[7.083333333333333vw]">
                     <a href="https://atolldigital.com" className="w-full lg:h-full flex items-center justify-center">
-                        {/* <svg className="w-full lg:w-[4.305555555555555vw] h-auto" width="62" height="26" viewBox="0 0 62 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path className="fill-current" d="M51.2196 0.314453L55.1169 0.317387L55.0956 25.4681L51.1983 25.4652L51.2196 0.314453Z"></path>
-                            <path className="fill-current" d="M58.1027 0.319635L62 0.322569L61.9787 25.4733L58.0814 25.4703L58.1027 0.319635Z"></path>
-                            <path className="fill-current" fill-rule="evenodd" clip-rule="evenodd" d="M29.6488 15.5299C29.6442 21.5202 33.5382 25.9186 39.5219 25.9231C45.4664 25.9276 49.3671 21.5351 49.3717 15.5448C49.3763 9.63228 45.4823 5.23387 39.5379 5.2294C33.5541 5.22489 29.6534 9.61744 29.6488 15.5299ZM45.1988 15.5416C45.1955 19.8593 43.1066 22.9307 39.5242 22.928C35.9025 22.9253 33.8184 19.8508 33.8217 15.5331C33.825 11.2543 35.9138 8.22182 39.5356 8.22455C43.118 8.22724 45.2021 11.2629 45.1988 15.5416Z"></path>
-                            <path className="fill-current" d="M29.5558 8.48932L25.1467 8.486L25.1467 8.48925L21.2183 8.48629L25.1433 12.9748L25.1378 20.1165C25.1364 21.9447 25.4509 22.4895 27.1437 22.4908L29.545 22.4926L29.5428 25.4489L25.9604 25.4462C22.2599 25.4434 21.1982 23.8089 21.2009 20.3858L21.21 8.48304L18.1394 8.48072L18.1416 5.60227L21.2123 5.60458L21.2163 0.314453L25.153 0.317417L25.149 5.60755L29.5581 5.61087L29.5558 8.48932Z"></path>
-                            <path className="fill-current" fill-rule="evenodd" clip-rule="evenodd" d="M2.19646e-06 19.8253C-0.00299705 23.7151 3.06595 25.8957 6.96328 25.8986C10.7425 25.9015 12.8304 24.0748 13.5407 21.8971L13.5379 25.4368L17.2778 25.4396L17.2887 11.3585C17.2917 7.39094 14.3409 5.21043 9.26252 5.20661C4.10545 5.20273 1.11152 7.84554 0.597016 11.3849L4.53371 11.3878C4.77166 9.13193 6.50467 8.00519 9.22099 8.00724C11.898 8.00925 13.3143 9.09946 13.3132 10.5387C13.3121 12.0136 11.579 12.4727 8.92425 13.176C8.63845 13.2517 8.34197 13.3302 8.03582 13.4132C3.11395 14.6931 0.00309142 15.8188 2.19646e-06 19.8253ZM13.4658 16.8792C13.4632 20.1855 11.4926 23.1014 8.06772 23.0988C5.78443 23.0971 4.09258 21.89 4.09426 19.7117C4.09609 17.3389 6.14386 16.4458 9.25452 15.5924C11.5777 14.9329 12.9954 14.3116 13.4686 13.1839L13.4658 16.8792Z"></path>
-                        </svg> */}
+                       
                         <svg className="w-full lg:w-[4.305555555555555vw] h-auto" width="122" height="86"  viewBox="0 0 657.5 294.49" fill="#091423" xmlns="http://www.w3.org/2000/svg">
                                  <g>
                                <path d="M176.88,0v228.86c0,36.6-31.27,65.63-72.36,65.63H75.93C33.5,294.49,0,265.46,0,228.86v-48.38l62.53-13.46v61.84
@@ -274,8 +268,8 @@ const Section01 = () => {
                     </a>
                 
                 </div>
-                <span className="max-lg:hidden block border-b border-current absolute bottom-0 left-0 w-full"></span>
-            </div>
+                <span className="max-lg:hidden block border-b border-current absolute bottom-0 left-0 w-full"></span> 
+            </div>*/}
             <section className='max-lg:bg-[#E6E8EA] relative overflow-x-clip max-lg:z-50' ref={section01Ref}>
                 <div className='grid grid-cols-2 max-lg:grid-cols-1'>
                     <div className='absolute top-[-50px] left-[1.38vw] lg:static lg:pb-[2.013888888888889vw] lg:pl-[var(--size-20)] lg:pr-[1.9444444444444444vw] lg:pt-[1.6666666666666667vw]'>
@@ -293,7 +287,7 @@ const Section01 = () => {
                                </svg> 
                                  
                         </div>
-                    </div>
+                    </div> 
                     <div className='pt-[38px] lg:pt-0 pb-3 lg:pb-[1.944444444444445vw] relative'>
                         <div className="max-lg:hidden absolute left-0 bottom-0 h-full w-[0.5px] bg-black"></div>
                         <div className='max-lg:hidden px-[var(--size-20)] flex justify-between'>
@@ -462,7 +456,7 @@ const Section01 = () => {
                 </div>
             </div>
             {/* section02 */}
-            <div id="section02" className="mb-5 lg:mb-[3.6111111111111107vw]">
+            {/* <div id="section02" className="mb-5 lg:mb-[3.6111111111111107vw]">
                 <div className="max-w-full pl-[1.38vw] pr-[1.38vw]">
                     <div className="pr-[60px] lg:pr-[11.527777777777779vw] relative">
                         <div class="absolute right-12 lg:right-[18.3194444444444444vw] -top-0.5 lg:top-[-0.06944444444444445vw] text-[18px] lg:text-[2.2222222222222223vw] leading-[100%]">
@@ -558,34 +552,7 @@ const Section01 = () => {
                                     </div>
                                 </div>
                             </div>
-                            {/* <div className='lg:h-[34.29166666666667vw] overflow-hidden relative'>
-                                <div className='absolute bottom-0 left-0 w-full bg-black h-[1px] z-10'></div>
-                                <a href='https://gaefadgdfdfsdf.github.io/portfolio2_glaxywatch/' target='_blank' className='absolute inset-0 z-[1]' />
-                                <div className='py-5 lg:py-[1.38vw] flex flex-col-reverse lg:flex-row lg:h-full'>
-                                    <div className='lg:w-[32.84722222222222vw] lg:pr-[2.7777777777777777vw] mt-[18px] lg:mt-0'>
-                                        <h2 className='text-[32px] lg:text-[4.166666666666666vw] leading-[100%] tracking-tighter font-medium'>flying bird</h2>
-                                        <div className='text-[14px] lg:text-[0.9722222222222222vw] mt-2.5 lg:mt-[1vw] font-medium'>HTML & CSS - animation</div>
-                                        <div className='text-[16px] description lg_br_enable mt-5 lg:mt-[2vw] lg:tracking-tight leading-[134%]'>
-                                            이 프로젝트는 Harry Potter 시리즈를 테마로 한 영화관 스타일의 인터랙티브 웹사이트입니다.
-                                            다양한 라이브러리를 조합하여 기획 + 디자인 + 구현까지 모두 제작하였습니다.
-                                            모든 섹션을 컴포넌트 단위로 쪼개어 관리하고, 반응형 대응을 고려한 레이아웃 설계로 확장성과 유지보수 용이성을 확보하였습니다.
-                                            Framer Motion + useScroll + useTransform 각 섹션에 스크롤 기반 애니메이션 효과와
-                                            ScrollTrigger로 스크롤의 위치를 감지해 타이밍별로 애니메이션 트리거를 적용했습니다.
-                                            Intersection Observer + useScroll, useTransform 으로 가로 스크롤로 구현하여 캐릭터와 TEXT를 단순 페이지 전환이 아닌 스토리텔링 중심 인터랙션으로 구현하였습니다.
-                                            Swiper + Navigation 모듈로 하단에 Harry Potter 영화 시리즈별 미리보기 슬라이드 구현하였습니다.
-                                            페이지 전환 없이 스크롤만으로 모든 콘텐츠 탐색이 가능, 부드러운 흐름 제공합니다.
-                                        </div>
-                                    </div>
-                                    <div className='lg:w-[calc(100%-32.84722222222222vw)]'>
-                                        <div className='wrap-img-distortion overflow-hidden rounded-[.3472222222222222vw] h-[42vw] lg:h-full relative'>
-                                            <img className='object-cover w-full relative h-full lg:top-1/2 lg:-translate-y-1/2' src={process.env.PUBLIC_URL + 'herryporter-1.jpg'} alt='birds' />
-                                            <div class="absolute top-[50%] w-full left-0 z-1 translate-y-[-50%]">
-                                                <canvas className='w-full h-full object-cover' id="hover-effect-canvas-1745038706574" width="1236" height="618"></canvas>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> */}
+                            
                             <div>
                                 <div className='lg:flex pt-[81px] lg:pt-[2.430555555555556vw] text-center lg:text-left'>
                                     <div className='lg:w-[32.84722222222222vw] lg:pr-[2.7777777777777777vw]'>
@@ -608,21 +575,14 @@ const Section01 = () => {
                                             More in the vault. <br />
                                             Take a look.
                                         </div>
-                                        {/* <div className='mt-[35px] lg:mt-[2.638888888888889vw] max-lg:w-[150px] max-lg:mx-auto  text-white'>
-                                            <a href='' className=' max-lg:mx-auto text-white bg-[#091423] rounded-[5px] block h-[70px] w-[190px] lg:w-[13.194444444444445vw] leading-[70px]'>
-                                                <span className='relative overflow-visible flex flex-col items-center'>
-                                                    <span className='opacity-0 flex absolute flex-nowrap items-center'>SEE MORE</span>
-                                                    <span className='flex absolute flex-nowrap items-center'>SEE MORE</span>
-                                                </span>
-                                            </a>
-                                        </div> */}
+                                       
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
         </>
     )

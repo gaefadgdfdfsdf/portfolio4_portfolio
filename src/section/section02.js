@@ -51,7 +51,7 @@ const Section02 = () => {
             </div>
             <div className='hidden h-[7.916666666666666vw]'></div>
            <section className='pb-[10.416666666666668vw]'>  {/* ref={section02Ref}  */}
-                <div className='w-full bg-black h-[0.5px]'></div> {/* ref={containerRef}  */}
+                <div id="header_Sticky" className='w-full bg-black h-[0.5px]'></div> {/* ref={containerRef}  */}
                 <div className='max-w-full pl-[1.38vw]  pr-[1.38vw] '>
                     <div className='relative'>
                         <div className='lg:sticky lg:top-[var(--header-sticky-height)] lg:grid'>

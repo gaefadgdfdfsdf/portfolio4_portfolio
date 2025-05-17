@@ -61,8 +61,8 @@ const Section02 = () => {
            <section className='pb-[10.416666666666668vw]'>  {/* ref={section02Ref}  */}
                 <div ref={containerRef} id="header_Sticky" className='w-full bg-black h-[0.5px]'></div> {/* ref={containerRef}  */}
                 <div className='max-w-full pl-[1.38vw]  pr-[1.38vw] '>
-                    <div className='relative'>
-                        <div className='lg:sticky lg:top-[var(--header-sticky-height)] lg:grid'>
+                    <div className='relative h-[500vh]'>
+                        <div className='lg:sticky lg:top-0 lg:grid'>
 
                             <div ref={divcontainerRef} className='lg:h-[34.29166666666667vw] overflow-hidden relative'>
                                 <div className='absolute bottom-0 left-0 w-full bg-black h-[1px] z-10'></div>

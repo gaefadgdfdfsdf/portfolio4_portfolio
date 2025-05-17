@@ -1,4 +1,3 @@
-
 import { useAnimations, useGLTF } from '@react-three/drei'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import React, { Suspense, useEffect, useRef, useState } from 'react'
@@ -72,20 +71,26 @@ const CameraController = ({
 
 const Model = ({ position }) => {
     const { scene, animations } = useGLTF('/flower.glb');
-    console.log(scene); // 모델에 대한 정보
-    console.log(animations); // 애니메이션에 대한 정보
-
-    //  마우스오버에 반응하는 3d
- 
-  //  마우스오버에 반응하는 3d
     
+
+    useEffect(() => {
+        scene.traverse((child) => {
+            if (child.isMesh) {
+                child.material = new THREE.MeshStandardMaterial({
+                    color: '#ffffff', 
+                    metalness: 0.1,   
+                    roughness: 0.5,  
+                    envMapIntensity: 1.0
+                });
+            }
+        });
+    }, [scene]);
+
     return (
         <primitive
-            // ref={ref}
             object={scene}
             position={[0, 0, 0]}
-            scale={0.33}    
-           
+            scale={0.33}
         />
     );
 }
@@ -396,13 +401,16 @@ const Section01 = () => {
                         <Suspense fallback={<span>로딩중..</span>}>
                             <Canvas>
                                 <CameraController scrollYProgress={scrollYProgress} />
-                                {/* <ambientLight intensity={10} /> */}
+                                <ambientLight intensity={1} />
                                 <directionalLight
-                                    position={[0, 10, 0]} // 위치
-                                    intensity={40} // 강도
+                                    position={[5, 5, 5]}
+                                    intensity={2}
                                     castShadow
                                 />
-
+                                <directionalLight
+                                    position={[-5, 5, -5]}
+                                    intensity={1}
+                                />
                                 <Model position={position} />
                             </Canvas>
                         </Suspense>
@@ -442,7 +450,7 @@ const Section01 = () => {
                                 </div>
                                 <div className="oerflow-hidden">
                                     <div className="block relative text-start">
-                                        이름처럼 ‘믿을 윤(允)’, ‘연꽃 하(荷)’의 의미를 담아, 신뢰감 있고 성장하는 개발자가 되고자 합니다.
+                                        이름처럼 '믿을 윤(允)', '연꽃 하(荷)'의 의미를 담아, 신뢰감 있고 성장하는 개발자가 되고자 합니다.
                                     </div>
                                 </div>
                                 <div className="oerflow-hidden">

@@ -5,6 +5,9 @@ import { showHeaderState } from '../store';
 
 
 const Section02 = () => {
+  
+  const containerRef =useRef(null);  
+  const divcontainerRef = useRef(null);
 
   const sectionRef = useRef(null);
   const setShowHeader = useSetRecoilState(showHeaderState);
@@ -15,12 +18,20 @@ const Section02 = () => {
 
       const sectionTop = sectionRef.current.offsetTop;
       const scrollY = window.scrollY;
+      const divcontainerRect = divcontainerRef.current.getBoundingClientRect(); // 높이값
+      const containerRefTop = containerRef.current.offsetTop;
+       
 
       // section02의 시작점보다 아래로 스크롤하면 header 보이기
       if (scrollY >= sectionTop) {
         setShowHeader(true);
       } else {
         setShowHeader(false);
+      }
+
+      // 맞닿으면 div 고정
+      if(setShowHeader.offsetBottom = containerRefTop){
+        
       }
     };
 
@@ -51,12 +62,12 @@ const Section02 = () => {
             </div>
             <div className='hidden h-[7.916666666666666vw]'></div>
            <section className='pb-[10.416666666666668vw]'>  {/* ref={section02Ref}  */}
-                <div id="header_Sticky" className='w-full bg-black h-[0.5px]'></div> {/* ref={containerRef}  */}
+                <div ref={containerRef} id="header_Sticky" className='w-full bg-black h-[0.5px]'></div> {/* ref={containerRef}  */}
                 <div className='max-w-full pl-[1.38vw]  pr-[1.38vw] '>
                     <div className='relative'>
                         <div className='lg:sticky lg:top-[var(--header-sticky-height)] lg:grid'>
 
-                            <div className='lg:h-[34.29166666666667vw] overflow-hidden relative'>
+                            <div ref={divcontainerRef} className='lg:h-[34.29166666666667vw] overflow-hidden relative'>
                                 <div className='absolute bottom-0 left-0 w-full bg-black h-[1px] z-10'></div>
                                 <a href='https://gaefadgdfdfsdf.github.io/portfolio2_glaxywatch/' target='_blank' className='absolute inset-0 z-[1]' />
                                 <div className='py-5 lg:py-[1.38vw] flex flex-col-reverse lg:flex-row lg:h-full'>

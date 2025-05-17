@@ -29,10 +29,7 @@ const Section02 = () => {
         setShowHeader(false);
       }
 
-      // 맞닿으면 div 고정
-      if(setShowHeader.offsetBottom = containerRefTop){
-        
-      }
+      
     };
 
     // 초기 체크 + 이벤트 등록

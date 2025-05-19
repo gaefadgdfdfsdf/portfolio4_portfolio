@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useSetRecoilState } from 'recoil';
 import { showHeaderState } from '../store';
-
+import { motion, useScroll, useTransform } from "framer-motion";
 
 
 const Section02 = () => {
@@ -10,7 +10,18 @@ const Section02 = () => {
   const divcontainerRef = useRef(null);
 
   const sectionRef = useRef(null);
+  const relatvieRef = useRef(null);
   const setShowHeader = useSetRecoilState(showHeaderState);
+
+  const { scrollYProgress } = useScroll({
+    target: relatvieRef,
+    offset: ["start start", "end end"],
+  });
+
+  // 각각의 카드에 대한 height 변화 설정
+const height1 = useTransform(scrollYProgress, [0.0, 0.33], ["34.29166666666667vw", "9.29166666666667vw"]);
+const height2 = useTransform(scrollYProgress, [0.33, 0.66], ["34.29166666666667vw", "9.29166666666667vw"]);
+const height3 = useTransform(scrollYProgress, [0.66, 1.0], ["34.29166666666667vw", "9.29166666666667vw"]);
 
  useEffect(() => {
     const handleScroll = () => {
@@ -18,8 +29,7 @@ const Section02 = () => {
 
       const sectionTop = sectionRef.current.offsetTop;
       const scrollY = window.scrollY;
-      const divcontainerRect = divcontainerRef.current.getBoundingClientRect(); // 높이값
-      const containerRefTop = containerRef.current.offsetTop;
+   
        
 
       // section02의 시작점보다 아래로 스크롤하면 header 보이기
@@ -61,10 +71,12 @@ const Section02 = () => {
            <section className='pb-[10.416666666666668vw]'>  {/* ref={section02Ref}  */}
                 <div ref={containerRef} id="header_Sticky" className='w-full bg-black h-[0.5px]'></div> {/* ref={containerRef}  */}
                 <div className='max-w-full pl-[1.38vw]  pr-[1.38vw] '>
-                    <div className='relative h-[500vh]'>
+                    <div className='relative h-[500vh]' ref={relatvieRef}>
                         <div className='lg:sticky lg:top-[3.44444vw] lg:grid'>
 
-                            <div ref={divcontainerRef} className='lg:h-[34.29166666666667vw] overflow-hidden relative'>
+                            <motion.div
+                            style={{ height: height1 }}
+                            ref={divcontainerRef} className='lg:h-[34.29166666666667vw] overflow-hidden relative'>
                                 <div className='absolute bottom-0 left-0 w-full bg-black h-[1px] z-10'></div>
                                 <a href='https://gaefadgdfdfsdf.github.io/portfolio2_glaxywatch/' target='_blank' className='absolute inset-0 z-[1]' />
                                 <div className='py-5 lg:py-[1.38vw] flex flex-col-reverse lg:flex-row lg:h-full'>
@@ -87,8 +99,10 @@ const Section02 = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div ref={divcontainerRef} className='lg:h-[34.29166666666667vw] overflow-hidden relative'>
+                            </motion.div>
+                            <motion.div
+                            style={{ height: height2 }}
+                            ref={divcontainerRef} className='lg:h-[34.29166666666667vw] overflow-hidden relative'>
                                 <div className='absolute bottom-0 left-0 w-full bg-black h-[1px] z-10'></div>
                                 <a href='https://gaefadgdfdfsdf.github.io/portfolio_1_hyundai/' target='_blank' className='absolute inset-0 z-[1]' />
                                 <div className='py-5 lg:py-[1.38vw] flex flex-col-reverse lg:flex-row lg:h-full'>
@@ -111,8 +125,10 @@ const Section02 = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div ref={divcontainerRef} className='lg:h-[34.29166666666667vw] overflow-hidden relative'>
+                            </motion.div>
+                            <motion.div
+                            style={{ height: height3 }}
+                            ref={divcontainerRef} className='lg:h-[34.29166666666667vw] overflow-hidden relative'>
                                 <div className='absolute bottom-0 left-0 w-full bg-black h-[1px] z-10'></div>
                                 <a href='https://gaefadgdfdfsdf.github.io/portfolio2_glaxywatch/' target='_blank' className='absolute inset-0 z-[1]' />
                                 <div className='py-5 lg:py-[1.38vw] flex flex-col-reverse lg:flex-row lg:h-full'>
@@ -139,7 +155,7 @@ const Section02 = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </motion.div>
 
                             <div>
                                 <div className='lg:flex pt-[81px] lg:pt-[2.430555555555556vw] text-center lg:text-left'>

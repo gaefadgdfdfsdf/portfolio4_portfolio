@@ -67,7 +67,7 @@ const Section03 = () => {
                                     <div className='pt-[9px] lg:pt-0'>
                                         <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>DESIGN</div>
                                         <div className='mt-[13px] lg:mt-[1.9444444444444444vw]'>
-                                            <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + ' icon_1.svg'} alt='icon_1'/>
+                                            <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + 'icon_1.svg'} alt='icon_1'/>
                                         </div>
                                     </div>
                                     <div className='max-[600px]:text-[60px]  host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw] font-medium leading-none lg:mt-[1.7722222222222222vw]'>
@@ -89,7 +89,7 @@ const Section03 = () => {
                                     <div className='pt-[9px] lg:pt-0'>
                                         <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>DESIGN</div>
                                         <div className='mt-[13px] lg:mt-[1.9444444444444444vw]'>
-                                            <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + ' icon_2.svg'} alt='icon_2'/>
+                                            <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + 'icon_2.svg'} alt='icon_2'/>
                                         </div>
                                     </div>
                                     <div className='max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
@@ -112,7 +112,7 @@ const Section03 = () => {
                                     <div className='pt-[9px] lg:pt-0'>
                                         <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>Development</div>
                                         <div className='mt-[13px] lg:mt-[1.9444444444444444vw]'>
-                                            <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + ' icon_3.svg'} alt='icon_3'/>
+                                            <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + 'icon_3.svg'} alt='icon_3'/>
                                         </div>
                                     </div>
                                     <div className='max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
@@ -136,7 +136,7 @@ const Section03 = () => {
                                         <div className='pt-[9px] lg:pt-0'>
                                             <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>Development</div>
                                             <div className='mt-[13px] lg:mt-[1.9444444444444444vw]'>
-                                                <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + ' icon_4.svg'} alt='icon_4'/>
+                                                <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + 'icon_4.svg'} alt='icon_4'/>
                                             </div>
                                         </div>
                                         <div className='max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
@@ -160,7 +160,7 @@ const Section03 = () => {
                                     <div className='pt-[9px] lg:pt-0'>
                                         <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>Development</div>
                                         <div className='mt-[13px] lg:mt-[1.9444444444444444vw]'>
-                                            <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + ' icon_2.svg'} alt='icon_2'/>
+                                            <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + 'icon_2.svg'} alt='icon_2'/>
                                         </div>
                                     </div>
                                     <div className='max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
@@ -177,29 +177,7 @@ const Section03 = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* <div className='relative z-[1px] lg:pt-0 pt-[0.694vw]'>
-                            <div className='absolute top-0 left-0 h-full w-[0.5px] bg-white max-lg:hidden'></div>
-                            <div className='absolute top-0 left-0 w-full h-[0.5px] bg-white hidden max-lg:block'></div>   
-                            <div className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
-                                <div className='max-lg:max-w-[310px] max-lg:mx-auto lg:flex lg:justify-between'>
-                                    <h2 className='text-[76px] lg:text-[9.722222222222223vw] lg:mt-[-0.9722222222222222vw] font-medium leading-none tracking-tight lg:whitespace-nowrap'>Ready?</h2>
-                                </div>
-                                <div className='max-lg:max-w-[310px] max-lg:mx-auto mt-7 lg:mt-[3.4722222222222223vw] lg:max-w-[23.26388888888889vw] lg:ml-auto'>
-                                    <div className='lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
-                                    Code. Create. Conquer.<br/>
-                                    With us, no regrets.
-                                    </div>
-                                    <div className='mt-9 lg:mt-[2.2916666666666665vw]'>
-                                        <a href='' className="rounded-[5px] block w-[160px] leading-[50px] h-[50px] bg-white text-[#091423] min-w-[169px] lg:min-w-[11.73611111111111vw] lg:h-[3.4722222222222223vw] lg:text-[0.8333333333333334vw]">
-                                            <span className='relative overflow-visible flex flex-col items-center'>
-                                                <span className='opacity-0 flex absolute flex-nowrap items-center'>CONTACT</span>
-                                                <span className='flex absolute flex-nowrap items-center'>CONTACT</span>
-                                            </span>
-                                        </a>    
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
+                  
                     </div>
                 </div>
             </div>

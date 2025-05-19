@@ -1,24 +1,40 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+import { useSetRecoilState } from 'recoil';
+import { colorHeaderState } from '../store';
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const Section03 = () => {
+  const section03Ref = useRef(null);
+  const setColorHeader = useSetRecoilState(colorHeaderState);
 
-//     const setIsSection07Visible = useSetRecoilState(isSection07VisibleState);
-//   const isInView = useInView(containerRef, {
-//     once: false,
-//     amount: "some",
-//     margin: "0px 0px -100% 0px",
-//   });
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!section03Ref.current) return;
 
-//   useEffect(() => {
-//     setIsSection07Visible(isInView);
-//   }, [isInView, setIsSection07Visible]);
+      const header = document.getElementById("header_sticky");
+      if (!header) return;
+
+      const headerRect = header.getBoundingClientRect();
+      const sectionRect = section03Ref.current.getBoundingClientRect();
+
+      // 헤더 하단이 section03 영역에 닿아 있는지 체크
+      const isHeaderBottomInSection =
+        headerRect.bottom >= sectionRect.top && headerRect.bottom <= sectionRect.bottom;
+
+      setColorHeader(isHeaderBottomInSection);
+    };
+
+    handleScroll(); // 초기 상태 반영
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [setColorHeader]);
 
   return (
    <>
-    <div className='bg-[#091423]'>
+    <div ref={section03Ref} className='bg-[#091423]'>
         <div id="process_block">
             <div className='lg:flex flex-col justify-between lg:h-[calc(100vh-var(3.4722222222222223vw))] lg:sticky lg:top-[var(3.4722222222222223vw)]'>
-                <section className='pt-[25px] lg:pt-[2.1111111111111112vw]'>
+                <section  className='pt-[25px] lg:pt-[2.1111111111111112vw]'>
                     <div className='w-max-full pl-[1.388vw] pr-[1.388vw]'>
                         <div className='relative'>
                             <div className='host-grotesk-superbold inline-flex absolute left-0 opacity-0'>SKILLSET</div>
@@ -42,7 +58,7 @@ const Section03 = () => {
                         </div>
                     </div>
                 </section>
-                <div className='lg:overflow-hidden mt-[70px] lg:mt-[11.861111111111112vw] relative pt-[0.694vw)]'>
+                <div className='lg:overflow-hidden mt-[70px] lg:mt-[11.861111111111112vw] relative pt-[0.694vw]'>
                     <div className='h-[0.5px] bg-white top-0 left-0 w-full'></div>
                     <div className='lg:static lg:flex lg:flex-nowrap text-white '>
                         <div className='relative z-[1px]'>

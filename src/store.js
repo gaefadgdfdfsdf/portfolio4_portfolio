@@ -16,3 +16,9 @@ export const showHeaderState = atom({
   key: 'showHeaderState',
   default: false,
 });
+
+
+export const colorHeaderState = atom({
+  key: 'colorHeaderState',
+  default: false,
+});

@@ -40,19 +40,19 @@ const Section02 = () => {
     // 1024 이상일 때만 transform 적용, 아니면 고정값 사용
     const height1 = useTransform(
         scrollYProgress,
-        [0, 0.1],
+        [0, 0.2],
         isWideScreen ? ['34.29166666666667vw', '9.29166666666667vw'] : ['34.29166666666667vw', '34.29166666666667vw']
     );
 
     const height2 = useTransform(
         scrollYProgress,
-        [0.1, 0.2],
+        [0.2, 0.4],
         isWideScreen ? ['34.29166666666667vw', '9.29166666666667vw'] : ['34.29166666666667vw', '34.29166666666667vw']
     );
 
     const height3 = useTransform(
         scrollYProgress,
-        [0.2, 0.3],
+        [0.4, 0.6],
         isWideScreen ? ['34.29166666666667vw', '9.29166666666667vw'] : ['34.29166666666667vw', '34.29166666666667vw']
     );
 
@@ -106,10 +106,10 @@ const Section02 = () => {
 
                             <motion.div
                                 style={{ height: height1 }}
-                                ref={divcontainerRef} className='lg:h-[34.29166666666667vw] overflow-hidden relative'>
+                                ref={divcontainerRef} className='max-[768px]:min-h-[700px] max-[1023px]:min-h-[800px] lg:h-[34.29166666666667vw] overflow-hidden relative'>
                                 <div className='absolute bottom-0 left-0 w-full bg-black h-[1px] z-10'></div>
                                 <a href='https://gaefadgdfdfsdf.github.io/portfolio2_glaxywatch/' target='_blank' className='absolute inset-0 z-[1]' rel="noreferrer" />
-                                <div className='max-lg:h-auto py-5 lg:py-[1.38vw] flex flex-col-reverse lg:flex-row lg:h-full'>
+                                <div className='py-5 lg:py-[1.38vw] flex flex-col-reverse lg:flex-row lg:h-full'>
                                     <div className='lg:w-[32.84722222222222vw] lg:pr-[2.7777777777777777vw] mt-[18px] lg:mt-0'>
                                         <h2 className='host-grotesk-superbold text-[32px] lg:text-[4.166666666666666vw] leading-[100%] tracking-tighter font-medium'>glaxywatch</h2>
                                         <div className='noto-sans-kr-bold text-[14px] lg:text-[0.9722222222222222vw] mt-2.5 lg:mt-[1vw] font-medium'>html & css & JavaScript</div>
@@ -133,7 +133,7 @@ const Section02 = () => {
 
                             <motion.div
                                 style={{ height: height2 }}
-                                ref={divcontainerRef} className='lg:h-[34.29166666666667vw] overflow-hidden relative'>
+                                ref={divcontainerRef} className='max-[768px]:min-h-[700px] max-[1023px]:min-h-[800px] lg:h-[34.29166666666667vw] overflow-hidden relative'>
                                 <div className='absolute bottom-0 left-0 w-full bg-black h-[1px] z-10'></div>
                                 <a href='https://gaefadgdfdfsdf.github.io/portfolio_1_hyundai/' target='_blank' className='absolute inset-0 z-[1]' rel="noreferrer" />
                                 <div className='py-5 lg:py-[1.38vw] flex flex-col-reverse lg:flex-row lg:h-full'>
@@ -157,7 +157,7 @@ const Section02 = () => {
 
                             <motion.div
                                 style={{ height: height3 }}
-                                ref={divcontainerRef} className='lg:h-[34.29166666666667vw] overflow-hidden relative'>
+                                ref={divcontainerRef} className='max-[768px]:min-h-[700px] max-[1023px]:min-h-[800px] lg:h-[34.29166666666667vw] overflow-hidden relative'>
                                 <div className='absolute bottom-0 left-0 w-full bg-black h-[1px] z-10'></div>
                                 <a href='https://gaefadgdfdfsdf.github.io/portfolio2_glaxywatch/' target='_blank' className='absolute inset-0 z-[1]' />
                                 <div className='py-5 lg:py-[1.38vw] flex flex-col-reverse lg:flex-row lg:h-full'>

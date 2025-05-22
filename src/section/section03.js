@@ -37,22 +37,23 @@ const Section03 = () => {
                 <section  className='pt-[25px] lg:pt-[2.1111111111111112vw]'>
                     <div className='w-max-full pl-[1.388vw] pr-[1.388vw]'>
                         <div className='relative'>
-                            <div className='host-grotesk-superbold inline-flex absolute left-0 opacity-0'>SKILLSET</div>
-                            <div className='font-medium text-white text-[.8333333333333334vw] -mb-4 lg:mb-[-1.5277777777777777vw] pointer-events-none'>SKILLSET</div>
+                            <div className='hidden max-lg:hidden host-grotesk-superbold inline-flex absolute left-0 opacity-0'>SKILLSET</div>
+                            <div className='relative lg:top-2 font-medium text-white max-lg:text-[1.5vw] lg:text-[.8933333333333334vw] -mb-4 max-[768px]:text-[2.3277777777777777vw] pointer-events-none'>SKILLSET</div>
                             <div>
                                 <h2 className='noto-sans-kr-medium text-white leading-[139%] tracking-[-0.01em] lg:text-[2.188888888888889vw]'>
                                     <div className='overflow-hidden'>
                                         <div className='relative block text-start'>
                                             <span className='ml-[90.953px]'>
                                             포토샵과 일러스트를 활용한 세련된 디자인 구현과, HTML, CSS, JavaScript, React를 
+                                            기반으로 한 효율적인 웹 개발 능력을 결합하여, 사용자 중심의 직관적이고 혁신적인 웹 경험을 제공합니다.
                                             </span>
                                         </div>
                                     </div>
-                                    <div className='overflow-hidden'>
+                                    {/* <div className='overflow-hidden'>
                                         <div className='relative block text-start'>
                                         기반으로 한 효율적인 웹 개발 능력을 결합하여, 사용자 중심의 직관적이고 혁신적인 웹 경험을 제공합니다.
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </h2>
                             </div>
                         </div>
@@ -60,9 +61,9 @@ const Section03 = () => {
                 </section>
                 <div className='lg:overflow-hidden mt-[70px] lg:mt-[11.861111111111112vw] relative pt-[0.694vw]'>
                     <div className='h-[0.5px] bg-white top-0 left-0 w-full'></div>
-                    <div className='lg:static lg:flex lg:flex-nowrap text-white '>
+                    <div id="section03_static" className='lg:static lg:flex lg:flex-nowrap text-white '>
                         <div className='relative z-[1px]'>
-                            <div className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
+                            <div id="reduce" className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
                                 <div className='flex justify-between'>
                                     <div className='pt-[9px] lg:pt-0'>
                                         <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>DESIGN</div>
@@ -84,7 +85,7 @@ const Section03 = () => {
                         <div className='relative z-[1px] lg:pt-0 pt-[0.694vw]'>
                             <div className='absolute top-0 left-0 h-full w-[0.5px] bg-white max-lg:hidden'></div>
                             <div className='absolute top-0 left-0 w-full h-[0.5px] bg-white hidden max-lg:block'></div>
-                            <div className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
+                            <div id="reduce" className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
                             <div className='flex justify-between'>
                                     <div className='pt-[9px] lg:pt-0'>
                                         <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>DESIGN</div>
@@ -107,7 +108,7 @@ const Section03 = () => {
                         <div className='relative z-[1px] lg:pt-0 pt-[0.694vw]'>
                             <div className='absolute top-0 left-0 h-full w-[0.5px] bg-white max-lg:hidden'></div>
                             <div className='absolute top-0 left-0 w-full h-[0.5px] bg-white hidden max-lg:block'></div>
-                            <div className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
+                            <div id="reduce" className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
                             <div className='flex justify-between'>
                                     <div className='pt-[9px] lg:pt-0'>
                                         <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>Development</div>
@@ -131,7 +132,7 @@ const Section03 = () => {
                         <div className='relative z-[1px] lg:pt-0 pt-[0.694vw]'>
                             <div className='absolute top-0 left-0 h-full w-[0.5px] bg-white max-lg:hidden'></div>
                             <div className='absolute top-0 left-0 w-full h-[0.5px] bg-white hidden max-lg:block'></div>   
-                            <div className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
+                            <div id="reduce" className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
                                 <div className='flex justify-between'>
                                         <div className='pt-[9px] lg:pt-0'>
                                             <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>Development</div>
@@ -155,7 +156,7 @@ const Section03 = () => {
                         <div className='relative z-[1px] lg:pt-0 pt-[0.694vw]'>
                             <div className='absolute top-0 left-0 h-full w-[0.5px] bg-white max-lg:hidden'></div>
                             <div className='absolute top-0 left-0 w-full h-[0.5px] bg-white hidden max-lg:block'></div>
-                            <div className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
+                            <div id="reduce" className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
                             <div className='flex justify-between'>
                                     <div className='pt-[9px] lg:pt-0'>
                                         <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>Development</div>

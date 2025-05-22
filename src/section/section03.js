@@ -33,7 +33,7 @@ const Section03 = () => {
    <>
     <div ref={section03Ref} className='bg-[#091423]'>
         <div id="process_block">
-            <div className='lg:flex flex-col justify-between lg:h-[calc(100vh-var(3.4722222222222223vw))] lg:sticky lg:top-[var(3.4722222222222223vw)]'>
+            <div className='lg:flex flex-col justify-between lg:h-[calc(100vh-var(--header-height))] lg:sticky lg:top-[var(3.4722222222222223vw)]'>
                 <section  className='pt-[25px] lg:pt-[2.1111111111111112vw]'>
                     <div className='w-max-full pl-[1.388vw] pr-[1.388vw]'>
                         <div className='relative'>
@@ -74,7 +74,7 @@ const Section03 = () => {
                                     Photoshop
                                     </div>
                                 </div>
-                                <div className='flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
+                                <div className='flex relative bottom-6 items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
                                     <div className='noto-sans-kr-medium lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
                                     포토샵의 기초 기능을 활용하여 창의적이고<br/> 효율적인 디자인 작업을 구현합니다.
                                     </div>
@@ -96,7 +96,7 @@ const Section03 = () => {
                                     Illustrator
                                     </div>
                                 </div>
-                                <div className='flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
+                                <div className='relative bottom-6 flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
                                     <div className='noto-sans-kr-medium lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
                                     일러스트 기초 기능을 활용하여<br/>
                                     간단한 SVG 아이콘 제작이 가능합니다.
@@ -119,7 +119,7 @@ const Section03 = () => {
                                         HTML+CSS
                                     </div>
                                 </div>
-                                <div className='flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
+                                <div className='relative bottom-6 flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
                                     <div className='noto-sans-kr-medium lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
                                     HTML과 CSS의 기초 지식을 바탕으로<br/>
                                     홈페이지의 구조를 제작하고, Animation CSS를 활용한<br/>
@@ -143,7 +143,7 @@ const Section03 = () => {
                                         Javascript
                                         </div>
                                     </div>
-                                    <div className='flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
+                                    <div className='relative bottom-6 flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
                                         <div className='noto-sans-kr-medium lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
                                         스크롤, 휠, 클릭 등 다양한 이벤트 리스너를 활용해<br/>
                                         요소 애니메이션, 화면 전환 등<br/>
@@ -167,7 +167,7 @@ const Section03 = () => {
                                     React
                                     </div>
                                 </div>
-                                <div className='flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
+                                <div className='relative bottom-6 flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
                                     <div className='noto-sans-kr-medium lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
                                     React를 기반으로 한 화면 구성과<br/>
                                     Framer Motion, Recoil을 활용한 인터랙션 구현이 가능하며,<br/>

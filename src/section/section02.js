@@ -101,7 +101,7 @@ const Section02 = () => {
             <section className='pb-[10.416666666666668vw]'>
                 <div ref={containerRef} id="header_Sticky" className='w-full bg-black h-[0.5px]'></div>
                 <div className='max-w-full pl-[1.38vw]  pr-[1.38vw] '>
-                    <div className='relative lg:h-[500vh]' ref={relatvieRef}>
+                    <div className='relative lg:h-[400vh]' ref={relatvieRef}>
                         <div className='lg:sticky lg:top-[3.44444vw] lg:grid'>
 
                             <motion.div
@@ -165,14 +165,12 @@ const Section02 = () => {
                                         <h2 className='host-grotesk-superbold text-[32px] lg:text-[4.166666666666666vw] leading-[100%] tracking-tighter font-medium'>herryporter</h2>
                                         <div className='noto-sans-kr-bold text-[14px] lg:text-[0.9722222222222222vw] mt-2.5 lg:mt-[1vw] font-medium'>react & JavaScript & tailwandcss</div>
                                         <div className='noto-sans-kr-medium text-[16px] description lg_br_enable mt-5 lg:mt-[2vw] lg:tracking-tight leading-[134%]'>
-                                            이 프로젝트는 Harry Potter 시리즈를 테마로 한 영화관 스타일의 인터랙티브 웹사이트입니다.
-                                            다양한 라이브러리를 조합하여 기획 + 디자인 + 구현까지 모두 제작하였습니다.
-                                            모든 섹션을 컴포넌트 단위로 쪼개어 관리하고, 반응형 대응을 고려한 레이아웃 설계로 확장성과 유지보수 용이성을 확보하였습니다.
-                                            Framer Motion + useScroll + useTransform 각 섹션에 스크롤 기반 애니메이션 효과와
-                                            ScrollTrigger로 스크롤의 위치를 감지해 타이밍별로 애니메이션 트리거를 적용했습니다.
-                                            Intersection Observer + useScroll, useTransform 으로 가로 스크롤로 구현하여 캐릭터와 TEXT를 단순 페이지 전환이 아닌 스토리텔링 중심 인터랙션으로 구현하였습니다.
-                                            Swiper + Navigation 모듈로 하단에 Harry Potter 영화 시리즈별 미리보기 슬라이드 구현하였습니다.
-                                            페이지 전환 없이 스크롤만으로 모든 콘텐츠 탐색이 가능, 부드러운 흐름 제공합니다.
+                                           이 프로젝트는 Harry Potter 시리즈를 테마로 한 인터랙티브 웹사이트입니다.
+                                            기획부터 디자인, 개발까지 전 과정을 직접 진행했습니다.
+                                            모든 섹션을 컴포넌트화하고, 반응형 레이아웃으로 확장성과 유지보수를 고려했습니다.
+                                            Framer Motion과 ScrollTrigger로 스크롤 기반 애니메이션을 구현했습니다.
+                                            Intersection Observer와 useTransform으로 가로 스크롤 기반 스토리텔링을 구성했습니다.
+                                            Swiper를 활용해 영화 시리즈별 슬라이드를 자연스럽게 연결했습니다.
                                         </div>
                                     </div>
                                     <div className='lg:w-[calc(100%-32.84722222222222vw)]'>

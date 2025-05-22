@@ -1,84 +1,55 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useSetRecoilState } from 'recoil';
 import { showHeaderState } from '../store';
 import { motion, useScroll, useTransform } from "framer-motion";
 
+
 const Section02 = () => {
-    const containerRef = useRef(null);
-    const divcontainerRef = useRef(null);
+  
+  const containerRef =useRef(null);  
+  const divcontainerRef = useRef(null);
 
-    const sectionRef = useRef(null);
-    const relatvieRef = useRef(null);
-    const setShowHeader = useSetRecoilState(showHeaderState);
+  const sectionRef = useRef(null);
+  const relatvieRef = useRef(null);
+  const setShowHeader = useSetRecoilState(showHeaderState);
 
-    // 화면 폭 상태
-    const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= 1024);
+  const { scrollYProgress } = useScroll({
+    target: relatvieRef,
+    offset: ["start start", "end end"],
+  });
 
-    // 화면 크기 변화 감지
-    useEffect(() => {
-        const handleResize = () => {
-            setIsWideScreen(window.innerWidth >= 1024);
-        };
+  // 각각의 카드에 대한 height 변화 설정
+const height1 = useTransform(scrollYProgress, [0.0, 0.33], ["34.29166666666667vw", "9.29166666666667vw"]);
+const height2 = useTransform(scrollYProgress, [0.33, 0.66], ["34.29166666666667vw", "9.29166666666667vw"]);
+const height3 = useTransform(scrollYProgress, [0.66, 1.0], ["34.29166666666667vw", "9.29166666666667vw"]);
 
-        window.addEventListener("resize", handleResize);
+ useEffect(() => {
+    const handleScroll = () => {
+      if (!sectionRef.current) return;
 
-        // 초기 체크
-        handleResize();
+      const sectionTop = sectionRef.current.offsetTop;
+      const scrollY = window.scrollY;
+   
+       
 
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
+      // section02의 시작점보다 아래로 스크롤하면 header 보이기
+      if (scrollY >= sectionTop) {
+        setShowHeader(true);
+      } else {
+        setShowHeader(false);
+      }
 
-    // 스크롤 progress 및 transform 설정
-    const { scrollYProgress } = useScroll({
-        target: relatvieRef,
-        offset: ["start start", "end end"],
-        // 1024 미만일 때는 의미 없으니 null 처리 가능 (optional)
-    });
+      
+    };
 
-    // 1024 이상일 때만 transform 적용, 아니면 고정값 사용
-    const height1 = useTransform(
-        scrollYProgress,
-        [0, 0.1],
-        isWideScreen ? ['34.29166666666667vw', '9.29166666666667vw'] : ['34.29166666666667vw', '34.29166666666667vw']
-    );
+    // 초기 체크 + 이벤트 등록
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
 
-    const height2 = useTransform(
-        scrollYProgress,
-        [0.1, 0.2],
-        isWideScreen ? ['34.29166666666667vw', '9.29166666666667vw'] : ['34.29166666666667vw', '34.29166666666667vw']
-    );
-
-    const height3 = useTransform(
-        scrollYProgress,
-        [0.2, 0.3],
-        isWideScreen ? ['34.29166666666667vw', '9.29166666666667vw'] : ['34.29166666666667vw', '34.29166666666667vw']
-    );
-
-    // header 보이기 제어
-    useEffect(() => {
-        const handleScroll = () => {
-            if (!sectionRef.current) return;
-
-            const sectionTop = sectionRef.current.offsetTop;
-            const scrollY = window.scrollY;
-
-            // section02의 시작점보다 아래로 스크롤하면 header 보이기
-            if (scrollY >= sectionTop) {
-                setShowHeader(true);
-            } else {
-                setShowHeader(false);
-            }
-        };
-
-        handleScroll();
-        window.addEventListener("scroll", handleScroll);
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, [setShowHeader]);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [setShowHeader]);
 
     return (
         <>
@@ -86,10 +57,9 @@ const Section02 = () => {
             <div ref={sectionRef} id="section02" className="mb-5 lg:mb-[3.6111111111111107vw]">
                 <div className="max-w-full pl-[1.38vw] pr-[1.38vw]">
                     <div className="pr-[60px] lg:pr-[11.527777777777779vw] relative">
-                        <div className="absolute right-12 lg:right-[18.3194444444444444vw] -top-0.5 lg:top-[-0.06944444444444445vw] text-[18px] lg:text-[2.2222222222222223vw] leading-[100%]">
+                        <div class="absolute right-12 lg:right-[18.3194444444444444vw] -top-0.5 lg:top-[-0.06944444444444445vw] text-[18px] lg:text-[2.2222222222222223vw] leading-[100%]">
                             <span className="bodoni-moda-bold inline-flex mx-[3px] lg:mx-[0.4166666666666667vw]">
-                                ｛ 03 ｝
-                            </span>
+                                ｛ 03 ｝				</span>
                         </div>
                         <div>
                             <img className='w-full h-auto max-w-full' src={process.env.PUBLIC_URL + 'portfolio.svg'} alt='portfolio' />
@@ -98,18 +68,18 @@ const Section02 = () => {
                 </div>
             </div>
             <div className='hidden h-[7.916666666666666vw]'></div>
-            <section className='pb-[10.416666666666668vw]'>
-                <div ref={containerRef} id="header_Sticky" className='w-full bg-black h-[0.5px]'></div>
+           <section className='pb-[10.416666666666668vw]'>  {/* ref={section02Ref}  */}
+                <div ref={containerRef} id="header_Sticky" className='w-full bg-black h-[0.5px]'></div> {/* ref={containerRef}  */}
                 <div className='max-w-full pl-[1.38vw]  pr-[1.38vw] '>
                     <div className='relative lg:h-[500vh]' ref={relatvieRef}>
                         <div className='lg:sticky lg:top-[3.44444vw] lg:grid'>
 
                             <motion.div
-                                style={{ height: height1 }}
-                                ref={divcontainerRef} className='lg:h-[34.29166666666667vw] overflow-hidden relative'>
+                            style={{ height: height1 }}
+                            ref={divcontainerRef} className='lg:h-[34.29166666666667vw] overflow-hidden relative'>
                                 <div className='absolute bottom-0 left-0 w-full bg-black h-[1px] z-10'></div>
-                                <a href='https://gaefadgdfdfsdf.github.io/portfolio2_glaxywatch/' target='_blank' className='absolute inset-0 z-[1]' rel="noreferrer" />
-                                <div className='max-lg:h-auto py-5 lg:py-[1.38vw] flex flex-col-reverse lg:flex-row lg:h-full'>
+                                <a href='https://gaefadgdfdfsdf.github.io/portfolio2_glaxywatch/' target='_blank' className='absolute inset-0 z-[1]' />
+                                <div className='py-5 lg:py-[1.38vw] flex flex-col-reverse lg:flex-row lg:h-full'>
                                     <div className='lg:w-[32.84722222222222vw] lg:pr-[2.7777777777777777vw] mt-[18px] lg:mt-0'>
                                         <h2 className='host-grotesk-superbold text-[32px] lg:text-[4.166666666666666vw] leading-[100%] tracking-tighter font-medium'>glaxywatch</h2>
                                         <div className='noto-sans-kr-bold text-[14px] lg:text-[0.9722222222222222vw] mt-2.5 lg:mt-[1vw] font-medium'>html & css & JavaScript</div>
@@ -130,12 +100,11 @@ const Section02 = () => {
                                     </div>
                                 </div>
                             </motion.div>
-
                             <motion.div
-                                style={{ height: height2 }}
-                                ref={divcontainerRef} className='lg:h-[34.29166666666667vw] overflow-hidden relative'>
+                            style={{ height: height2 }}
+                            ref={divcontainerRef} className='lg:h-[34.29166666666667vw] overflow-hidden relative'>
                                 <div className='absolute bottom-0 left-0 w-full bg-black h-[1px] z-10'></div>
-                                <a href='https://gaefadgdfdfsdf.github.io/portfolio_1_hyundai/' target='_blank' className='absolute inset-0 z-[1]' rel="noreferrer" />
+                                <a href='https://gaefadgdfdfsdf.github.io/portfolio_1_hyundai/' target='_blank' className='absolute inset-0 z-[1]' />
                                 <div className='py-5 lg:py-[1.38vw] flex flex-col-reverse lg:flex-row lg:h-full'>
                                     <div className='lg:w-[32.84722222222222vw] lg:pr-[2.7777777777777777vw] mt-[18px] lg:mt-0'>
                                         <h2 className='host-grotesk-superbold text-[32px] lg:text-[4.166666666666666vw] leading-[100%] tracking-tighter font-medium'>hyundai</h2>
@@ -149,15 +118,17 @@ const Section02 = () => {
                                     </div>
                                     <div className='lg:w-[calc(100%-32.84722222222222vw)]'>
                                         <div className='wrap-img-distortion overflow-hidden rounded-[.3472222222222222vw] h-[42vw] lg:h-full relative'>
-                                            <img className='object-cover w-full relative h-full lg:top-1/2 lg:-translate-y-1/2' src={process.env.PUBLIC_URL + 'hyundai.jpg'} alt='hyundai' />
+                                            <img className='object-cover w-full relative h-full lg:top-1/2 lg:-translate-y-1/2' src={process.env.PUBLIC_URL + 'hyundai.jpg'} alt='hyunda' />
+                                            <div className="absolute top-[50%] w-full left-0 z-1 translate-y-[-50%]">
+                                                <canvas className='w-full h-full object-cover' id="hover-effect-canvas-1745038706574" width="1236" height="618"></canvas>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </motion.div>
-
                             <motion.div
-                                style={{ height: height3 }}
-                                ref={divcontainerRef} className='lg:h-[34.29166666666667vw] overflow-hidden relative'>
+                            style={{ height: height3 }}
+                            ref={divcontainerRef} className='lg:h-[34.29166666666667vw] overflow-hidden relative'>
                                 <div className='absolute bottom-0 left-0 w-full bg-black h-[1px] z-10'></div>
                                 <a href='https://gaefadgdfdfsdf.github.io/portfolio2_glaxywatch/' target='_blank' className='absolute inset-0 z-[1]' />
                                 <div className='py-5 lg:py-[1.38vw] flex flex-col-reverse lg:flex-row lg:h-full'>
@@ -217,7 +188,7 @@ const Section02 = () => {
                 </div>
             </section>
         </>
-    );
-};
+    )
+}
 
-export default Section02;
+export default Section02

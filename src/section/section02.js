@@ -58,7 +58,7 @@ const height3 = useTransform(scrollYProgress, [0.66, 1.0], ["34.29166666666667vw
                 <div className="max-w-full pl-[1.38vw] pr-[1.38vw]">
                     <div className="pr-[60px] lg:pr-[11.527777777777779vw] relative">
                         <div class="absolute right-12 lg:right-[18.3194444444444444vw] -top-0.5 lg:top-[-0.06944444444444445vw] text-[18px] lg:text-[2.2222222222222223vw] leading-[100%]">
-                            <span class="bodoni-moda-bold inline-flex mx-[3px] lg:mx-[0.4166666666666667vw]">
+                            <span className="bodoni-moda-bold inline-flex mx-[3px] lg:mx-[0.4166666666666667vw]">
                                 ｛ 03 ｝				</span>
                         </div>
                         <div>
@@ -71,7 +71,7 @@ const height3 = useTransform(scrollYProgress, [0.66, 1.0], ["34.29166666666667vw
            <section className='pb-[10.416666666666668vw]'>  {/* ref={section02Ref}  */}
                 <div ref={containerRef} id="header_Sticky" className='w-full bg-black h-[0.5px]'></div> {/* ref={containerRef}  */}
                 <div className='max-w-full pl-[1.38vw]  pr-[1.38vw] '>
-                    <div className='relative h-[500vh]' ref={relatvieRef}>
+                    <div className='relative lg:h-[500vh]' ref={relatvieRef}>
                         <div className='lg:sticky lg:top-[3.44444vw] lg:grid'>
 
                             <motion.div
@@ -93,7 +93,7 @@ const height3 = useTransform(scrollYProgress, [0.66, 1.0], ["34.29166666666667vw
                                     <div className='lg:w-[calc(100%-32.84722222222222vw)]'>
                                         <div className='wrap-img-distortion overflow-hidden rounded-[.3472222222222222vw] h-[42vw] lg:h-full relative'>
                                             <img className='object-cover w-full relative h-full lg:top-1/2 lg:-translate-y-1/2' src={process.env.PUBLIC_URL + 'galaxy.jpg'} alt='galaxy' />
-                                            <div class="absolute top-[50%] w-full left-0 z-1 translate-y-[-50%]">
+                                            <div className="absolute top-[50%] w-full left-0 z-1 translate-y-[-50%]">
                                                 <canvas className='w-full h-full object-cover' id="hover-effect-canvas-1745038706574" width="1236" height="618"></canvas>
                                             </div>
                                         </div>
@@ -119,7 +119,7 @@ const height3 = useTransform(scrollYProgress, [0.66, 1.0], ["34.29166666666667vw
                                     <div className='lg:w-[calc(100%-32.84722222222222vw)]'>
                                         <div className='wrap-img-distortion overflow-hidden rounded-[.3472222222222222vw] h-[42vw] lg:h-full relative'>
                                             <img className='object-cover w-full relative h-full lg:top-1/2 lg:-translate-y-1/2' src={process.env.PUBLIC_URL + 'hyundai.jpg'} alt='hyunda' />
-                                            <div class="absolute top-[50%] w-full left-0 z-1 translate-y-[-50%]">
+                                            <div className="absolute top-[50%] w-full left-0 z-1 translate-y-[-50%]">
                                                 <canvas className='w-full h-full object-cover' id="hover-effect-canvas-1745038706574" width="1236" height="618"></canvas>
                                             </div>
                                         </div>
@@ -149,7 +149,7 @@ const height3 = useTransform(scrollYProgress, [0.66, 1.0], ["34.29166666666667vw
                                     <div className='lg:w-[calc(100%-32.84722222222222vw)]'>
                                         <div className='wrap-img-distortion overflow-hidden rounded-[.3472222222222222vw] h-[42vw] lg:h-full relative'>
                                             <img className='object-cover w-full relative h-full lg:top-1/2 lg:-translate-y-1/2' src={process.env.PUBLIC_URL + 'herryporter-1.jpg'} alt='herryporter' />
-                                            <div class="absolute top-[50%] w-full left-0 z-1 translate-y-[-50%]">
+                                            <div className="absolute top-[50%] w-full left-0 z-1 translate-y-[-50%]">
                                                 <canvas className='w-full h-full object-cover' id="hover-effect-canvas-1745038706574" width="1236" height="618"></canvas>
                                             </div>
                                         </div>
@@ -174,7 +174,7 @@ const height3 = useTransform(scrollYProgress, [0.66, 1.0], ["34.29166666666667vw
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='class="lg:w-[calc(100%-32.84722222222222vw)] mt-[37px] lg:mt-0 max-lg:mx-auto'>
+                                    <div className='lg:w-[calc(100%-32.84722222222222vw)] mt-[37px] lg:mt-0 max-lg:mx-auto'>
                                         <div className='tracking-[-2px] noto-sans-kr-medium text-[2.18vw] leading-[133%] max-lg:max-w-[330px] max-lg:mx-auto'>
                                             More in the vault. <br />
                                             Take a look.

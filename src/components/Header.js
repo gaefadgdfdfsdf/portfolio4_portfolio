@@ -44,7 +44,10 @@ const Header = () => {
                             className='h-full bg-black absolute bottom-0 left-0 w-[0.5px]'></span>
                         </li>
                         <li>
-                            <a href="https://atolldigital.com/about/" className="overflow-hidden leading-none h-[3.472vw]">
+                            <a onClick={() => {
+                                        document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+                                    }}
+                                     className="overflow-hidden leading-none h-[3.472vw] cursor-pointer">
                                 <span className="group relative flex flex-col overflow-hidden">
                                     <span className="pl-[1.041555vw] translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center" >
                                         <img style={{background: colorHeader ? '#eee' : '#fff'}}
@@ -60,7 +63,10 @@ const Header = () => {
                             </a>
                         </li>
                         <li className="flex items-center">
-                            <a href="https://atolldigital.com/work/" className="overflow-hidden leading-none flex h-[3.472vw] items-center">
+                            <a onClick={() => {
+                                        document.getElementById('section02').scrollIntoView({ behavior: 'smooth' });
+                                    }}
+                                     className="overflow-hidden leading-none flex h-[3.472vw] items-center cursor-pointer">
                                 <span className="group relative flex flex-col overflow-hidden ">
                                     <span className="pl-[1.041555vw] translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center" >
                                         <img style={{background: colorHeader ? '#eee' : '#fff'}}

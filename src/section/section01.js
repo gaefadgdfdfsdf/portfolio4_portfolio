@@ -331,7 +331,7 @@ const Section01 = () => {
                                             </span>
                                         </span>
                                     </a>
-                                    <span className="relative text-[12px] -top-[5px] left-[3px]">(10)</span>
+                                    <span className="relative text-[12px] -top-[5px] left-[3px]">(3)</span>
                                 </li>
                                 <li>
                                     <a href="#" className='pt-[1.5277777777777777vw] pb-[1.5277777777777777vw] px-0relative flex items-center overflow-hidden'>

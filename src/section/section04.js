@@ -6,24 +6,31 @@ const Section04 = () => {
 
 
 
-  // 화면 폭 상태
-  const [isWideScreen, setIsWideScreen] = useState(false);
+   // 화면 폭 상태 (3단계 구분)
+   const [screenSize, setScreenSize] = useState("wide"); // wide / medium / small
 
-  // 화면 크기 변화 감지
-  useEffect(() => {
-    const handleResize = () => {
-      setIsWideScreen(window.innerWidth >= 1024);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    // 초기 체크
-    handleResize();
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+   // 화면 크기 변화 감지
+   useEffect(() => {
+     const handleResize = () => {
+       const width = window.innerWidth;
+       if (width >= 1024) {
+         setScreenSize("wide");
+       } else if (width >= 769) {
+         setScreenSize("medium");
+       } else {
+         setScreenSize("small");
+       }
+     };
+ 
+     window.addEventListener("resize", handleResize);
+ 
+     // 초기 체크
+     handleResize();
+ 
+     return () => {
+       window.removeEventListener("resize", handleResize);
+     };
+   }, []);
 
 
 
@@ -35,11 +42,16 @@ const Section04 = () => {
   // const x = useTransform(scrollYProgress, [0, 1], ["0%", "-225vw"]);
 
  // 스크롤에 따른 가로 이동 값
- const x = useTransform(
-  scrollYProgress,
-  [0, 1],
-  isWideScreen ? ["0%", "-225vw"] : ["0%", "-355vw"]
-);
+  // 스크롤에 따른 가로 이동 값 (반응형)
+  const x = useTransform(
+    scrollYProgress,
+    [0, 1],
+    screenSize === "wide"
+      ? ["0%", "-225vw"]
+      : screenSize === "medium"
+      ? ["0%", "-350vw"]
+      : ["0%", "-655vw"]
+  );
 
   return (
     <div ref={containerRef} className="h-[600vh] mt-10">

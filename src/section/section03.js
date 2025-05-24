@@ -1,14 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useSetRecoilState } from 'recoil';
 import { colorHeaderState } from '../store';
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useMotionValue, useScroll, useTransform } from "framer-motion";
 
 const Section03 = () => {
   const section03Ref = useRef(null);
   const setColorHeader = useSetRecoilState(colorHeaderState);
 
 // text opacity
-
 
 
 
@@ -99,7 +98,7 @@ const Section03 = () => {
    <>
     <div ref={section03Ref} className='bg-[#091423] lg:h-[500vh]'>
         <div id="process_block" className='sticky top-[3.4722222222222223vw] '>
-            <div className='lg:flex flex-col justify-between lg:h-[calc(100vh+1px-3.472vw)] lg:sticky lg:top-[var(3.4722222222222223vw)]'>
+            <div  className='lg:flex flex-col justify-between lg:h-[calc(100vh+1px-3.472vw)] lg:sticky lg:top-[var(3.4722222222222223vw)]'>
                 <section  className='pt-[25px] lg:pt-[2.1111111111111112vw]'>
                     <div className='w-max-full pl-[1.388vw] pr-[1.388vw]'>
                         <div className='relative'>
@@ -138,8 +137,7 @@ const Section03 = () => {
                                         </div>
                                     </div>
                                     <div
-                                    
-                                    className='max-[600px]:text-[60px]  host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw] font-medium leading-none lg:mt-[1.7722222222222222vw]'>
+                                    className='max-[600px]:text-[60px]  host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw] font-medium leading-none lg:mt-[1.7722222222222222vw]'> 
                                     Photoshop
                                     </div>
                                 </div>

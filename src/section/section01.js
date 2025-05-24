@@ -425,6 +425,7 @@ const Section01 = () => {
                         </Suspense>
                     </motion.div>
                 </div>
+                
                 <div id="about" className='max-lg:mt-[-28vw] mt-[-35vw] lg:mt-[-20vw] mb-[116px] lg:mb-[20vw]'>
                     <div className='max-w-full pl-[1.38vw] pr-[1.38vw'>
                         <div className='relative'>

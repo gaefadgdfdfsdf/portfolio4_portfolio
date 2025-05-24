@@ -297,29 +297,12 @@ const Section01 = () => {
                         <div className="max-lg:hidden absolute left-0 bottom-0 h-full w-[0.5px] bg-black"></div>
                         <div className='max-lg:hidden px-[var(--size-20)] flex justify-between'>
                             <ul className="host-grotesk-bold menu_header lowercase flex items-center gap-[2.083333333333333vw] font-medium text-[20px]">
-                                <li>
-                                    <a onClick={() => {
-                                        document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
-                                    }}
-                                    href="#" className='pl-[1.388vw] pt-[1.5277777777777777vw] pb-[1.5277777777777777vw] px-0 relative flex items-center overflow-hidden'>
-                                        <span className="group relative flex flex-col overflow-hidden">
-                                            <span className="pl-[1.041555vw] translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center" >
-                                                <img className='absolute top-1/5 -translate-y-1/3 opacity-[0.2] left-0 w-[0.694vw] h-[0.694vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + 'trai_icon.svg'} alt='trai_icon' />
-                                                ABOUT
-                                            </span>
-                                            <span className="pl-[1.041555vw] translate-y-0 opacity-100 group-hover:-translate-y-full  transition-transform duration-300 flex nowrap items-center">
-                                                <img className='absolute top-1/5 -translate-y-1/3 opacity-[0.2] left-0 w-[0.694vw] h-[0.694vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + 'trai_icon.svg'} alt='trai_icon' />
-                                                ABOUT
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                </li>
+                               
                                 <li className="flex items-center">
                                     <a onClick={() => {
                                         document.getElementById('section02').scrollIntoView({ behavior: 'smooth' });
                                     }}
-                                     href="#" className="pt-[1.5277777777777777vw] pb-[1.5277777777777777vw] px-0relative flex items-center">
+                                     href="#" className="pl-[1.388vw] pt-[1.5277777777777777vw] pb-[1.5277777777777777vw] px-0relative flex items-center">
                                         <span className="group relative flex flex-col overflow-hidden">
                                             <span className="pl-[1.041555vw] translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center" >
                                             <img className='absolute -translate-y-1/2 opacity-[0.2] left-0 w-[0.694vw] h-[0.694vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + 'trai_icon.svg'} alt='trai_icon' />
@@ -332,6 +315,24 @@ const Section01 = () => {
                                         </span>
                                     </a>
                                     <span className="relative text-[12px] -top-[5px] left-[3px]">(3)</span>
+                                </li>
+                                <li>
+                                    <a onClick={() => {
+                                        document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+                                    }}
+                                    href="#" className='pt-[1.5277777777777777vw] pb-[1.5277777777777777vw] px-0 relative flex items-center overflow-hidden'>
+                                        <span className="group relative flex flex-col overflow-hidden">
+                                            <span className="pl-[1.041555vw] translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center" >
+                                                <img className='absolute top-1/5 -translate-y-1/3 opacity-[0.2] left-0 w-[0.694vw] h-[0.694vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + 'trai_icon.svg'} alt='trai_icon' />
+                                                skill
+                                            </span>
+                                            <span className="pl-[1.041555vw] translate-y-0 opacity-100 group-hover:-translate-y-full  transition-transform duration-300 flex nowrap items-center">
+                                                <img className='absolute top-1/5 -translate-y-1/3 opacity-[0.2] left-0 w-[0.694vw] h-[0.694vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + 'trai_icon.svg'} alt='trai_icon' />
+                                                skill
+                                            </span>
+                                        </span>
+                                    </a>
+
                                 </li>
                                 <li>
                                     <a onClick={() => {

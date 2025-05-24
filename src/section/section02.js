@@ -3,7 +3,15 @@ import { useSetRecoilState } from 'recoil';
 import { showHeaderState } from '../store';
 import { motion, useScroll, useTransform } from "framer-motion";
 
+
+
 const Section02 = () => {
+    //마우스 오버 왜곡
+
+   
+
+    //마우스 오버 왜곡
+
     const containerRef = useRef(null);
     const divcontainerRef = useRef(null);
 
@@ -147,7 +155,7 @@ const Section02 = () => {
                                             전체적으로 구조가 깔끔하고, 인터랙션이 잘 적용되어 보기 편한 웹사이트입니다.
                                         </div>
                                     </div>
-                                    <div className='lg:w-[calc(100%-32.84722222222222vw)]'>
+                                    <div  className='lg:w-[calc(100%-32.84722222222222vw)]'>
                                         <div className='wrap-img-distortion overflow-hidden rounded-[.3472222222222222vw] h-[42vw] lg:h-full relative'>
                                             <img className='object-cover w-full relative h-full lg:top-1/2 lg:-translate-y-1/2' src={process.env.PUBLIC_URL + 'hyundai.jpg'} alt='hyundai' />
                                         </div>

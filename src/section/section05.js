@@ -188,7 +188,7 @@ const Section05 = () => {
             </div>
             <div className="flex flex-col-reverse lg:flex-row justify-between py-3.5 lg:py-0">
               <nav className="flex justify-between lg:justify-end gap-[1.25vw] mt-[20px]">
-                <a href="https://www.linkedin.com/company/atoll-digital/" target="_blank">
+                <a href="https://github.com/gaefadgdfdfsdf?tab=repositories" target='_blank'>
                   <span className="group h-[1em] relative flex flex-col overflow-hidden">
                     <span className="translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center" >GIT</span>
                     <span className="translate-y-0 opacity-100 group-hover:-translate-y-full  transition-transform duration-300 flex nowrap items-center" >GIT</span>

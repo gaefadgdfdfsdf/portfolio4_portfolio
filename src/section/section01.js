@@ -318,7 +318,7 @@ const Section01 = () => {
                                 </li>
                                 <li>
                                     <a onClick={() => {
-                                        document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+                                        document.getElementById('section03Ref').scrollIntoView({ behavior: 'smooth' });
                                     }}
                                     href="#" className='pt-[1.5277777777777777vw] pb-[1.5277777777777777vw] px-0 relative flex items-center overflow-hidden'>
                                         <span className="group relative flex flex-col overflow-hidden">

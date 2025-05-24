@@ -96,7 +96,7 @@ const Section03 = () => {
 
   return (
    <>
-    <div ref={section03Ref} className='bg-[#091423] lg:h-[500vh]'>
+    <div ref={section03Ref} id="section03Ref" className='bg-[#091423] lg:h-[500vh]'>
         <div id="process_block" className='sticky top-[3.4722222222222223vw] '>
             <div  className='lg:flex flex-col justify-between lg:h-[calc(100vh+1px-3.472vw)] lg:sticky lg:top-[var(3.4722222222222223vw)]'>
                 <section  className='pt-[25px] lg:pt-[2.1111111111111112vw]'>

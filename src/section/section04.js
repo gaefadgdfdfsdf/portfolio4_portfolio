@@ -165,8 +165,8 @@ const Section04 = () => {
 
         <div className="relative group max-[768px]:w-[70vw] max-[1023px]:w-[55vw] lg:w-[43vw]">
             <img
-            src="/web05.jpg"
-            alt="Poster 5"
+            src="/web07.jpg"
+            alt="Poster 7"
             className="h-3/4 object-cover shadow-2xl"
             />
              <a

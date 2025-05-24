@@ -353,7 +353,7 @@ const Section01 = () => {
 
                             </ul>
                             <div className='host-grotesk-bold flex items-center justify-center mr-6'>
-                                <a href="#" className='pt-[1.5277777777777777vw] pb-[1.5277777777777777vw] px-0relative flex items-center overflow-hidden'>
+                                <a href="https://github.com/gaefadgdfdfsdf?tab=repositories" target='_blank' className='pt-[1.5277777777777777vw] pb-[1.5277777777777777vw] px-0relative flex items-center overflow-hidden'>
                                     <span className="group relative flex flex-col overflow-hidden">
                                         <span className="pl-[1.041555vw] translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center" >
                                         GIT

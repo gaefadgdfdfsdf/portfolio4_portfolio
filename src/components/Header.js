@@ -114,7 +114,7 @@ const Header = () => {
                 <div className="host-grotesk-bold transition-colors duration-300 max-lg:hidden cursor-pointer absolute right-0 inset-y-0 flex items-center justify-center">
                     <div style={{background: colorHeader ? '#fff' : '#000',}}
                     className="block bg-black absolute top-0 left-0 w-[0.5px] h-full"></div>
-                    <a href="https://atolldigital.com/fr/" className="h-[3.472vw] text-[1vw] font-medium px-[1vw] flex items-center justify-center w-full overflow-hidden leading-none">
+                    <a  href="https://github.com/gaefadgdfdfsdf?tab=repositories" target='_blank' className="h-[3.472vw] text-[1vw] font-medium px-[1vw] flex items-center justify-center w-full overflow-hidden leading-none">
                         <span class="group relative flex flex-col overflow-hidden">
                             <span className="translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center">GIT</span>
                             <span className="translate-y-0 opacity-100 group-hover:-translate-y-full  transition-transform duration-300 flex nowrap items-center">GIT</span>

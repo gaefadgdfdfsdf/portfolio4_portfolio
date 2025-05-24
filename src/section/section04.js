@@ -32,7 +32,7 @@ const Section04 = () => {
             />
           ))} */}
 
-        <div className="host-grotesk-bold relative group max-[1023px]:w-[55vw] lg:w-[43vw]">
+        <div className="host-grotesk-bold relative group max-[768px]:w-[70vw] max-[1023px]:w-[55vw] lg:w-[43vw]">
             <img
             src="/web01.jpg"
             alt="Poster 1"
@@ -47,7 +47,7 @@ const Section04 = () => {
             </a>
         </div>
 
-        <div className="relative group max-[1023px]:w-[55vw] lg:w-[43vw]">
+        <div className="relative group max-[768px]:w-[70vw] max-[1023px]:w-[55vw] lg:w-[43vw]">
             <img
             src="/web02.jpg"
             alt="Poster 2"
@@ -62,7 +62,7 @@ const Section04 = () => {
             </a>
         </div>
 
-        <div className="relative group max-[1023px]:w-[55vw] lg:w-[43vw]">
+        <div className="relative group max-[768px]:w-[70vw] max-[1023px]:w-[55vw] lg:w-[43vw]">
             <img
             src="/web03.jpg"
             alt="Poster 3"
@@ -77,7 +77,7 @@ const Section04 = () => {
             </a>
         </div>
 
-        <div className="relative group max-[1023px]:w-[55vw] lg:w-[43vw]">
+        <div className="relative group max-[768px]:w-[70vw] max-[1023px]:w-[55vw] lg:w-[43vw]">
             <img
             src="/web06.jpg"
             alt="Poster 6"
@@ -92,7 +92,7 @@ const Section04 = () => {
             </a>
         </div>
 
-        <div className="relative group max-[1023px]:w-[55vw] lg:w-[43vw]">
+        <div className="relative group max-[768px]:w-[70vw] max-[1023px]:w-[55vw] lg:w-[43vw]">
             <img
             src="/web04.jpg"
             alt="Poster 4"
@@ -107,7 +107,7 @@ const Section04 = () => {
             </a>
         </div>
 
-        <div className="relative group max-[1023px]:w-[55vw] lg:w-[43vw]">
+        <div className="relative group max-[768px]:w-[70vw] max-[1023px]:w-[55vw] lg:w-[43vw]">
             <img
             src="/web05.jpg"
             alt="Poster 5"
@@ -122,7 +122,7 @@ const Section04 = () => {
             </a>
         </div>
 
-        <div className="relative group max-[1023px]:w-[55vw] lg:w-[43vw]">
+        <div className="relative group max-[768px]:w-[70vw] max-[1023px]:w-[55vw] lg:w-[43vw]">
             <img
             src="/web05.jpg"
             alt="Poster 5"

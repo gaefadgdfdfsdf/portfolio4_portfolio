@@ -51,23 +51,23 @@ const Section03 = () => {
     const div1Width = useTransform(
         scrollYProgress,
         [0, 0.25],
-        isWideScreen ? ["100%", "9.29166666666667vw"] : ["100%", "100%"]
+        isWideScreen ? ["34.236111111111114vw", "9.29166666666667vw"] : ["100%", "100%"]
     );
 
     const div2Width = useTransform(
         scrollYProgress,
         [0.25, 0.5],
-        isWideScreen ? ["100%", "9.29166666666667vw"] : ["100%", "100%"]
+        isWideScreen ? ["34.236111111111114vw", "9.29166666666667vw"] : ["100%", "100%"]
     );
     const div3Width = useTransform(
         scrollYProgress,
         [0.5, 0.75],
-        isWideScreen ? ["100%", "9.29166666666667vw"] : ["100%", "100%"]
+        isWideScreen ? ["34.236111111111114vw", "9.29166666666667vw"] : ["100%", "100%"]
     );
     const div4Width = useTransform(
         scrollYProgress,
         [0.75, 1],
-        isWideScreen ? ["100%", "9.29166666666667vw"] : ["100%", "100%"]
+        isWideScreen ? ["34.236111111111114vw", "9.29166666666667vw"] : ["100%", "100%"]
     );
   
 
@@ -127,8 +127,8 @@ const Section03 = () => {
                 <div className='lg:overflow-hidden mt-[70px] lg:mt-[11.861111111111112vw] relative pt-[0.694vw]'>
                     <div className='h-[0.5px] bg-white top-0 left-0 w-full'></div>
                     <div id="section03_static" className='lg:static lg:flex lg:flex-nowrap text-white '>
-                        <motion.div  className='relative z-[1px]'  style={{ width: div1Width }}>
-                            <div id="reduce" className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
+                        <div  className='relative z-[1px]' >
+                            <motion.div   style={{ width: div1Width }} id="reduce" className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
                                 <div className='flex justify-between'>
                                     <div className='pt-[9px] lg:pt-0'>
                                         <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>DESIGN</div>
@@ -148,12 +148,12 @@ const Section03 = () => {
                                     포토샵의 기초 기능을 활용하여 창의적이고<br/> 효율적인 디자인 작업을 구현합니다.
                                     </div>
                                 </div>
-                            </div>
-                        </motion.div>
-                        <motion.div  className='relative z-[1px] lg:pt-0 pt-[0.694vw]' style={{ width: div2Width }}>
+                            </motion.div>
+                        </div>
+                        <div  className='relative z-[1px] lg:pt-0 pt-[0.694vw]' style={{ width: div2Width }}>
                             <div className='absolute top-0 left-0 h-full w-[0.5px] bg-white max-lg:hidden'></div>
                             <div className='absolute top-0 left-0 w-full h-[0.5px] bg-white hidden max-lg:block'></div>
-                            <div id="reduce" className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
+                            <motion.div style={{ width: div2Width }} id="reduce" className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
                             <div className='flex justify-between'>
                                     <div className='pt-[9px] lg:pt-0'>
                                         <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>DESIGN</div>
@@ -171,12 +171,12 @@ const Section03 = () => {
                                     간단한 SVG 아이콘 제작이 가능합니다.
                                     </div>
                                 </div>
-                            </div>
-                        </motion.div>
-                        <motion.div className='relative z-[1px] lg:pt-0 pt-[0.694vw]' style={{ width: div3Width }}>
+                            </motion.div>
+                        </div>
+                        <div className='relative z-[1px] lg:pt-0 pt-[0.694vw]' >
                             <div className='absolute top-0 left-0 h-full w-[0.5px] bg-white max-lg:hidden'></div>
                             <div className='absolute top-0 left-0 w-full h-[0.5px] bg-white hidden max-lg:block'></div>
-                            <div id="reduce" className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
+                            <motion.div style={{ width: div3Width }} id="reduce" className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
                             <div className='flex justify-between'>
                                     <div className='pt-[9px] lg:pt-0'>
                                         <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>Development</div>
@@ -195,12 +195,12 @@ const Section03 = () => {
                                     다양한 인터랙션 구현이 가능합니다.
                                     </div>
                                 </div>
-                            </div>
-                        </motion.div>
-                        <motion.div  className='relative z-[1px] lg:pt-0 pt-[0.694vw]' style={{ width: div4Width }}>
+                            </motion.div>
+                        </div>
+                        <div  className='relative z-[1px] lg:pt-0 pt-[0.694vw]' >
                             <div className='absolute top-0 left-0 h-full w-[0.5px] bg-white max-lg:hidden'></div>
                             <div className='absolute top-0 left-0 w-full h-[0.5px] bg-white hidden max-lg:block'></div>   
-                            <div id="reduce" className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
+                            <motion.div style={{ width: div4Width }} id="reduce" className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
                                 <div className='flex justify-between'>
                                         <div className='pt-[9px] lg:pt-0'>
                                             <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>Development</div>
@@ -219,8 +219,8 @@ const Section03 = () => {
                                         동적인 UI를 JavaScript로 구현이 가능합니다.
                                         </div>
                                     </div>
-                                </div>
-                        </motion.div>
+                                </motion.div>
+                        </div>
                         <div className='relative z-[1px] lg:pt-0 pt-[0.694vw]'>
                             <div className='absolute top-0 left-0 h-full w-[0.5px] bg-white max-lg:hidden'></div>
                             <div className='absolute top-0 left-0 w-full h-[0.5px] bg-white hidden max-lg:block'></div>

@@ -298,7 +298,10 @@ const Section01 = () => {
                         <div className='max-lg:hidden px-[var(--size-20)] flex justify-between'>
                             <ul className="host-grotesk-bold menu_header lowercase flex items-center gap-[2.083333333333333vw] font-medium text-[20px]">
                                 <li>
-                                    <a href="#" className='pl-[1.388vw] pt-[1.5277777777777777vw] pb-[1.5277777777777777vw] px-0 relative flex items-center overflow-hidden'>
+                                    <a onClick={() => {
+                                        document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+                                    }}
+                                    href="#" className='pl-[1.388vw] pt-[1.5277777777777777vw] pb-[1.5277777777777777vw] px-0 relative flex items-center overflow-hidden'>
                                         <span className="group relative flex flex-col overflow-hidden">
                                             <span className="pl-[1.041555vw] translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center" >
                                                 <img className='absolute top-1/5 -translate-y-1/3 opacity-[0.2] left-0 w-[0.694vw] h-[0.694vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + 'trai_icon.svg'} alt='trai_icon' />

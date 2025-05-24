@@ -170,7 +170,7 @@ const Section04 = () => {
             className="h-3/4 object-cover shadow-2xl"
             />
              <a
-            href="https://www.no1cats.com/"
+            href="https://gaefadgdfdfsdf.github.io/css_animation_bird/"
             target="_blank"
             className="absolute inset-0 flex items-center justify-center bg-black/50 text-[#091423] opacity-0 group-hover:opacity-100 transition-opacity"
             >   

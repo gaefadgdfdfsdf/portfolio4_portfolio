@@ -1,16 +1,45 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const Section04 = () => {
   const containerRef = useRef(null);
+
+
+
+  // 화면 폭 상태
+  const [isWideScreen, setIsWideScreen] = useState(false);
+
+  // 화면 크기 변화 감지
+  useEffect(() => {
+    const handleResize = () => {
+      setIsWideScreen(window.innerWidth >= 1024);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // 초기 체크
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"],
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-225vw"]);
+  // const x = useTransform(scrollYProgress, [0, 1], ["0%", "-225vw"]);
 
- 
+ // 스크롤에 따른 가로 이동 값
+ const x = useTransform(
+  scrollYProgress,
+  [0, 1],
+  isWideScreen ? ["0%", "-225vw"] : ["0%", "-355vw"]
+);
 
   return (
     <div ref={containerRef} className="h-[600vh] mt-10">

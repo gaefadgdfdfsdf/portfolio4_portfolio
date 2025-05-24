@@ -47,7 +47,7 @@ const Loading = () => {
   return (
     <div className="h-[50vh] w-full mt-40 " ref={stickyRef}>
       {/* 프로그레스 바 */}
-      <div className="flex justify-center flex-nowrap pl-[1.38vw] pr-[1.38vw]">
+      <div className="relative max-[768px]:bottom-12 flex justify-center flex-nowrap pl-[1.38vw] pr-[1.38vw]">
         <div className="pr-[1.38vw] flex flex-nowrap items-end">
             <motion.svg
                 

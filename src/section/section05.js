@@ -150,15 +150,15 @@ const Section05 = () => {
       <footer className='bg-[#091423] lg:text-[0.9722222222222222vw] lg:h-[calc(100vh+1px-3.472vw)] overflow-hidden'>
         <div className='lg:grid lg:grid-cols-2 font-medium relative border-b border-white border-solid'>
           <div className='line'>
-            <ul className="text-white p-0 m-0">
-              <li className="group relative overflow-hidden">
+            <ul className="text-white h-full p-0 m-0">
+              <li className="group h-[33.3334%] relative overflow-hidden">
                 <div className="group-hover:translate-y-0 hover-bg h-full bg-[#E6E8EA] absolute inset-0 translate-y-[100px] transition-transform duration-300"></div>
                 <p className="max-lg:h-[4.5vw] flex items-center pl-[1.388vw] pr-[1.388vw] lg:h-[3vw] lg:pt-0 lg:pb-0 lg:text-[0.9722222222222222vw] relative z-10 transition-colors duration-300 group-hover:text-black">
                    조윤하 980920
                 </p>
               </li>
 
-              <li className="group relative overflow-hidden cursor-pointer">
+              <li className="group h-[33.3334%] relative overflow-hidden cursor-pointer">
                 <div className="group-hover:translate-y-0 hover-bg h-full bg-[#E6E8EA] absolute inset-0 translate-y-[100px] transition-transform duration-300"></div>
                 
                 <p className="max-lg:h-[4.5vw]  flex items-center pl-[1.388vw] pr-[1.388vw] lg:h-[3vw] lg:pt-0 lg:pb-0 lg:text-[0.9722222222222222vw] relative z-10 transition-colors duration-300 group-hover:text-black">
@@ -167,7 +167,7 @@ const Section05 = () => {
                
               </li>
 
-              <li className="group relative overflow-hidden cursor-pointer p-0">
+              <li className="group h-[33.3334%] relative overflow-hidden cursor-pointer p-0">
                 <div className="group-hover:translate-y-0 hover-bg h-full bg-[#E6E8EA] absolute inset-0 translate-y-[100px] transition-transform duration-300"></div>
                 {/* tell */}
                 <a href="#" className="max-lg:h-[4.5vw] flex items-center pl-[1.388vw] pr-[1.388vw] lg:h-[3vw] lg:pt-0 lg:pb-0 lg:text-[0.9722222222222222vw] relative z-10 transition-colors duration-300 group-hover:text-black">

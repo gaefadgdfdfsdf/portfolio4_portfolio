@@ -1,3 +1,13 @@
+## 250524
+마우스 hover ?
+
+hover시에
+work , skill ,contact
+작업물, 스킬, 연락처
+
+https://velog.io/@bami/React-GitHub-Pages%EC%97%90-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0
+
+
 https://atolldigital.com/
 
 

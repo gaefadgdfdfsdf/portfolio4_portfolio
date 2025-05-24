@@ -7,7 +7,13 @@ const Section03 = () => {
   const section03Ref = useRef(null);
   const setColorHeader = useSetRecoilState(colorHeaderState);
 
+// text opacity
 
+
+
+
+
+// text opacity
  
 
  // 화면 폭 상태
@@ -87,6 +93,7 @@ const Section03 = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [setColorHeader]);
+  
 
   return (
    <>
@@ -121,7 +128,7 @@ const Section03 = () => {
                 <div className='lg:overflow-hidden mt-[70px] lg:mt-[11.861111111111112vw] relative pt-[0.694vw]'>
                     <div className='h-[0.5px] bg-white top-0 left-0 w-full'></div>
                     <div id="section03_static" className='lg:static lg:flex lg:flex-nowrap text-white '>
-                        <motion.div className='relative z-[1px]'  style={{ width: div1Width }}>
+                        <motion.div  className='relative z-[1px]'  style={{ width: div1Width }}>
                             <div id="reduce" className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
                                 <div className='flex justify-between'>
                                     <div className='pt-[9px] lg:pt-0'>
@@ -130,18 +137,22 @@ const Section03 = () => {
                                             <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + 'icon_1.svg'} alt='icon_1'/>
                                         </div>
                                     </div>
-                                    <div className='max-[600px]:text-[60px]  host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw] font-medium leading-none lg:mt-[1.7722222222222222vw]'>
+                                    <div
+                                    
+                                    className='max-[600px]:text-[60px]  host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw] font-medium leading-none lg:mt-[1.7722222222222222vw]'>
                                     Photoshop
                                     </div>
                                 </div>
-                                <div className='flex relative bottom-6 items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
+                                <div
+                                
+                                    className='flex relative bottom-6 items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
                                     <div className='noto-sans-kr-medium lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
                                     포토샵의 기초 기능을 활용하여 창의적이고<br/> 효율적인 디자인 작업을 구현합니다.
                                     </div>
                                 </div>
                             </div>
                         </motion.div>
-                        <motion.div className='relative z-[1px] lg:pt-0 pt-[0.694vw]' style={{ width: div2Width }}>
+                        <motion.div  className='relative z-[1px] lg:pt-0 pt-[0.694vw]' style={{ width: div2Width }}>
                             <div className='absolute top-0 left-0 h-full w-[0.5px] bg-white max-lg:hidden'></div>
                             <div className='absolute top-0 left-0 w-full h-[0.5px] bg-white hidden max-lg:block'></div>
                             <div id="reduce" className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
@@ -188,7 +199,7 @@ const Section03 = () => {
                                 </div>
                             </div>
                         </motion.div>
-                        <motion.div className='relative z-[1px] lg:pt-0 pt-[0.694vw]' style={{ width: div4Width }}>
+                        <motion.div  className='relative z-[1px] lg:pt-0 pt-[0.694vw]' style={{ width: div4Width }}>
                             <div className='absolute top-0 left-0 h-full w-[0.5px] bg-white max-lg:hidden'></div>
                             <div className='absolute top-0 left-0 w-full h-[0.5px] bg-white hidden max-lg:block'></div>   
                             <div id="reduce" className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>

@@ -76,7 +76,7 @@ const Header = () => {
                                 </span>
                             </a>
                             <span className="font_editorial text-[.9vw] ml-[.2vw] relative top-[-.3vw]">
-                                (10)
+                                (3)
                             </span>
                         </li>
                         <li>

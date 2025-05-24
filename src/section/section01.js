@@ -334,7 +334,10 @@ const Section01 = () => {
                                     <span className="relative text-[12px] -top-[5px] left-[3px]">(3)</span>
                                 </li>
                                 <li>
-                                    <a href="#" className='pt-[1.5277777777777777vw] pb-[1.5277777777777777vw] px-0relative flex items-center overflow-hidden'>
+                                    <a onClick={() => {
+                                        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+                                    }}
+                                    href="#" className='pt-[1.5277777777777777vw] pb-[1.5277777777777777vw] px-0relative flex items-center overflow-hidden'>
                                         <span className="group relative flex flex-col overflow-hidden">
                                             <span className="pl-[1.041555vw] translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center" >
                                             <img className='absolute top-1/5 -translate-y-1/2 opacity-[0.2] left-0 w-[1.194vw] h-[0.994vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + 'thesun_33.svg'} alt='thesun_33' />

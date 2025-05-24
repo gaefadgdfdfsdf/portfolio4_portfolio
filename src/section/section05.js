@@ -66,7 +66,7 @@ const TypingText = ({ phrases, typingSpeed = 120, deletingSpeed = 50, pauseTime 
 const Section05 = () => {
   return (
     <>
-      <section className='my-[100px] lg:my-[8.333333333333332vw] overflow-hidden'>
+      <section id="contact" className='my-[100px] lg:my-[8.333333333333332vw] overflow-hidden'>
         <div className='max-w-full pl-[1.388vw] pr-[1.388vw]'>
           <div className='noto-sans-kr-medium  text-[#091423] max-lg:max-w-[550px] max-lg:mx-auto mb-[-5px] lg:mb-0'>
             <h2 className='text-[76px] lg:text-[8.222222222222223vw] tracking-tight font-medium leading-[100%] lg:leading-[116%]'>

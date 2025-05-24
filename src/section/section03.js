@@ -7,6 +7,17 @@ const Section03 = () => {
   const section03Ref = useRef(null);
   const setColorHeader = useSetRecoilState(colorHeaderState);
 
+
+  const { scrollYProgress } = useScroll({
+    target: section03Ref,
+    offset: ["start start", "end end"],
+  });
+
+  const div1Width = useTransform(scrollYProgress, [0, 0.25], ["100%", "9.29166666666667vw"]);
+  const div2Width = useTransform(scrollYProgress, [0.25, 0.5], ["100%", "9.29166666666667vw"]);
+  const div3Width = useTransform(scrollYProgress, [0.5, 0.75], ["100%", "9.29166666666667vw"]);
+  const div4Width = useTransform(scrollYProgress, [0.75, 1], ["100%", "9.29166666666667vw"]);
+
   useEffect(() => {
     const handleScroll = () => {
       if (!section03Ref.current) return;
@@ -31,9 +42,9 @@ const Section03 = () => {
 
   return (
    <>
-    <div ref={section03Ref} className='bg-[#091423]'>
-        <div id="process_block">
-            <div className='lg:flex flex-col justify-between lg:h-[calc(100vh-var(--header-height))] lg:sticky lg:top-[var(3.4722222222222223vw)]'>
+    <div ref={section03Ref} className='bg-[#091423] h-[500vh]'>
+        <div id="process_block" className='sticky top-0 '>
+            <div className='lg:flex flex-col justify-between lg:h-[calc(100vh+1px-3.472vw)] lg:sticky lg:top-[var(3.4722222222222223vw)]'>
                 <section  className='pt-[25px] lg:pt-[2.1111111111111112vw]'>
                     <div className='w-max-full pl-[1.388vw] pr-[1.388vw]'>
                         <div className='relative'>
@@ -62,7 +73,7 @@ const Section03 = () => {
                 <div className='lg:overflow-hidden mt-[70px] lg:mt-[11.861111111111112vw] relative pt-[0.694vw]'>
                     <div className='h-[0.5px] bg-white top-0 left-0 w-full'></div>
                     <div id="section03_static" className='lg:static lg:flex lg:flex-nowrap text-white '>
-                        <div className='relative z-[1px]'>
+                        <motion.div className='relative z-[1px]'  style={{ width: div1Width }}>
                             <div id="reduce" className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
                                 <div className='flex justify-between'>
                                     <div className='pt-[9px] lg:pt-0'>
@@ -81,8 +92,8 @@ const Section03 = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className='relative z-[1px] lg:pt-0 pt-[0.694vw]'>
+                        </motion.div>
+                        <motion.div className='relative z-[1px] lg:pt-0 pt-[0.694vw]' style={{ width: div2Width }}>
                             <div className='absolute top-0 left-0 h-full w-[0.5px] bg-white max-lg:hidden'></div>
                             <div className='absolute top-0 left-0 w-full h-[0.5px] bg-white hidden max-lg:block'></div>
                             <div id="reduce" className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
@@ -104,8 +115,8 @@ const Section03 = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className='relative z-[1px] lg:pt-0 pt-[0.694vw]'>
+                        </motion.div>
+                        <motion.div className='relative z-[1px] lg:pt-0 pt-[0.694vw]' style={{ width: div3Width }}>
                             <div className='absolute top-0 left-0 h-full w-[0.5px] bg-white max-lg:hidden'></div>
                             <div className='absolute top-0 left-0 w-full h-[0.5px] bg-white hidden max-lg:block'></div>
                             <div id="reduce" className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
@@ -128,8 +139,8 @@ const Section03 = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className='relative z-[1px] lg:pt-0 pt-[0.694vw]'>
+                        </motion.div>
+                        <motion.div className='relative z-[1px] lg:pt-0 pt-[0.694vw]' style={{ width: div4Width }}>
                             <div className='absolute top-0 left-0 h-full w-[0.5px] bg-white max-lg:hidden'></div>
                             <div className='absolute top-0 left-0 w-full h-[0.5px] bg-white hidden max-lg:block'></div>   
                             <div id="reduce" className='lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
@@ -152,7 +163,7 @@ const Section03 = () => {
                                         </div>
                                     </div>
                                 </div>
-                        </div>
+                        </motion.div>
                         <div className='relative z-[1px] lg:pt-0 pt-[0.694vw]'>
                             <div className='absolute top-0 left-0 h-full w-[0.5px] bg-white max-lg:hidden'></div>
                             <div className='absolute top-0 left-0 w-full h-[0.5px] bg-white hidden max-lg:block'></div>

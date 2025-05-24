@@ -89,7 +89,7 @@ const Header = () => {
                             <a onClick={() => {
                                         document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
                                     }}
-                                    href="https://atolldigital.com/contact/" className="overflow-hidden leading-none contact  h-[3.472vw] cursor-pointer">
+                                    className="overflow-hidden leading-none contact  h-[3.472vw] cursor-pointer">
                                 <span className="group relative flex flex-col overflow-hidden">
                                     <span className="pl-[1.141555vw] translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center" >
                                         <img 

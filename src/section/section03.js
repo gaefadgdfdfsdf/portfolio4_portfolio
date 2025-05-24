@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useSetRecoilState } from 'recoil';
 import { colorHeaderState } from '../store';
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -8,15 +8,63 @@ const Section03 = () => {
   const setColorHeader = useSetRecoilState(colorHeaderState);
 
 
+ 
+
+ // 화면 폭 상태
+ const [isWideScreen, setIsWideScreen] = useState(window.innerWidth >= 1024);
+
+ // 화면 크기 변화 감지
+ useEffect(() => {
+     const handleResize = () => {
+         setIsWideScreen(window.innerWidth >= 1024);
+     };
+
+     window.addEventListener("resize", handleResize);
+
+     // 초기 체크
+     handleResize();
+
+     return () => {
+         window.removeEventListener("resize", handleResize);
+     };
+ }, []);
+
+
+
   const { scrollYProgress } = useScroll({
     target: section03Ref,
     offset: ["start start", "end end"],
   });
 
-  const div1Width = useTransform(scrollYProgress, [0, 0.25], ["100%", "9.29166666666667vw"]);
-  const div2Width = useTransform(scrollYProgress, [0.25, 0.5], ["100%", "9.29166666666667vw"]);
-  const div3Width = useTransform(scrollYProgress, [0.5, 0.75], ["100%", "9.29166666666667vw"]);
-  const div4Width = useTransform(scrollYProgress, [0.75, 1], ["100%", "9.29166666666667vw"]);
+//   const div1Width = useTransform(scrollYProgress, [0, 0.25], ["100%", "9.29166666666667vw"]);
+//   const div2Width = useTransform(scrollYProgress, [0.25, 0.5], ["100%", "9.29166666666667vw"]);
+//   const div3Width = useTransform(scrollYProgress, [0.5, 0.75], ["100%", "9.29166666666667vw"]);
+//   const div4Width = useTransform(scrollYProgress, [0.75, 1], ["100%", "9.29166666666667vw"]);
+  
+
+    // 1024 이상일 때만 transform 적용, 아니면 고정값 사용
+    const div1Width = useTransform(
+        scrollYProgress,
+        [0, 0.25],
+        isWideScreen ? ["100%", "9.29166666666667vw"] : ["100%", "100%"]
+    );
+
+    const div2Width = useTransform(
+        scrollYProgress,
+        [0.25, 0.5],
+        isWideScreen ? ["100%", "9.29166666666667vw"] : ["100%", "100%"]
+    );
+    const div3Width = useTransform(
+        scrollYProgress,
+        [0.5, 0.75],
+        isWideScreen ? ["100%", "9.29166666666667vw"] : ["100%", "100%"]
+    );
+    const div4Width = useTransform(
+        scrollYProgress,
+        [0.75, 1],
+        isWideScreen ? ["100%", "9.29166666666667vw"] : ["100%", "100%"]
+    );
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,7 +90,7 @@ const Section03 = () => {
 
   return (
    <>
-    <div ref={section03Ref} className='bg-[#091423] h-[500vh]'>
+    <div ref={section03Ref} className='bg-[#091423] lg:h-[500vh]'>
         <div id="process_block" className='sticky top-[3.4722222222222223vw] '>
             <div className='lg:flex flex-col justify-between lg:h-[calc(100vh+1px-3.472vw)] lg:sticky lg:top-[var(3.4722222222222223vw)]'>
                 <section  className='pt-[25px] lg:pt-[2.1111111111111112vw]'>

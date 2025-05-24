@@ -32,7 +32,7 @@ const Section04 = () => {
             />
           ))} */}
 
-        <div className="host-grotesk-bold relative group">
+        <div className="host-grotesk-bold relative group max-[1023px]:w-[55vw] lg:w-[43vw]">
             <img
             src="/web01.jpg"
             alt="Poster 1"
@@ -47,7 +47,7 @@ const Section04 = () => {
             </a>
         </div>
 
-        <div className="relative group ">
+        <div className="relative group max-[1023px]:w-[55vw] lg:w-[43vw]">
             <img
             src="/web02.jpg"
             alt="Poster 2"
@@ -62,7 +62,7 @@ const Section04 = () => {
             </a>
         </div>
 
-        <div className="relative group">
+        <div className="relative group max-[1023px]:w-[55vw] lg:w-[43vw]">
             <img
             src="/web03.jpg"
             alt="Poster 3"
@@ -77,7 +77,7 @@ const Section04 = () => {
             </a>
         </div>
 
-        <div className="relative group">
+        <div className="relative group max-[1023px]:w-[55vw] lg:w-[43vw]">
             <img
             src="/web06.jpg"
             alt="Poster 6"
@@ -92,7 +92,7 @@ const Section04 = () => {
             </a>
         </div>
 
-        <div className="relative group">
+        <div className="relative group max-[1023px]:w-[55vw] lg:w-[43vw]">
             <img
             src="/web04.jpg"
             alt="Poster 4"
@@ -107,7 +107,7 @@ const Section04 = () => {
             </a>
         </div>
 
-        <div className="relative group">
+        <div className="relative group max-[1023px]:w-[55vw] lg:w-[43vw]">
             <img
             src="/web05.jpg"
             alt="Poster 5"
@@ -122,7 +122,7 @@ const Section04 = () => {
             </a>
         </div>
 
-        <div className="relative group">
+        <div className="relative group max-[1023px]:w-[55vw] lg:w-[43vw]">
             <img
             src="/web05.jpg"
             alt="Poster 5"
@@ -139,7 +139,7 @@ const Section04 = () => {
         </motion.div>
       
         <div className='class="lg:w-[calc(100%-32.84722222222222vw)] lg:mt-0 relative left-24'>
-            <div className='max-lg:hidden  tracking-[-0.7px] noto-sans-kr-medium text-[1.02vw] leading-[133%] max-lg:max-w-[290px] max-lg:mx-auto'> 
+            <div className='max-lg:hidden  tracking-[-0.7px] noto-sans-kr-medium text-[18px] max-[1600px]:text-[16px] leading-[133%] max-lg:max-w-[290px] max-lg:mx-auto'> 
             기업 프로젝트에 참여해 반응형 웹사이트 제작을 진행한 경험이 있습니다.<br/>
             클라이언트와의 줌 미팅 및 기획 회의를 통해 요구사항을 정확히 파악하고,<br/>
             원하는 분위기와 기능을 구현할 수 있도록 구조를 설계하고 수정했습니다.<br/>

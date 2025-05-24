@@ -1,0 +1,354 @@
+/*
+	1. background색을 원하는 색으로 넣어주세요.
+
+	2. 새의 몸통을 원하는대로 꾸며주세요.
+	- 센터정렬하면서 중앙보다 살짝 더 아래 위치하게 해주세요.
+
+*/
+
+body {
+  background-color: rgb(181, 250, 255);
+}
+
+.bird {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.face {
+  width: 200px;
+  height: 180px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 170px 170px 150px 150px;
+
+  position: relative;
+
+  z-index: 1000;
+}
+
+.cheek div {
+  width: 30px;
+  height: 20px;
+  background-color: rgb(253, 207, 215);
+  position: absolute;
+  border-radius: 50px 50px 40px 40px;
+}
+
+.cheek .left {
+  top: 105px;
+  left: 35px;
+}
+
+.cheek .right {
+  top: 105px;
+  right: 35px;
+}
+
+.eyes div {
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  position: absolute;
+  border-radius: 14px 14px 10px 10px;
+}
+
+.eyes .left {
+  top: 78px;
+  left: 45px;
+  position: relative;
+}
+
+.eyes .right {
+  top: 56px;
+  left: 135px;
+  position: relative;
+}
+
+.eyes .right .white {
+  width: 3px;
+  height: 18px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 8px;
+  left: 12px;
+  border-radius: 20px 10px;
+}
+
+.eyes .right .two {
+  transform: rotate(55deg);
+}
+
+.eyes .right .three {
+  transform: rotate(-55deg);
+}
+
+.eyes .right .four {
+  transform: rotate(90deg);
+}
+
+.mouse {
+  width: 25px;
+  height: 25px;
+  background-color: rgb(32, 32, 31);
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.wings div {
+  width: 70px;
+  height: 90px;
+  background-color: #ffffff;
+  position: absolute;
+  border-radius: 200px 100px;
+  border-bottom: 8px solid rgb(48, 47, 46);
+  transform: rotate(35deg);
+}
+
+.wings .left {
+  left: -10px;
+  top: 10px;
+  position: relative;
+}
+
+.wings .right {
+  right: -10px;
+  top: 10px;
+
+  border-radius: 100px 200px;
+  transform: rotate(-35deg);
+}
+
+.body {
+  width: 230px;
+  height: 180px;
+  background-color: #ffffff;
+  border-radius: 80px 68px 120px 120px;
+  position: relative;
+  top: -90px;
+  left: -20px;
+}
+
+.flower {
+  position: absolute;
+  cursor: pointer;
+}
+
+#one {
+  top: 300px;
+  left: 250px;
+}
+
+#two {
+  top: 130px;
+  right: 300px;
+}
+
+#three {
+  top: 100px;
+  left: 140px;
+}
+
+#four {
+  bottom: 240px;
+  right: 200px;
+}
+
+#five {
+  left: 430px;
+  top: 500px;
+}
+
+#six {
+  left: 100px;
+  bottom: 130px;
+}
+
+#seven {
+  left: 550px;
+  top: 100px;
+}
+
+#eight {
+  top: 600px;
+  right: 600px;
+}
+
+#nine {
+  top: 340px;
+  right: 490px;
+}
+
+.flower .center {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: palevioletred;
+  border-radius: 30px;
+}
+
+.flower .center div {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: palevioletred;
+  border-radius: 120px 120px 110px 110px;
+}
+
+.flower .center .one {
+  top: -12px;
+  transform: rotate(15deg);
+}
+
+.flower .center .two {
+  top: 15px;
+  left: 10px;
+  transform: rotate(-30deg);
+}
+
+.flower .center .three {
+  top: 15px;
+  right: 5px;
+  transform: rotate(30deg);
+}
+
+.flower .center .four {
+  right: 10px;
+  top: -2px;
+  transform: rotate(95deg);
+}
+
+.flower .center .five {
+  right: -20px;
+  top: -2px;
+  transform: rotate(-95deg);
+}
+
+.flower .center .flo_Cent {
+  width: 10px;
+  height: 10px;
+  background-color: antiquewhite;
+  border-radius: 30px;
+  left: 8px;
+  top: 10px;
+}
+
+/* 애니메이션 */
+
+.bird {
+  animation: boxAni 4s ease-out infinite normal;
+}
+
+@keyframes boxAni {
+  0% {
+    position: absolute;
+    bottom: -400px;
+  }
+
+  20% {
+    position: absolute;
+    bottom: 400px;
+    transform: translate(-50%, -50%) rotate(20deg);
+  }
+
+  40% {
+    position: absolute;
+    bottom: 700px;
+    transform: translate(-50%, -50%) rotate(-30deg);
+  }
+
+  60% {
+    position: absolute;
+    top: 300px;
+    transform: translate(-50%, -50%) rotate(20deg);
+  }
+
+  100% {
+    position: absolute;
+    top: 200px;
+    transform: translate(-50%, -50%) rotate(-30deg);
+  }
+}
+
+.wings .left {
+  animation: boxAnis 0.5s ease-out infinite normal;
+}
+
+@keyframes boxAnis {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(45deg);
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+.wings .right {
+  animation: boxAns 0.5s ease-out infinite normal;
+}
+
+@keyframes boxAns {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(-45deg);
+  }
+
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+
+.flower {
+  animation: boxAnisa 5s ease-out infinite alternate;
+}
+
+@keyframes boxAnisa {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  }
+
+  50% {
+    background-color: yellow;
+    transform: translate(-50%, -50%) rotate(360deg) scale(0.8);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  }
+}
+
+body {
+  animation: boxAnissa 3s ease-in infinite alternate;
+}
+
+@keyframes boxAnissa {
+  0% {
+    background-color: rgb(181, 250, 255);
+  }
+
+  100% {
+    background-color: rgb(246, 218, 247);
+  }
+}
+
+.flower:hover .center div {
+  background-color: rgb(253, 183, 246);
+}
+
+.bird:hover .face .cheek div {
+  background-color: rgb(245, 110, 151);
+}

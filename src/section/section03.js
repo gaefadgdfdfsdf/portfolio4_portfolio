@@ -8,10 +8,57 @@ const Section03 = () => {
   const setColorHeader = useSetRecoilState(colorHeaderState);
 
 // text opacity
+const card1Ref = useRef(null);
+  const card2Ref = useRef(null);
+  const card3Ref = useRef(null);
+  const card4Ref = useRef(null);
 
+  const [isCard1Narrow, setIsCard1Narrow] = useState(false);
+  const [isCard2Narrow, setIsCard2Narrow] = useState(false);
+  const [isCard3Narrow, setIsCard3Narrow] = useState(false);
+  const [isCard4Narrow, setIsCard4Narrow] = useState(false);
 
+  useEffect(() => {
+    const observer1 = new ResizeObserver((entries) => {
+      for (let entry of entries) {
+        const { width } = entry.contentRect;
+        setIsCard1Narrow(width < 260);
+      }
+    });
 
+    const observer2 = new ResizeObserver((entries) => {
+      for (let entry of entries) {
+        const { width } = entry.contentRect;
+        setIsCard2Narrow(width < 260);
+      }
+    });
 
+    const observer3 = new ResizeObserver((entries) => {
+      for (let entry of entries) {
+        const { width } = entry.contentRect;
+        setIsCard3Narrow(width < 260);
+      }
+    });
+
+     const observer4 = new ResizeObserver((entries) => {
+      for (let entry of entries) {
+        const { width } = entry.contentRect;
+        setIsCard4Narrow(width < 260);
+      }
+    });
+
+    if (card1Ref.current) observer1.observe(card1Ref.current);
+    if (card2Ref.current) observer2.observe(card2Ref.current);
+    if (card3Ref.current) observer3.observe(card3Ref.current);
+    if (card4Ref.current) observer4.observe(card4Ref.current);
+
+    return () => {
+      observer1.disconnect();
+      observer2.disconnect();
+      observer3.disconnect();
+      observer4.disconnect();
+    };
+  }, []);
 // text opacity
  
 
@@ -128,7 +175,7 @@ const Section03 = () => {
                     <div className='h-[0.5px] bg-white top-0 left-0 w-full'></div>
                     <div id="section03_static" className='lg:static lg:flex lg:flex-nowrap text-white '>
                         <div  className='relative z-[1px]' >
-                            <motion.div   style={{ width: div1Width }} id="reduce" className='overflow-hidden lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
+                            <motion.div ref={card1Ref}  style={{ width: div1Width }} id="reduce" className='overflow-hidden lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
                                 <div className='flex justify-between'>
                                     <div className='pt-[9px] lg:pt-0'>
                                         <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>DESIGN</div>
@@ -137,13 +184,16 @@ const Section03 = () => {
                                         </div>
                                     </div>
                                     <div
-                                    className='w-[500px] relative left-32 max-[600px]:text-[60px]  host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw] font-medium leading-none lg:mt-[1.7722222222222222vw]'> 
+                                    className='max-lg:left-12 max-[1290px]:left-20  w-[500px] relative left-32 max-[600px]:text-[60px]  host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw] font-medium leading-none lg:mt-[1.7722222222222222vw]'> 
                                     Photoshop
                                     </div>
                                 </div>
                                 <div
-                                
-                                    className='w-[600px] flex relative bottom-6 items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
+                                style={{
+                                opacity: isCard1Narrow ? 0 : 1,
+                                transition: "opacity 0.5s ease-in-out",
+                            }} 
+                                className='w-[600px] flex relative bottom-6 items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
                                     <div className='noto-sans-kr-medium lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
                                     포토샵의 기초 기능을 활용하여 창의적이고<br/> 효율적인 디자인 작업을 구현합니다.
                                     </div>
@@ -153,7 +203,7 @@ const Section03 = () => {
                         <div  className='relative z-[1px] lg:pt-0 pt-[0.694vw]' style={{ width: div2Width }}>
                             <div className='absolute top-0 left-0 h-full w-[0.5px] bg-white max-lg:hidden'></div>
                             <div className='absolute top-0 left-0 w-full h-[0.5px] bg-white hidden max-lg:block'></div>
-                            <motion.div style={{ width: div2Width }} id="reduce" className='overflow-hidden lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
+                            <motion.div ref={card2Ref} style={{ width: div2Width }} id="reduce" className='overflow-hidden lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
                             <div className='flex justify-between'>
                                     <div className='pt-[9px] lg:pt-0'>
                                         <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>DESIGN</div>
@@ -161,11 +211,16 @@ const Section03 = () => {
                                             <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + 'icon_2.svg'} alt='icon_2'/>
                                         </div>
                                     </div>
-                                    <div className='w-[500px] relative left-32 max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
+                                    <div className='max-lg:left-12 max-[1290px]:left-24 w-[500px] relative left-40 max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
                                     Illustrator
                                     </div>
                                 </div>
-                                <div className='w-[600px] relative bottom-6 flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
+                                <div
+                                style={{
+                                opacity: isCard2Narrow ? 0 : 1,
+                                transition: "opacity 0.5s ease-in-out",
+                            }}  
+                                className='w-[600px] relative bottom-6 flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'> 
                                     <div className='noto-sans-kr-medium lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
                                     일러스트 기초 기능을 활용하여<br/>
                                     간단한 SVG 아이콘 제작이 가능합니다.
@@ -176,7 +231,7 @@ const Section03 = () => {
                         <div className='relative z-[1px] lg:pt-0 pt-[0.694vw]' >
                             <div className='absolute top-0 left-0 h-full w-[0.5px] bg-white max-lg:hidden'></div>
                             <div className='absolute top-0 left-0 w-full h-[0.5px] bg-white hidden max-lg:block'></div>
-                            <motion.div style={{ width: div3Width }} id="reduce" className='overflow-hidden lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
+                            <motion.div ref={card3Ref} style={{ width: div3Width }} id="reduce" className='overflow-hidden lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
                             <div className='flex justify-between'>
                                     <div className='pt-[9px] lg:pt-0'>
                                         <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>Development</div>
@@ -184,11 +239,16 @@ const Section03 = () => {
                                             <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + 'icon_3.svg'} alt='icon_3'/>
                                         </div>
                                     </div>
-                                    <div className='w-[500px] relative left-32 max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
+                                    <div className='max-lg:left-12 max-[1290px]:left-8 w-[500px] relative left-16 max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
                                         HTML+CSS
                                     </div>
                                 </div>
-                                <div className='w-[600px] relative bottom-6 flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
+                                <div
+                                 style={{
+                                opacity: isCard3Narrow ? 0 : 1,
+                                transition: "opacity 0.5s ease-in-out",
+                            }}   
+                                className='w-[600px] relative bottom-6 flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
                                     <div className='noto-sans-kr-medium lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
                                     HTML과 CSS의 기초 지식을 바탕으로<br/>
                                     홈페이지의 구조를 제작하고, Animation CSS를 활용한<br/>
@@ -200,7 +260,7 @@ const Section03 = () => {
                         <div  className='relative z-[1px] lg:pt-0 pt-[0.694vw]' >
                             <div className='absolute top-0 left-0 h-full w-[0.5px] bg-white max-lg:hidden'></div>
                             <div className='absolute top-0 left-0 w-full h-[0.5px] bg-white hidden max-lg:block'></div>   
-                            <motion.div style={{ width: div4Width }} id="reduce" className='overflow-hidden lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
+                            <motion.div ref={card4Ref} style={{ width: div4Width }} id="reduce" className='overflow-hidden lg:min-h-[27.583333vw] lg:w-[34.236111111111114vw] px-[1.38vw] pt-[11px] lg:pt-[1.38vw] pb-5 lg:pb-[2.875vw] lg:flex flex-col justify-between flex-none'>
                                 <div className='flex justify-between'>
                                         <div className='pt-[9px] lg:pt-0'>
                                             <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>Development</div>
@@ -208,11 +268,16 @@ const Section03 = () => {
                                                 <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + 'icon_4.svg'} alt='icon_4'/>
                                             </div>
                                         </div>
-                                        <div className='w-[500px] relative left-32 max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
+                                        <div className='max-lg:left-12 w-[500px] relative left-20 max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
                                         Javascript
                                         </div>
                                     </div>
-                                    <div className='w-[600px] relative bottom-6 flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
+                                    <div
+                                     style={{
+                                opacity: isCard4Narrow ? 0 : 1,
+                                transition: "opacity 0.5s ease-in-out",
+                            }} 
+                                     className='w-[600px] relative bottom-6 flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
                                         <div className='noto-sans-kr-medium lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
                                         스크롤, 휠, 클릭 등 다양한 이벤트 리스너를 활용해<br/>
                                         요소 애니메이션, 화면 전환 등<br/>

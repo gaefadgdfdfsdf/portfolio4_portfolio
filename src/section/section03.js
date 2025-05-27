@@ -184,7 +184,7 @@ const card1Ref = useRef(null);
                                         </div>
                                     </div>
                                     <div
-                                    className='max-lg:left-12 max-[1290px]:left-20  w-[500px] relative left-32 max-[600px]:text-[60px]  host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw] font-medium leading-none lg:mt-[1.7722222222222222vw]'> 
+                                    className='max-[600px]:left-48 max-lg:left-12 max-[1290px]:left-20  w-[500px] relative left-32 max-[600px]:text-[60px]  host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw] font-medium leading-none lg:mt-[1.7722222222222222vw]'> 
                                     Photoshop
                                     </div>
                                 </div>
@@ -194,7 +194,7 @@ const card1Ref = useRef(null);
                                 transition: "opacity 0.5s ease-in-out",
                             }} 
                                 className='w-[600px] flex relative bottom-6 items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
-                                    <div className='noto-sans-kr-medium lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
+                                    <div className='max-lg:leading-[130%] noto-sans-kr-medium lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
                                     포토샵의 기초 기능을 활용하여 창의적이고<br/> 효율적인 디자인 작업을 구현합니다.
                                     </div>
                                 </div>
@@ -211,7 +211,7 @@ const card1Ref = useRef(null);
                                             <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + 'icon_2.svg'} alt='icon_2'/>
                                         </div>
                                     </div>
-                                    <div className='max-lg:left-12 max-[1290px]:left-24 w-[500px] relative left-40 max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
+                                    <div className='max-[600px]:left-56 max-lg:left-24 max-[1290px]:left-24 w-[500px] relative left-40 max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
                                     Illustrator
                                     </div>
                                 </div>
@@ -221,7 +221,7 @@ const card1Ref = useRef(null);
                                 transition: "opacity 0.5s ease-in-out",
                             }}  
                                 className='w-[600px] relative bottom-6 flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'> 
-                                    <div className='noto-sans-kr-medium lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
+                                    <div className='max-lg:leading-[130%] noto-sans-kr-medium lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
                                     일러스트 기초 기능을 활용하여<br/>
                                     간단한 SVG 아이콘 제작이 가능합니다.
                                     </div>
@@ -239,7 +239,7 @@ const card1Ref = useRef(null);
                                             <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + 'icon_3.svg'} alt='icon_3'/>
                                         </div>
                                     </div>
-                                    <div className='max-lg:left-12 max-[1290px]:left-8 w-[500px] relative left-16 max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
+                                    <div className='max-[600px]:left-40 max-lg:left-8 max-[1290px]:left-8 w-[500px] relative left-16 max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
                                         HTML+CSS
                                     </div>
                                 </div>
@@ -249,7 +249,7 @@ const card1Ref = useRef(null);
                                 transition: "opacity 0.5s ease-in-out",
                             }}   
                                 className='w-[600px] relative bottom-6 flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
-                                    <div className='noto-sans-kr-medium lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
+                                    <div className='max-lg:leading-[130%]  noto-sans-kr-medium lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
                                     HTML과 CSS의 기초 지식을 바탕으로<br/>
                                     홈페이지의 구조를 제작하고, Animation CSS를 활용한<br/>
                                     다양한 인터랙션 구현이 가능합니다.
@@ -268,7 +268,7 @@ const card1Ref = useRef(null);
                                                 <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + 'icon_4.svg'} alt='icon_4'/>
                                             </div>
                                         </div>
-                                        <div className='max-lg:left-12 w-[500px] relative left-20 max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
+                                        <div className='max-[600px]:left-48 max-[1290px]:left-14 max-lg:left-20 w-[500px] relative left-20 max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
                                         Javascript
                                         </div>
                                     </div>
@@ -278,7 +278,7 @@ const card1Ref = useRef(null);
                                 transition: "opacity 0.5s ease-in-out",
                             }} 
                                      className='w-[600px] relative bottom-6 flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
-                                        <div className='noto-sans-kr-medium lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
+                                        <div className='max-lg:leading-[130%]  noto-sans-kr-medium lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
                                         스크롤, 휠, 클릭 등 다양한 이벤트 리스너를 활용해<br/>
                                         요소 애니메이션, 화면 전환 등<br/>
                                         동적인 UI를 JavaScript로 구현이 가능합니다.
@@ -297,12 +297,12 @@ const card1Ref = useRef(null);
                                             <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + 'icon_2.svg'} alt='icon_2'/>
                                         </div>
                                     </div>
-                                    <div className=' relative lg:right-20 max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
+                                    <div className='max-lg:right-4 max-[600px]:right-4 relative lg:right-20 max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
                                     React
                                     </div>
                                 </div>
                                 <div className='relative bottom-6 flex items-end lg:block mt-[30px] lg:mt-0 min-h-[110px] lg:min-h-px'>
-                                    <div className='noto-sans-kr-medium lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
+                                    <div className='max-lg:leading-[130%]  noto-sans-kr-medium lg:mt-[3.4722222222222223vw] w-full lg:text-[1.25vw] lg:leading-[133%] lg:tracking-[-0.02em]'>
                                     React를 기반으로 한 화면 구성과<br/>
                                     Framer Motion, Recoil을 활용한 인터랙션 구현이 가능하며,<br/>
                                     ScrollTrigger, Swiper, useEffect 등<br/>

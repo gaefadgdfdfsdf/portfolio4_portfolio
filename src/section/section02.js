@@ -114,7 +114,7 @@ const Section02 = () => {
 
                             <motion.div
                                 style={{ height: height1 }}
-                                ref={divcontainerRef} className='max-[768px]:min-h-[500px] max-[1023px]:min-h-[700px] lg:h-[34.29166666666667vw] overflow-hidden relative'>
+                                ref={divcontainerRef} className='max-[768px]:min-h-[600px] max-[1023px]:min-h-[700px] lg:h-[34.29166666666667vw] overflow-hidden relative'>
                                 <div className='absolute bottom-0 left-0 w-full bg-black h-[1px] z-10'></div>
                                 <a href='https://gaefadgdfdfsdf.github.io/portfolio2_glaxywatch/' target='_blank' className='absolute inset-0 z-[1]' rel="noreferrer" />
                                 <div className='py-5 lg:py-[1.38vw] flex flex-col-reverse lg:flex-row lg:h-full'>
@@ -141,7 +141,7 @@ const Section02 = () => {
 
                             <motion.div
                                 style={{ height: height2 }}
-                                ref={divcontainerRef} className='max-[768px]:min-h-[500px] max-[1023px]:min-h-[700px] lg:h-[34.29166666666667vw] overflow-hidden relative'>
+                                ref={divcontainerRef} className='max-[768px]:min-h-[600px] max-[1023px]:min-h-[700px] lg:h-[34.29166666666667vw] overflow-hidden relative'>
                                 <div className='absolute bottom-0 left-0 w-full bg-black h-[1px] z-10'></div>
                                 <a href='https://gaefadgdfdfsdf.github.io/portfolio_1_hyundai/' target='_blank' className='absolute inset-0 z-[1]' rel="noreferrer" />
                                 <div className='py-5 lg:py-[1.38vw] flex flex-col-reverse lg:flex-row lg:h-full'>
@@ -165,7 +165,7 @@ const Section02 = () => {
 
                             <motion.div
                                 style={{ height: height3 }}
-                                ref={divcontainerRef} className='max-[768px]:min-h-[500px] max-[1023px]:min-h-[700px] lg:h-[34.29166666666667vw] overflow-hidden relative'>
+                                ref={divcontainerRef} className='max-[768px]:min-h-[600px] max-[1023px]:min-h-[700px] lg:h-[34.29166666666667vw] overflow-hidden relative'>
                                 <div className='absolute bottom-0 left-0 w-full bg-black h-[1px] z-10'></div>
                                 <a href='https://gaefadgdfdfsdf.github.io/portfolio2_glaxywatch/' target='_blank' className='absolute inset-0 z-[1]' />
                                 <div className='py-5 lg:py-[1.38vw] flex flex-col-reverse lg:flex-row lg:h-full'>

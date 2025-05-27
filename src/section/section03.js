@@ -184,7 +184,7 @@ const card1Ref = useRef(null);
                                         </div>
                                     </div>
                                     <div
-                                    className='max-[600px]:left-48 max-lg:left-12 max-[1290px]:left-20  w-[500px] relative left-32 max-[600px]:text-[60px]  host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw] font-medium leading-none lg:mt-[1.7722222222222222vw]'> 
+                                    className='max-[525px]:left-[160px] max-[580px]:left-56 max-[580px]:text-[50px]  max-[600px]:left-48 max-lg:left-12 max-[1290px]:left-20  w-[500px] relative left-32 max-[600px]:text-[60px]  host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw] font-medium leading-none lg:mt-[1.7722222222222222vw]'> 
                                     Photoshop
                                     </div>
                                 </div>
@@ -211,7 +211,7 @@ const card1Ref = useRef(null);
                                             <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + 'icon_2.svg'} alt='icon_2'/>
                                         </div>
                                     </div>
-                                    <div className='max-[600px]:left-56 max-lg:left-24 max-[1290px]:left-24 w-[500px] relative left-40 max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
+                                    <div className='max-[525px]:left-[190px] max-[580px]:left-60 max-[580px]:text-[50px]  max-[600px]:left-56 max-lg:left-24 max-[1290px]:left-24 w-[500px] relative left-40 max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
                                     Illustrator
                                     </div>
                                 </div>
@@ -239,7 +239,7 @@ const card1Ref = useRef(null);
                                             <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + 'icon_3.svg'} alt='icon_3'/>
                                         </div>
                                     </div>
-                                    <div className='max-[600px]:left-40 max-lg:left-8 max-[1290px]:left-8 w-[500px] relative left-16 max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
+                                    <div className='max-[525px]:left-[100px] max-[580px]:text-[50px] max-[600px]:left-40 max-lg:left-8 max-[1290px]:left-8 w-[500px] relative left-16 max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
                                         HTML+CSS
                                     </div>
                                 </div>
@@ -268,7 +268,7 @@ const card1Ref = useRef(null);
                                                 <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + 'icon_4.svg'} alt='icon_4'/>
                                             </div>
                                         </div>
-                                        <div className='max-[600px]:left-48 max-[1290px]:left-14 max-lg:left-20 w-[500px] relative left-20 max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
+                                        <div className='max-[525px]:left-[130px] max-[580px]:text-[50px]  max-[600px]:left-48 max-[1290px]:left-14 max-lg:left-20 w-[500px] relative left-20 max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
                                         Javascript
                                         </div>
                                     </div>
@@ -297,7 +297,7 @@ const card1Ref = useRef(null);
                                             <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + 'icon_2.svg'} alt='icon_2'/>
                                         </div>
                                     </div>
-                                    <div className='max-lg:right-4 max-[600px]:right-4 relative lg:right-20 max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
+                                    <div className='max-[500px]:right-10 max-[525px]:right-12 max-[580px]:right-8 max-[580px]:text-[50px]  max-lg:right-4 max-[600px]:right-4 relative lg:right-20 max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
                                     React
                                     </div>
                                 </div>

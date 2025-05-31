@@ -75,7 +75,8 @@ const Section04 = () => {
 
         <div className="host-grotesk-bold relative group max-[768px]:w-[70vw] max-[1023px]:w-[55vw] lg:w-[43vw]">
             <img
-            src="/web01.jpg"
+            src={process.env.PUBLIC_URL + "/web01.jpg"}
+           
             alt="Poster 1"
             className="h-3/4 object-cover shadow-2xl"
             />
@@ -90,7 +91,7 @@ const Section04 = () => {
 
         <div className="relative group max-[768px]:w-[70vw] max-[1023px]:w-[55vw] lg:w-[43vw]">
             <img
-            src="/web02.jpg"
+            src={process.env.PUBLIC_URL + "/web02.jpg"}
             alt="Poster 2"
             className="h-3/4 object-cover shadow-2xl"
             />
@@ -105,7 +106,7 @@ const Section04 = () => {
 
         <div className="relative group max-[768px]:w-[70vw] max-[1023px]:w-[55vw] lg:w-[43vw]">
             <img
-            src="/web03.jpg"
+            src={process.env.PUBLIC_URL + "/web03.jpg"}
             alt="Poster 3"
             className="h-3/4 object-cover shadow-2xl"
             />
@@ -120,7 +121,7 @@ const Section04 = () => {
 
         <div className="relative group max-[768px]:w-[70vw] max-[1023px]:w-[55vw] lg:w-[43vw]">
             <img
-            src="/web06.jpg"
+             src={process.env.PUBLIC_URL + "/web06.jpg"}
             alt="Poster 6"
             className="h-3/4 object-cover shadow-2xl"
             />
@@ -135,7 +136,7 @@ const Section04 = () => {
 
         <div className="relative group max-[768px]:w-[70vw] max-[1023px]:w-[55vw] lg:w-[43vw]">
             <img
-            src="/web04.jpg"
+            src={process.env.PUBLIC_URL + "/web04.jpg"}
             alt="Poster 4"
             className="h-3/4 object-cover shadow-2xl"
             />
@@ -150,7 +151,7 @@ const Section04 = () => {
 
         <div className="relative group max-[768px]:w-[70vw] max-[1023px]:w-[55vw] lg:w-[43vw]">
             <img
-            src="/web05.jpg"
+             src={process.env.PUBLIC_URL + "/web05.jpg"}
             alt="Poster 5"
             className="h-3/4 object-cover shadow-2xl"
             />
@@ -165,7 +166,7 @@ const Section04 = () => {
 
         <div className="relative group max-[768px]:w-[70vw] max-[1023px]:w-[55vw] lg:w-[43vw]">
             <img
-            src="/web07.jpg"
+            src={process.env.PUBLIC_URL + "/web07.jpg"}
             alt="Poster 7"
             className="h-3/4 object-cover shadow-2xl"
             />
@@ -203,9 +204,9 @@ const Section04 = () => {
                   <span className="ransition-transform duration-300 group-hover:bottom-16 rotate-[135deg] absolute left-2 bottom-2 noto-sans-kr-medium group flex overflow-hidden text-white ">
                   
                   <img className="rotate-[90deg] w-[10px] translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center"
-                   src={process.env.PUBLIC_URL + 'arrow.png'} alt='arrow' />
+                   src={process.env.PUBLIC_URL + '/arrow.png'} alt='arrow' />
                   <img className="w-[10px] translate-y-0 opacity-100 group-hover:-translate-y-full  transition-transform duration-300 flex nowrap items-center"
-                   src={process.env.PUBLIC_URL + 'arrow.png'} alt='arrow' />
+                   src={process.env.PUBLIC_URL + '/arrow.png'} alt='arrow' />
                 
                 </span>
                <span className="noto-sans-kr-medium group relative flex flex-col overflow-hidden  text-white ">
@@ -218,9 +219,9 @@ const Section04 = () => {
                   <span className="ransition-transform duration-300 group-hover:top-16 rotate-[315deg] absolute top-2 right-2 noto-sans-kr-medium group flex overflow-hidden text-white ">
                   
                       <img className="rotate-[90deg] w-[10px] translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center"
-                       src={process.env.PUBLIC_URL + 'arrow.png'} alt='arrow' />
+                       src={process.env.PUBLIC_URL + '/arrow.png'} alt='arrow' />
                       <img className="w-[10px] translate-y-0 opacity-100 group-hover:-translate-y-full  transition-transform duration-300 flex nowrap items-center"
-                       src={process.env.PUBLIC_URL + 'arrow.png'} alt='arrow' />
+                       src={process.env.PUBLIC_URL + '/arrow.png'} alt='arrow' />
                     
                   </span>
               </a>

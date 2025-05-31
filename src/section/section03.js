@@ -180,7 +180,7 @@ const card1Ref = useRef(null);
                                     <div className='pt-[9px] lg:pt-0'>
                                         <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>DESIGN</div>
                                         <div className='mt-[13px] lg:mt-[1.9444444444444444vw]'>
-                                            <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + 'icon_1.svg'} alt='icon_1'/>
+                                            <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + '/icon_1.svg'} alt='icon_1'/>
                                         </div>
                                     </div>
                                     <div
@@ -208,7 +208,7 @@ const card1Ref = useRef(null);
                                     <div className='pt-[9px] lg:pt-0'>
                                         <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>DESIGN</div>
                                         <div className='mt-[13px] lg:mt-[1.9444444444444444vw]'>
-                                            <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + 'icon_2.svg'} alt='icon_2'/>
+                                            <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + '/icon_2.svg'} alt='icon_2'/>
                                         </div>
                                     </div>
                                     <div className='max-[400px]:text-[30px] max-[450px]:text-[40px] max-[525px]:left-[190px] max-[580px]:left-60 max-[580px]:text-[50px]  max-[600px]:left-56 max-lg:left-24 max-[1290px]:left-24 w-[500px] relative left-40 max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
@@ -236,7 +236,7 @@ const card1Ref = useRef(null);
                                     <div className='pt-[9px] lg:pt-0'>
                                         <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>Development</div>
                                         <div className='mt-[13px] lg:mt-[1.9444444444444444vw]'>
-                                            <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + 'icon_3.svg'} alt='icon_3'/>
+                                            <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + '/icon_3.svg'} alt='icon_3'/>
                                         </div>
                                     </div>
                                     <div className='max-[400px]:left-[120px] max-[400px]:text-[30px] max-[450px]:text-[40px] max-[525px]:left-[100px] max-[580px]:text-[50px] max-[600px]:left-40 max-lg:left-8 max-[1290px]:left-8 w-[500px] relative left-16 max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
@@ -265,7 +265,7 @@ const card1Ref = useRef(null);
                                         <div className='pt-[9px] lg:pt-0'>
                                             <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>Development</div>
                                             <div className='mt-[13px] lg:mt-[1.9444444444444444vw]'>
-                                                <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + 'icon_4.svg'} alt='icon_4'/>
+                                                <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + '/icon_4.svg'} alt='icon_4'/>
                                             </div>
                                         </div>
                                         <div className='max-[400px]:left-[135px] max-[400px]:text-[30px] max-[450px]:text-[40px] max-[525px]:left-[130px] max-[580px]:text-[50px]  max-[600px]:left-48 max-[1290px]:left-14 max-lg:left-20 w-[500px] relative left-20 max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>
@@ -294,7 +294,7 @@ const card1Ref = useRef(null);
                                     <div className='pt-[9px] lg:pt-0'>
                                         <div className='host-grotesk-bold text-[12px] lg:text-[0.9722222222222222vw] leading-[114%] font-medium uppercase hide_br_tablet'>Development</div>
                                         <div className='mt-[13px] lg:mt-[1.9444444444444444vw]'>
-                                            <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + 'icon_2.svg'} alt='icon_2'/>
+                                            <img className='lg:w-[2.7777777777777777vw] h-auto' src={process.env.PUBLIC_URL + '/icon_2.svg'} alt='icon_2'/>
                                         </div>
                                     </div>
                                     <div className='max-[400px]:text-[30px] max-[450px]:right-4 max-[450px]:text-[40px] max-[500px]:right-10 max-[525px]:right-12 max-[580px]:right-8 max-[580px]:text-[50px]  max-lg:right-4 max-[600px]:right-4 relative lg:right-20 max-[600px]:text-[60px] host-grotesk-bold text-[92px] lg:text-[3.722222222222223vw]  font-medium leading-none lg:mt-[1.7722222222222222vw]'>

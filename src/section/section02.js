@@ -100,7 +100,7 @@ const Section02 = () => {
                             </span>
                         </div>
                         <div>
-                            <img className='w-full h-auto max-w-full' src={process.env.PUBLIC_URL + 'portfolio.svg'} alt='portfolio' />
+                            <img className='w-full h-auto max-w-full' src={process.env.PUBLIC_URL + '/portfolio.svg'} alt='portfolio' />
                         </div>
                     </div>
                 </div>
@@ -130,7 +130,7 @@ const Section02 = () => {
                                     </div>
                                     <div className='lg:w-[calc(100%-32.84722222222222vw)]'>
                                         <div className='wrap-img-distortion overflow-hidden rounded-[.3472222222222222vw] h-[42vw] lg:h-full relative'>
-                                            <img className='object-cover w-full relative h-full lg:top-1/2 lg:-translate-y-1/2' src={process.env.PUBLIC_URL + 'galaxy.jpg'} alt='galaxy' />
+                                            <img className='object-cover w-full relative h-full lg:top-1/2 lg:-translate-y-1/2' src={process.env.PUBLIC_URL + '/galaxy.jpg'} alt='galaxy' />
                                             <div className="absolute top-[50%] w-full left-0 z-1 translate-y-[-50%]">
                                                 <canvas className='w-full h-full object-cover' id="hover-effect-canvas-1745038706574" width="1236" height="618"></canvas>
                                             </div>
@@ -157,7 +157,7 @@ const Section02 = () => {
                                     </div>
                                     <div  className='lg:w-[calc(100%-32.84722222222222vw)]'>
                                         <div className='wrap-img-distortion overflow-hidden rounded-[.3472222222222222vw] h-[42vw] lg:h-full relative'>
-                                            <img className='object-cover w-full relative h-full lg:top-1/2 lg:-translate-y-1/2' src={process.env.PUBLIC_URL + 'hyundai.jpg'} alt='hyundai' />
+                                            <img className='object-cover w-full relative h-full lg:top-1/2 lg:-translate-y-1/2' src={process.env.PUBLIC_URL + '/hyundai.jpg'} alt='hyundai' />
                                         </div>
                                     </div>
                                 </div>
@@ -167,7 +167,7 @@ const Section02 = () => {
                                 style={{ height: height3 }}
                                 ref={divcontainerRef} className='max-[768px]:min-h-[600px] max-[1023px]:min-h-[700px] lg:h-[34.29166666666667vw] overflow-hidden relative'>
                                 <div className='absolute bottom-0 left-0 w-full bg-black h-[1px] z-10'></div>
-                                <a href='https://gaefadgdfdfsdf.github.io/portfolio2_glaxywatch/' target='_blank' className='absolute inset-0 z-[1]' />
+                                <a href='https://gaefadgdfdfsdf.github.io/portfolio3_herryporter/' target='_blank' className='absolute inset-0 z-[1]' />
                                 <div className='py-5 lg:py-[1.38vw] flex flex-col-reverse lg:flex-row lg:h-full'>
                                     <div className='lg:w-[32.84722222222222vw] lg:pr-[2.7777777777777777vw] mt-[18px] lg:mt-0'>
                                         <h2 className='host-grotesk-superbold text-[32px] lg:text-[4.166666666666666vw] leading-[100%] tracking-tighter font-medium'>herryporter</h2>
@@ -183,7 +183,7 @@ const Section02 = () => {
                                     </div>
                                     <div className='lg:w-[calc(100%-32.84722222222222vw)]'>
                                         <div className='wrap-img-distortion overflow-hidden rounded-[.3472222222222222vw] h-[42vw] lg:h-full relative'>
-                                            <img className='object-cover w-full relative h-full lg:top-1/2 lg:-translate-y-1/2' src={process.env.PUBLIC_URL + 'herryporter-1.jpg'} alt='herryporter' />
+                                            <img className='object-cover w-full relative h-full lg:top-1/2 lg:-translate-y-1/2' src={process.env.PUBLIC_URL + '/herryporter-1.jpg'} alt='herryporter' />
                                             <div className="absolute top-[50%] w-full left-0 z-1 translate-y-[-50%]">
                                                 <canvas className='w-full h-full object-cover' id="hover-effect-canvas-1745038706574" width="1236" height="618"></canvas>
                                             </div>
@@ -198,7 +198,7 @@ const Section02 = () => {
                                         <div className='flex justify-center lg:justify-start'>
                                             <div id="blackline" className='min-w-[208px] lg:min-w-[15.069444444444443vw] pl-2 lg:pl-[0.5555555555555556vw] pr-[5px] lg:pr-[0.4166666666666667vw] min-h-[49px] lg:min-h-[3.4027777777777777vw] inline-flex items-center justify-between rounded-[5px]'>
                                                 <div className='flex items-center'>
-                                                    <img className='w-[32px] lg:w-[2.2222222222222223vw] h-auto mr-2 lg:mr-[0.5555555555555556vw]' src={process.env.PUBLIC_URL + 'icon-projects.svg'} alt='icon-projects' />
+                                                    <img className='w-[32px] lg:w-[2.2222222222222223vw] h-auto mr-2 lg:mr-[0.5555555555555556vw]' src={process.env.PUBLIC_URL + '/icon-projects.svg'} alt='icon-projects' />
                                                     <div className='host-grotesk-bold text-left leading-[100%] text-[12px] lg:text-[0.8333333333333334vw] tracking-[-0.7px] uppercase'>
                                                         ADDED<br />
                                                         PORTFOLIO<br />

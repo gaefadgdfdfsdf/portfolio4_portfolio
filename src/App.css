@@ -187,6 +187,7 @@ body {
 }
 
 
+
 .animate-up-down {
   animation: scroll-down 4s infinite backwards;
   animation-delay: 4s;

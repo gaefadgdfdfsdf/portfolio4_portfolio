@@ -38,34 +38,41 @@ const CameraController = ({
     }, [camera]);
 
 
+   
 
    
 
 
 
     useFrame(() => {
+        
+       
         const progress = scrollYProgress.get();
         if (pivotRef.current) {
             let targetRotationY = 0;
+            let targetRotationX = 0;
+            let targetRotationZ = 0;
           
             let targetScale = 1;
 
-
-           
+            
     
             // 회전 + 확대 범위
-            if (progress >= 0.1 && progress <= 0.2) {
+            if (progress >= 0.07 && progress <= 0.3) {
                 targetRotationY = Math.PI * 2;
                 targetScale = 0.9; // 스크롤 내릴 때 커짐
+
+                
             }
 
           
-    
+       
+
             // 회전 적용
             pivotRef.current.rotation.y = THREE.MathUtils.lerp(
                 pivotRef.current.rotation.y,
                 targetRotationY,
-                0.05
+                0.07
             );
     
             // 스케일 적용 (부드럽게 변화)
@@ -149,19 +156,23 @@ const Section01 = () => {
             new THREE.Vector3(0, 0, 3),
             new THREE.Vector3(0, 0, 0),
         ]
+
     );
 
-    const headerRef = useRef(null);
-    const section02Ref = useRef(null);
-    const [showHeader, setShowHeader] = useState(false);
+    // 📌 회전 값 추가 (Euler 라디안 배열 [x, y, z])
+const rotation = useTransform(
+    scrollYProgress,
+  [0, 0.2, 0.4, 0.6, 0.8, 1],
+  [
+    [0, 0, 0], // 시작
+    [Math.PI / 8, 0 / 12, 0], // x, y 살짝 회전
+    [Math.PI / 4, Math.PI / 6, Math.PI / 12], // x, y, z 약간 더 회전
+    [Math.PI / 2, Math.PI / 3, Math.PI / 6], // 중간 회전
+    [Math.PI, Math.PI, Math.PI / 2], // 강한 회전
+    [2 * Math.PI, 2 * Math.PI, 2 * Math.PI] // 360도 회전
+  ]
+  );
 
-    const [isSectionvisible, setIsSectionVisible] = useState(false);
-
-
-
-
-    const containerRef = useRef(null);
-  
 
 
 
@@ -297,13 +308,13 @@ const Section01 = () => {
                 </div>
                 <div className='overflow-x-clip h-[150vh] mt-[-65vw] lg:mt-[-2vw]'>
                     <motion.div className='sticky top-0 h-screen'
-                    
+                     rotation={rotation}
                     id="text"
                     ref={threed_Ref}
                     style={{ y ,x}} 
                     >
                         <Suspense fallback={<span>로딩중..</span>}>
-                            <Canvas>
+                            <Canvas >
                                 <CameraController scrollYProgress={scrollYProgress} />
                                 <ambientLight intensity={1} />
                                 <directionalLight

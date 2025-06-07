@@ -349,37 +349,37 @@ const Section01 = () => {
                                 <div className="overflow-hidden">
                                     <div className='block relative text-start'>
                                         <span className='mr-[101px] lg:mr-[4.472222222222223vw] '></span>
-                                        저는 프론트엔드 개발을 기반으로 꾸준히 학습하고 있는 신입 개발자 JYH입니다.
+                                        저는 2년 6개월간 프론트엔드 개발자로서 다수의 프로젝트를 성공적으로 
                                     </div>
                                 </div>
                                 <div className="oerflow-hidden">
                                     <div className="block relative text-start">
-                                        JavaScript, HTML, CSS, React, jQuery 등 웹 기술에 대한 이해를 바탕으로,
+                                    수행하며 실무 역량을 갖추었습니다. JavaScript, HTML, CSS, React, jQuery 등 최신 웹 기술을 
                                     </div>
                                 </div>
                                 <div className="oerflow-hidden">
                                     <div className="block relative text-start">
-                                        사용자 중심의 UI 구현에 집중하고 있습니다. 신입이지만 성실함과 꾸준함을
+                                    능숙하게 활용하며, 사용자 경험(UX)을 최우선으로 고려한 직관적이고 효율적인 UI 구현에 집중하고 있습니다. 
                                     </div>
                                 </div>
                                 <div className="oerflow-hidden">
                                     <div className="block relative text-start">
-                                        바탕으로 기초를 탄탄히 다져왔으며, 실무에서도 빠르게 적응할 수 있는 준비가 되어 있습니다.
+                                    꼼꼼한 코드 관리와 문제 해결 능력을 바탕으로 안정적이고 확장 가능한 웹 서비스를 제공하는 데
                                     </div>
                                 </div>
                                 <div className="oerflow-hidden">
                                     <div className="block relative text-start">
-                                        작은 디테일도 놓치지 않는 꼼꼼함과 책임감을 강점으로 삼고 있습니다.
+                                    강점을 가지고 있습니다. ‘믿을 윤(允)’, ‘연꽃 하(荷)’라는 이름의 뜻처럼 신뢰할 수 있는 개발자로서
                                     </div>
                                 </div>
                                 <div className="oerflow-hidden">
                                     <div className="block relative text-start">
-                                        이름처럼 '믿을 윤(允)', '연꽃 하(荷)'의 의미를 담아, 신뢰감 있고 성장하는 개발자가 되고자 합니다.
+                                    팀과 고객에게 꾸준한 가치를 전달하며, 끊임없는 자기 개발과  기술 습득을 통해 
                                     </div>
                                 </div>
                                 <div className="oerflow-hidden">
                                     <div className="block relative text-start">
-                                        장기적인 관점에서 계속해서 발전할 수 있는 개발자를 목표로 하고 있습니다.
+                                   장기적인 성장과 발전을 도모하고 있습니다.
                                     </div>
                                 </div>
                             </div>

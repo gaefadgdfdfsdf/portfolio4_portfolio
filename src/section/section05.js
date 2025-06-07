@@ -124,12 +124,16 @@ const Section05 = () => {
                    src={process.env.PUBLIC_URL + '/arrow.png'} alt='arrow' />
                 
                 </span>
+              
                <span className="noto-sans-kr-medium group relative flex flex-col overflow-hidden  text-white ">
+                   <a href="tel:010-8864-4851" target='_blank'>
                     <span className="translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center">
                       contact me
                       </span>
                     <span className="translate-y-0 opacity-100 group-hover:-translate-y-full  transition-transform duration-300 flex nowrap items-center">contact me</span>
+                    </a>
                   </span>
+                  
 
                   <span className="ransition-transform duration-300 group-hover:top-16 rotate-[315deg] absolute top-2 right-2 noto-sans-kr-medium group flex overflow-hidden text-white ">
                   
@@ -169,11 +173,11 @@ const Section05 = () => {
 
               <li className="group h-[33.3334%] relative overflow-hidden cursor-pointer p-0">
                 <div className="group-hover:translate-y-0 hover-bg h-full bg-[#E6E8EA] absolute inset-0 translate-y-[100px] transition-transform duration-300"></div>
-                {/* tell */}
-                <a href="#" className="max-[550px]:h-[6.5vw] max-lg:h-[4.5vw] flex items-center pl-[1.388vw] pr-[1.388vw] lg:h-[3vw] lg:pt-0 lg:pb-0 lg:text-[0.9722222222222222vw] relative z-10 transition-colors duration-300 group-hover:text-black">
+               
+                <a href="tel:010-8864-4851" target='_blank' className="max-[550px]:h-[6.5vw] max-lg:h-[4.5vw] flex items-center pl-[1.388vw] pr-[1.388vw] lg:h-[3vw] lg:pt-0 lg:pb-0 lg:text-[0.9722222222222222vw] relative z-10 transition-colors duration-300 group-hover:text-black">
                   010-8864-4851
                 </a>
-                {/* <span className="absolute right-[1.388vw] top-1/2 -translate-y-1/2 transition-colors duration-300 group-hover:text-black"></span> */}
+               
               </li>
             </ul>
           </div>
@@ -200,7 +204,7 @@ const Section05 = () => {
                 <ul className="flex gap-[1.25vw]">
                   <li>
                     {/* 이메일로 mailto */}
-                    <a href="#">
+                    <a href="mailto:joyunha4@gmail.com" target='_blank'>
                       <span className=" group leading-[132%] h-[1.3em] relative flex flex-col overflow-hidden">
                         <span className="translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center" >joyunha4@gmail.com</span>
                         <span className="translate-y-0 opacity-100 group-hover:-translate-y-full  transition-transform duration-300 flex nowrap items-center" >joyunha4@gmail.com</span>

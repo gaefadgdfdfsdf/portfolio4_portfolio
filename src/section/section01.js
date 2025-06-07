@@ -90,8 +90,8 @@ const CameraController = ({
 };
 
 
-const Model = ({ position }) => {
-    const { scene, animations } = useGLTF(process.env.PUBLIC_URL + '/flower.glb');
+const Model = () => {
+    const { scene} = useGLTF(process.env.PUBLIC_URL + '/flower.glb');
     
 
     useEffect(() => {
@@ -126,6 +126,18 @@ const Section01 = () => {
         offset: ["start end", "end end" ],
     });
 
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+          setIsMobile(window.innerWidth <= 800)
+        }
+        handleResize()
+        window.addEventListener('resize', handleResize)
+        return () => window.removeEventListener('resize', handleResize)
+      }, [])
+
+
     // 3d 아래쪽으로 이동
    // scrollYProgress로 변경
     const { scrollYProgress: scrollYProgressB } = useScroll({
@@ -140,6 +152,7 @@ const Section01 = () => {
      // 3d 아래쪽으로 이동
    
     useEffect(() => {
+        
         window.addEventListener("scroll", () => {
             console.log(scrollYProgress.get());
         });
@@ -148,6 +161,16 @@ const Section01 = () => {
     const position = useTransform(
         scrollYProgress,
         [0, 0.1, 0.3, 0.7 , 1, 1.3], // 전체 스크롤 범위에서 점진적으로
+        isMobile
+        ?[
+            new THREE.Vector3(0, 0, 3),
+            new THREE.Vector3(0, 0, 0),
+            new THREE.Vector3(0, 0, -2),   // x = 0으로 고정
+            new THREE.Vector3(0, 0, -5),   // x = 0으로 고정
+            new THREE.Vector3(0, 0, 3),
+            new THREE.Vector3(0, 0, 0),
+          ]
+        : 
         [
             new THREE.Vector3(0, 0, 3),       // 초기 위치: 앞에 있음
             new THREE.Vector3(0, 0, 0),       // 점점 가까워짐
@@ -158,20 +181,6 @@ const Section01 = () => {
         ]
 
     );
-
-    // 📌 회전 값 추가 (Euler 라디안 배열 [x, y, z])
-const rotation = useTransform(
-    scrollYProgress,
-  [0, 0.2, 0.4, 0.6, 0.8, 1],
-  [
-    [0, 0, 0], // 시작
-    [Math.PI / 8, 0 / 12, 0], // x, y 살짝 회전
-    [Math.PI / 4, Math.PI / 6, Math.PI / 12], // x, y, z 약간 더 회전
-    [Math.PI / 2, Math.PI / 3, Math.PI / 6], // 중간 회전
-    [Math.PI, Math.PI, Math.PI / 2], // 강한 회전
-    [2 * Math.PI, 2 * Math.PI, 2 * Math.PI] // 360도 회전
-  ]
-  );
 
 
 
@@ -210,11 +219,11 @@ const rotation = useTransform(
                                      href="#" className="pl-[1.388vw] pt-[1.5277777777777777vw] pb-[1.5277777777777777vw] px-0relative flex items-center">
                                         <span className="group relative flex flex-col overflow-hidden">
                                             <span className="pl-[1.041555vw] translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center" >
-                                            <img className='absolute -translate-y-1/2 opacity-[0.2] left-0 w-[0.694vw] h-[0.694vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + '/trai_icon.svg'} alt='trai_icon' />
+                                            <img className='relative -top-[5px] mr-2 opacity-[0.2] left-0 w-[0.694vw] h-[0.694vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + '/trai_icon.svg'} alt='trai_icon' />
                                             WORK
                                             </span>
                                             <span className="pl-[1.041555vw] translate-y-0 opacity-100 group-hover:-translate-y-full  transition-transform duration-300 flex nowrap items-cente">
-                                                <img className='absolute -translate-y-1/2 opacity-[0.2] left-0 w-[0.694vw] h-[0.694vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + '/trai_icon.svg'} alt='trai_icon' />
+                                                <img className='relative -top-[5px] mr-2 opacity-[0.2] left-0 w-[0.694vw] h-[0.694vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + '/trai_icon.svg'} alt='trai_icon' />
                                                 WORK
                                             </span>
                                         </span>
@@ -227,12 +236,12 @@ const rotation = useTransform(
                                     }}
                                     href="#" className='pt-[1.5277777777777777vw] pb-[1.5277777777777777vw] px-0 relative flex items-center overflow-hidden'>
                                         <span className="group relative flex flex-col overflow-hidden">
-                                            <span className="pl-[1.041555vw] translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center" >
-                                                <img className='absolute top-1/5 -translate-y-1/3 opacity-[0.2] left-0 w-[0.694vw] h-[0.694vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + '/trai_icon.svg'} alt='trai_icon' />
+                                            <span className="pl-[0.541555vw] translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center" >
+                                                <img className='relative -top-[5px] mr-2 opacity-[0.2] left-0 w-[0.694vw] h-[0.694vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + '/trai_icon.svg'} alt='trai_icon' />
                                                 skill
                                             </span>
-                                            <span className="pl-[1.041555vw] translate-y-0 opacity-100 group-hover:-translate-y-full  transition-transform duration-300 flex nowrap items-center">
-                                                <img className='absolute top-1/5 -translate-y-1/3 opacity-[0.2] left-0 w-[0.694vw] h-[0.694vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + '/trai_icon.svg'} alt='trai_icon' />
+                                            <span className="pl-[0.541555vw] translate-y-0 opacity-100 group-hover:-translate-y-full  transition-transform duration-300 flex nowrap items-center">
+                                                <img className='relative -top-[5px] mr-2 opacity-[0.2] left-0 w-[0.694vw] h-[0.694vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + '/trai_icon.svg'} alt='trai_icon' />
                                                 skill
                                             </span>
                                         </span>
@@ -308,7 +317,6 @@ const rotation = useTransform(
                 </div>
                 <div className='overflow-x-clip h-[150vh] mt-[-65vw] lg:mt-[-2vw]'>
                     <motion.div className='sticky top-0 h-screen'
-                     rotation={rotation}
                     id="text"
                     ref={threed_Ref}
                     style={{ y ,x}} 

@@ -126,11 +126,11 @@ const Section05 = () => {
                 </span>
               
                <span className="noto-sans-kr-medium group relative flex flex-col overflow-hidden  text-white ">
-                   <a href="tel:010-8864-4851" target='_blank'>
+                   <a href="tel:010-8864-4851" target='_blank' className='leading-[26px]'>
                     <span className="translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center">
-                      contact me
+                     my resume
                       </span>
-                    <span className="translate-y-0 opacity-100 group-hover:-translate-y-full  transition-transform duration-300 flex nowrap items-center">contact me</span>
+                    <span className="translate-y-0 opacity-100 group-hover:-translate-y-full  transition-transform duration-300 flex nowrap items-center">my resume</span>
                     </a>
                   </span>
                   

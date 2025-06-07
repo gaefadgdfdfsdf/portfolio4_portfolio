@@ -38,7 +38,7 @@ const Header = () => {
                 </div>
 
                 <div className="transition-colors duration-300 px-[var(--size-20)] max-lg:hidden">
-                    <ul className="host-grotesk-bold menu_header menu_global relative lowercase flex items-center gap-[2.083333333333333vw] text-[20px]">
+                    <ul className="host-grotesk-bold menu_header menu_global relative lowercase flex items-center gap-[1.113333333333333vw] text-[20px]">
                         <li>
                             <span style={{ background: colorHeader ? '#fff' : '#000', }}
                                 className='h-full bg-black absolute bottom-0 left-0 w-[0.5px]'></span>
@@ -51,15 +51,21 @@ const Header = () => {
                                 className="overflow-hidden leading-none flex h-[3.472vw] items-center cursor-pointer">
                                 <span className="group relative flex flex-col overflow-hidden ">
                                     <span className="pl-[1.041555vw] translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center" >
-                                        <img style={{ background: colorHeader ? '#eee' : '#fff' }}
+                                        <svg style={{ fill: colorHeader ? '#fff' : '#c3c3c3' }}  className="mr-2 relative top-1/2" width='14' height='14' viewBox='0 0 10 10'  xmlns='http://www.w3.org/2000/svg'>
+                                            <path d='M10 0L10 10L0 1.90735e-06L10 0Z'/></svg>
+                                        
+                                        {/* <img style={{ background: colorHeader ? '#eee' : '#fff' }}
                                             className='absolute -translate-y-1/2 opacity-[0.2] left-0 w-[0.694vw] h-[0.694vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + '/trai_icon.svg'} alt='trai_icon' />
-                                        WORK
+                                         */}WORK
                                     </span>
                                     <span className="pl-[1.041555vw] translate-y-0 opacity-100 group-hover:-translate-y-full  transition-transform duration-300 flex nowrap items-cente">
-                                        <img
+                                        <svg style={{ fill: colorHeader ? '#fff' : '#c3c3c3' }}  className="mr-2 relative top-1" width='14' height='14' viewBox='0 0 10 10'  xmlns='http://www.w3.org/2000/svg'>
+                                        <path d='M10 0L10 10L0 1.90735e-06L10 0Z'/></svg>
+                                        
+                                        {/* <img
                                             style={{ background: colorHeader ? '#eee' : '#fff' }}
                                             className='absolute -translate-y-1/2 opacity-[0.2] left-0 w-[0.694vw] h-[0.694vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + '/trai_icon.svg'} alt='trai_icon' />
-                                        WORK
+                                         */}WORK
                                     </span>
                                 </span>
                             </a>
@@ -75,14 +81,18 @@ const Header = () => {
                                 className="overflow-hidden leading-none h-[3.472vw] cursor-pointer">
                                 <span className="group relative flex flex-col overflow-hidden">
                                     <span className="pl-[1.041555vw] translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center" >
-                                        <img style={{ background: colorHeader ? '#eee' : '#fff' }}
+                                    <svg style={{ fill: colorHeader ? '#fff' : '#c3c3c3' }}  className="mr-2 relative top-1/2" width='14' height='14' viewBox='0 0 10 10'  xmlns='http://www.w3.org/2000/svg'>
+                                    <path d='M10 0L10 10L0 1.90735e-06L10 0Z'/></svg>
+                                        {/* <img style={{ background: colorHeader ? '#eee' : '#fff' }}
                                             className='absolute top-1/5 -translate-y-1/3 opacity-[0.2] left-0 w-[0.694vw] h-[0.694vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + '/trai_icon.svg'} alt='trai_icon' />
-                                        skill
+                                         */}skill
                                     </span>
                                     <span className="pl-[1.041555vw] translate-y-0 opacity-100 group-hover:-translate-y-full  transition-transform duration-300 flex nowrap items-center">
-                                        <img style={{ background: colorHeader ? '#eee' : '#fff' }}
-                                            className='absolute top-1/5 -translate-y-1/3 opacity-[0.2] left-0 w-[0.694vw] h-[0.694vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + '/trai_icon.svg'} alt='trai_icon' />
-                                        skill
+                                    <svg style={{ fill: colorHeader ? '#fff' : '#c3c3c3' }}  className="mr-2 relative top-1/2" width='14' height='14' viewBox='0 0 10 10'  xmlns='http://www.w3.org/2000/svg'>
+                                    <path d='M10 0L10 10L0 1.90735e-06L10 0Z'/></svg>
+                                        {/* <img style={{ background: colorHeader ? '#eee' : '#fff' }}
+                                            className='absolute top-1/5 -translate-y-1/3 opacity-[0.2] left-0 w-[0.694vw] h-[0.694vw] mt-[0.694vw] block' src={process.env.PUBLIC_URL + '/trai_icon.svg'} alt='trai_icon' />*/}
+                                        skill 
                                     </span>
                                 </span>
                             </a>
@@ -94,7 +104,7 @@ const Header = () => {
                                 className="overflow-hidden leading-none contact  h-[3.472vw] cursor-pointer">
                                 <span className="group relative flex flex-col overflow-hidden">
                                     <span className="pl-[1.141555vw] translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center" >
-                                    <svg style={{fill: colorHeader ? '#fff' : '#999' }} className="mr-2" width='20' height='13' viewBox='0 0 17 10' fill='black' xmlns='http://www.w3.org/2000/svg' >
+                                    <svg style={{fill: colorHeader ? '#fff' : '#999999' }} className="mr-2" width='22' height='15' viewBox='0 0 17 10' fill='black' xmlns='http://www.w3.org/2000/svg' >
                                       <path class="st0" d="M7.8,0.5c0-0.1,0-0.1,0-0.2c0,0,0,0,0,0c0,0,0,0,0.1,0c0.5,0,1.1,0,1.6,0c0,0,0,0.9,0,2.1c0,1.6,0,3.7-0.1,4
                                         C9.7,6,10,5.7,10.3,5.4c0.3-0.3,0.6-0.6,0.9-0.9c0.2-0.2,0.5-0.5,0.7-0.7c0.6-0.6,1.2-1.2,1.8-1.7c0.4,0.4,0.8,0.8,1.1,1.2
                                         c-0.7,0.7-1.4,1.3-2,2c-0.1,0.1-0.3,0.3-0.4,0.4c-0.3,0.3-0.5,0.5-0.8,0.8c-0.1,0.1-0.2,0.2-0.2,0.2c-0.3,0.3-0.6,0.6-0.9,0.8
@@ -110,7 +120,7 @@ const Header = () => {
                                         &nbsp;*/}CONTACT 
                                     </span>
                                     <span className="pl-[1.141555vw] translate-y-0 opacity-100 group-hover:-translate-y-full  transition-transform duration-300 flex nowrap items-cente">
-                                      <svg style={{fill: colorHeader ? '#fff' : '#999' }} className="mr-2 relative top-1" width='20' height='13' viewBox='0 0 17 10' fill='black' xmlns='http://www.w3.org/2000/svg' >
+                                      <svg style={{fill: colorHeader ? '#fff' : '#999999' }} className="mr-2 relative top-1" width='22' height='15' viewBox='0 0 17 10' fill='black' xmlns='http://www.w3.org/2000/svg' >
                                       <path class="st0" d="M7.8,0.5c0-0.1,0-0.1,0-0.2c0,0,0,0,0,0c0,0,0,0,0.1,0c0.5,0,1.1,0,1.6,0c0,0,0,0.9,0,2.1c0,1.6,0,3.7-0.1,4
                                         C9.7,6,10,5.7,10.3,5.4c0.3-0.3,0.6-0.6,0.9-0.9c0.2-0.2,0.5-0.5,0.7-0.7c0.6-0.6,1.2-1.2,1.8-1.7c0.4,0.4,0.8,0.8,1.1,1.2
                                         c-0.7,0.7-1.4,1.3-2,2c-0.1,0.1-0.3,0.3-0.4,0.4c-0.3,0.3-0.5,0.5-0.8,0.8c-0.1,0.1-0.2,0.2-0.2,0.2c-0.3,0.3-0.6,0.6-0.9,0.8

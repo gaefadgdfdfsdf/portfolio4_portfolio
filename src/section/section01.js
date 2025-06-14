@@ -28,6 +28,7 @@ const CameraController = ({
 }) => {
     const pivotRef = useRef(null);
     const { camera } = useThree();
+    const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
 
     useEffect(() => {
         if (pivotRef.current) {
@@ -48,12 +49,19 @@ const CameraController = ({
         
        
         const progress = scrollYProgress.get();
+
+        
+  
+
+        
         if (pivotRef.current) {
             let targetRotationY = 0;
             let targetRotationX = 0;
             let targetRotationZ = 0;
           
             let targetScale = 1;
+
+          
 
             
     

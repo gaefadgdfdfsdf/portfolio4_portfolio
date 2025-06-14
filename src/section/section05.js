@@ -113,7 +113,7 @@ const Section05 = () => {
               <div className='mt-[37px] lg:mt-[2.638888888888889vw]'>
                 
              <a
-                href="#"
+                href="/resume.pdf" download target='_blank'
                 className="group relative inline-flex items-center justify-center rounded-[5px] h-[80px] lg:px-[2.7777777777777777vw] lg:text-[0.9722222222222222vw] bg-[#091423] min-w-[223px] lg:min-w-[15.555555555555555vw] overflow-hidden"
               >
                   <span className="ransition-transform duration-300 group-hover:bottom-16 rotate-[135deg] absolute left-2 bottom-2 noto-sans-kr-medium group flex overflow-hidden text-white ">
@@ -126,7 +126,7 @@ const Section05 = () => {
                 </span>
               
                <span className="noto-sans-kr-medium group relative flex flex-col overflow-hidden  text-white ">
-                   <a href="/resume.pdf" download target='_blank' className='leading-[26px]'>
+                   <a  className='leading-[26px]'>
                     <span className="translate-y-full  group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute top-0 left-0 flex nowrap items-center">
                      my resume
                       </span>

@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useSetRecoilState } from 'recoil';
 import { showHeaderState } from '../store';
 import { motion, useScroll, useTransform } from "framer-motion";
-import ImageDistortion from './ImageDistortion';
+// import ImageDistortion from './ImageDistortion';
 
 
 const Section02 = () => {
@@ -130,7 +130,7 @@ const Section02 = () => {
                                     </div>
                                     <div className='lg:w-[calc(100%-32.84722222222222vw)]'>
                                         <div className='wrap-img-distortion overflow-hidden rounded-[.3472222222222222vw] h-[42vw] lg:h-full relative'>
-                                            <ImageDistortion className='object-cover w-full relative h-full lg:top-1/2 lg:-translate-y-1/2' image={process.env.PUBLIC_URL + '/galaxy.jpg'} alt='galaxy' />
+                                            <img className='object-cover w-full relative h-full lg:top-1/2 lg:-translate-y-1/2' src={process.env.PUBLIC_URL + '/galaxy.jpg'} alt='galaxy' />
                                             <div className="absolute top-[50%] w-full left-0 z-1 translate-y-[-50%]">
                                                 <canvas className='w-full h-full object-cover' id="hover-effect-canvas-1745038706574" width="1236" height="618"></canvas>
                                             </div>

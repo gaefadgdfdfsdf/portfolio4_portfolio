@@ -12,6 +12,7 @@ import Section04 from './section/section04';
 import Section05 from './section/section05';
 
 
+
 function App() {
   const [progress, setProgress] = useRecoilState(loadingProgressState);
   if(progress < 100){
@@ -26,6 +27,7 @@ function App() {
       <Section03/>
       <Section04/>
       <Section05/>
+     
       
     </>
   );

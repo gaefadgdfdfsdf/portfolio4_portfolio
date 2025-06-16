@@ -162,7 +162,7 @@ const Section02 = () => {
                                     </div>
                                 </div>
                             </motion.div>
-
+                            {/* 링크다시추가 */}
                             <motion.div
                                 style={{ height: height3 }}
                                 ref={divcontainerRef} className='max-[768px]:min-h-[600px] max-[1023px]:min-h-[700px] lg:h-[34.29166666666667vw] overflow-hidden relative'>

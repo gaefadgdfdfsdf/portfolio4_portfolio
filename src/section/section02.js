@@ -111,7 +111,7 @@ const Section02 = () => {
                 <div className='max-w-full pl-[1.38vw]  pr-[1.38vw] '>
                     <div className='relative lg:h-[400vh]' ref={relatvieRef}>
                         <div className='lg:sticky lg:top-[3.44444vw] lg:grid'>
-
+                            {/* 링크수정예정 */}
                             <motion.div
                                 style={{ height: height1 }}
                                 ref={divcontainerRef} className='max-[768px]:min-h-[600px] max-[1023px]:min-h-[700px] lg:h-[34.29166666666667vw] overflow-hidden relative'>

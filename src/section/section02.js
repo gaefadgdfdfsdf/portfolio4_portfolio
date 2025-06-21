@@ -170,7 +170,7 @@ const Section02 = () => {
                                 <a href='https://joyunhahahaha.github.io/portfolio3_herryporter/' target='_blank' className='absolute inset-0 z-[1]' />
                                 <div className='py-5 lg:py-[1.38vw] flex flex-col-reverse lg:flex-row lg:h-full'>
                                     <div className='lg:w-[32.84722222222222vw] lg:pr-[2.7777777777777777vw] mt-[18px] lg:mt-0'>
-                                        <h2 className='host-grotesk-superbold text-[32px] lg:text-[4.166666666666666vw] leading-[100%] tracking-tighter font-medium'>herryporter</h2>
+                                        <h2 className='host-grotesk-superbold text-[32px] lg:text-[4.166666666666666vw] leading-[100%] tracking-tighter font-medium'>harryporter</h2>
                                         <div className='noto-sans-kr-bold text-[14px] lg:text-[0.9722222222222222vw] mt-2.5 lg:mt-[1vw] font-medium'>react & JavaScript & tailwandcss</div>
                                         <div className='noto-sans-kr-medium text-[16px] description lg_br_enable mt-5 lg:mt-[2vw] lg:tracking-tight leading-[134%]'>
                                            이 프로젝트는 Harry Potter 시리즈를 테마로 한 인터랙티브 웹사이트입니다.

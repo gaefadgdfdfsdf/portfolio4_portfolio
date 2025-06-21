@@ -116,7 +116,7 @@ const Section02 = () => {
                                 style={{ height: height1 }}
                                 ref={divcontainerRef} className='max-[768px]:min-h-[600px] max-[1023px]:min-h-[700px] lg:h-[34.29166666666667vw] overflow-hidden relative'>
                                 <div className='absolute bottom-0 left-0 w-full bg-black h-[1px] z-10'></div>
-                                <a href='https://gaefadgdfdfsdf.github.io/portfolio2_glaxywatch/' target='_blank' className='absolute inset-0 z-[1]' rel="noreferrer" />
+                                <a href='https://joyunhahahaha.github.io/portfolio2_glaxywatch/' target='_blank' className='absolute inset-0 z-[1]' rel="noreferrer" />
                                 <div className='py-5 lg:py-[1.38vw] flex flex-col-reverse lg:flex-row lg:h-full'>
                                     <div className='lg:w-[32.84722222222222vw] lg:pr-[2.7777777777777777vw] mt-[18px] lg:mt-0'>
                                         <h2 className='host-grotesk-superbold text-[32px] lg:text-[4.166666666666666vw] leading-[100%] tracking-tighter font-medium'>glaxywatch</h2>
@@ -143,7 +143,7 @@ const Section02 = () => {
                                 style={{ height: height2 }}
                                 ref={divcontainerRef} className='max-[768px]:min-h-[600px] max-[1023px]:min-h-[700px] lg:h-[34.29166666666667vw] overflow-hidden relative'>
                                 <div className='absolute bottom-0 left-0 w-full bg-black h-[1px] z-10'></div>
-                                <a href='https://gaefadgdfdfsdf.github.io/portfolio_1_hyundai/' target='_blank' className='absolute inset-0 z-[1]' rel="noreferrer" />
+                                <a href='https://joyunhahahaha.github.io/portfolio_1_hyundai/' target='_blank' className='absolute inset-0 z-[1]' rel="noreferrer" />
                                 <div className='py-5 lg:py-[1.38vw] flex flex-col-reverse lg:flex-row lg:h-full'>
                                     <div className='lg:w-[32.84722222222222vw] lg:pr-[2.7777777777777777vw] mt-[18px] lg:mt-0'>
                                         <h2 className='host-grotesk-superbold text-[32px] lg:text-[4.166666666666666vw] leading-[100%] tracking-tighter font-medium'>hyundai</h2>
@@ -167,7 +167,7 @@ const Section02 = () => {
                                 style={{ height: height3 }}
                                 ref={divcontainerRef} className='max-[768px]:min-h-[600px] max-[1023px]:min-h-[700px] lg:h-[34.29166666666667vw] overflow-hidden relative'>
                                 <div className='absolute bottom-0 left-0 w-full bg-black h-[1px] z-10'></div>
-                                <a href='https://gaefadgdfdfsdf.github.io/portfolio3_herryporter/' target='_blank' className='absolute inset-0 z-[1]' />
+                                <a href='https://joyunhahahaha.github.io/portfolio3_herryporter/' target='_blank' className='absolute inset-0 z-[1]' />
                                 <div className='py-5 lg:py-[1.38vw] flex flex-col-reverse lg:flex-row lg:h-full'>
                                     <div className='lg:w-[32.84722222222222vw] lg:pr-[2.7777777777777777vw] mt-[18px] lg:mt-0'>
                                         <h2 className='host-grotesk-superbold text-[32px] lg:text-[4.166666666666666vw] leading-[100%] tracking-tighter font-medium'>herryporter</h2>
